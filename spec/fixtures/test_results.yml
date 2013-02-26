@@ -1,0 +1,15 @@
+one:
+  nitrate: 9.99
+  nitrite: 9.99
+  hardness: 9.99
+  alkalinity: 9.99
+  ph: 9.99
+  bowl_id: 1
+
+two:
+  nitrate: 9.99
+  nitrite: 9.99
+  hardness: 9.99
+  alkalinity: 9.99
+  ph: 9.99
+  bowl_id: 1

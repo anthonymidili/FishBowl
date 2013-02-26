@@ -2,7 +2,9 @@ FishBowl::Application.routes.draw do
 
   devise_for :users
 
-  resources :bowls
+  resources :bowls do
+    resources :test_results, only: [:create, :destroy]
+  end
 
   root :to => 'welcome#index'
 
