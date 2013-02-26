@@ -1,0 +1,8 @@
+<h2><%= "Edit #{current_user.name}'s Fish Bowl" %></h2>
+
+<%= render 'form' %>
+
+<p>
+  <%= link_to "Show", @bowl %> |
+  <%= link_to "View All", bowls_path %>
+</p>

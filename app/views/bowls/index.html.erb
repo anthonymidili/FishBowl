@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="span12">
+  <h2><%= "#{current_user.name}'s Fish #{bowl_bowls(@bowls)}" %></h2>
+
+  <table class="table table-striped">
+    <tr>
+      <th>Fish bowl's name</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <% @bowls.each do |bowl| %>
+      <tr>
+        <td><%= link_to bowl.name, bowl %></td>
+        <td>
+          <%= link_to edit_bowl_path(bowl) do %>
+            <i class="icon-ok icon-pencil"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to bowl, confirm: 'Are you sure?', method: :delete do %>
+            <i class="icon-ok icon-remove"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+  <p><%= link_to "New Bowl", new_bowl_path, class: "btn btn-primary" %></p>
+</div>
+</div>

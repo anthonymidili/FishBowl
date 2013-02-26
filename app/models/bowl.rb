@@ -1,4 +1,4 @@
-class Tank < ActiveRecord::Base
+class Bowl < ActiveRecord::Base
   attr_accessible :name
 
   validates :name, presence: true

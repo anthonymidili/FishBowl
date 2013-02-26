@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe TanksController do
+describe BowlsController do
   fixtures :all
   render_views
 
@@ -10,7 +10,7 @@ describe TanksController do
   end
 
   it "show action should render show template" do
-    get :show, :id => Tank.first
+    get :show, :id => Bowl.first
     response.should render_template(:show)
   end
 
@@ -20,38 +20,38 @@ describe TanksController do
   end
 
   it "create action should render new template when model is invalid" do
-    Tank.any_instance.stubs(:valid?).returns(false)
+    Bowl.any_instance.stubs(:valid?).returns(false)
     post :create
     response.should render_template(:new)
   end
 
   it "create action should redirect when model is valid" do
-    Tank.any_instance.stubs(:valid?).returns(true)
+    Bowl.any_instance.stubs(:valid?).returns(true)
     post :create
-    response.should redirect_to(tank_url(assigns[:tank]))
+    response.should redirect_to(tank_url(assigns[:bowl]))
   end
 
   it "edit action should render edit template" do
-    get :edit, :id => Tank.first
+    get :edit, :id => Bowl.first
     response.should render_template(:edit)
   end
 
   it "update action should render edit template when model is invalid" do
-    Tank.any_instance.stubs(:valid?).returns(false)
-    put :update, :id => Tank.first
+    Bowl.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Bowl.first
     response.should render_template(:edit)
   end
 
   it "update action should redirect when model is valid" do
-    Tank.any_instance.stubs(:valid?).returns(true)
-    put :update, :id => Tank.first
-    response.should redirect_to(tank_url(assigns[:tank]))
+    Bowl.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Bowl.first
+    response.should redirect_to(tank_url(assigns[:bowl]))
   end
 
   it "destroy action should destroy model and redirect to index action" do
-    tank = Tank.first
+    tank = Bowl.first
     delete :destroy, :id => tank
     response.should redirect_to(tanks_url)
-    Tank.exists?(tank.id).should be_false
+    Bowl.exists?(tank.id).should be_false
   end
 end

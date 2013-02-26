@@ -2,7 +2,7 @@ FishBowl::Application.routes.draw do
 
   devise_for :users
 
-  resources :tanks
+  resources :bowls
 
   root :to => 'welcome#index'
 

@@ -1,0 +1,10 @@
+<p>
+  <strong>Name:</strong>
+  <%= @bowl.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_bowl_path(@bowl) %> |
+  <%= link_to "Destroy", @bowl, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", bowls_path %>
+</p>
