@@ -1,10 +1,8 @@
-<p>
-  <strong>Name:</strong>
-  <%= @bowl.name %>
-</p>
+<h2><%= "#{current_user.name}'s, Fish Bowl #{@bowl.name}" %></h2>
 
 <p>
   <%= link_to "Edit", edit_bowl_path(@bowl) %> |
-  <%= link_to "Destroy", @bowl, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", bowls_path %>
+  <%= link_to "Bowls Directory", bowls_path %>
 </p>
+
+<p>Trace Tank Levels</p>
