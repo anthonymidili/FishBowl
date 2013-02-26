@@ -1,7 +1,7 @@
 <%= form_for @bowl do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
-    <%= f.label :name %>
+    <%= f.label :name, "Bowl Name" %>
     <%= f.text_field :name %>
   </div>
   <div class="control-group"><%= f.submit %></div>

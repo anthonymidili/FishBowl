@@ -1,8 +1,8 @@
-<h2><%= "#{current_user.name}'s, Fish Bowl #{@bowl.name}" %></h2>
+<h2><%= "#{current_user.name}'s, #{@bowl.name} Fish Bowl" %></h2>
 
 <p>
-  <%= link_to "Edit", edit_bowl_path(@bowl) %> |
-  <%= link_to "Bowls Directory", bowls_path %>
+  <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
+  <%= link_to "Bowl Directory", bowls_path %>
 </p>
 
 <p>Trace Tank Levels</p>
