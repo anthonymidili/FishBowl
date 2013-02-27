@@ -1,4 +1,6 @@
 class TestResultsController < ApplicationController
+  before_filter :authenticate_user!
+
   def create
     @bowl = current_user.bowls.find(params[:bowl_id])
     @test_result = @bowl.test_results.new(params[:test_result])
