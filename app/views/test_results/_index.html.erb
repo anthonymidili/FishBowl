@@ -11,17 +11,18 @@
   <%= render 'test_results/form' %>
   <% @test_results.each do |test_result| %>
     <tr>
-      <td><%= test_result.created_at %></td>
+      <td><%= test_result.created_at.strftime("%b,%d %Y @ %I:%M%p") %></td>
       <td><%= test_result.nitrate %></td>
       <td><%= test_result.nitrite %></td>
       <td><%= test_result.hardness %></td>
       <td><%= test_result.alkalinity %></td>
       <td><%= test_result.ph %></td>
-      <td>
-        <%= link_to "Delete Results", [@bowl, test_result],
-                    class: "btn btn-small btn-danger",
-                    confirm: 'Are you sure?',
-                    method: :delete %>
+      <td style="text-align: center;">
+        <%= link_to [@bowl, test_result],
+                    confirm: 'Are you sure? This will permanently delete your test results!',
+                    method: :delete do %>
+          <i class="icon-remove"></i>
+        <% end %>
       </td>
     </tr>
   <% end %>

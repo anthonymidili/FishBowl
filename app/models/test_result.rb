@@ -9,4 +9,6 @@ class TestResult < ActiveRecord::Base
   validates :alkalinity, presence: true
   validates :ph, presence: true
   validates :bowl_id, presence: true
+
+  default_scope order: 'test_results.created_at DESC'
 end

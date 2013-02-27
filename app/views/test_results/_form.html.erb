@@ -2,7 +2,7 @@
   <%= render 'shared/error_messages', object: f.object %>
   <tr>
     <th>Date taken</th>
-    <td><%= f.text_field :nitrate, class: "field_width" %></td>
+    <td><%= f.text_field :nitrate, class: "field_width", autofocus: true %></td>
     <td><%= f.text_field :nitrite, class: "field_width" %></td>
     <td><%= f.text_field :hardness, class: "field_width" %></td>
     <td><%= f.text_field :alkalinity, class: "field_width" %></td>

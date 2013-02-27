@@ -1,8 +1,8 @@
 <%= form_for @bowl do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
-    <%= f.label :name, "Bowl Name" %>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Fish Bowl Name" %>
+    <%= f.text_field :name, autofocus: true %>
   </div>
-  <div class="control-group"><%= f.submit %></div>
+  <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
 <% end %>
