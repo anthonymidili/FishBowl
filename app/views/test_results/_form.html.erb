@@ -1,0 +1,11 @@
+<%= form_for [@bowl, @test_result] do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <tr>
+    <td><%= f.text_field :nitrate, class: "field_width" %></td>
+    <td><%= f.text_field :nitrite, class: "field_width" %></td>
+    <td><%= f.text_field :hardness, class: "field_width" %></td>
+    <td><%= f.text_field :alkalinity, class: "field_width" %></td>
+    <td><%= f.text_field :ph, class: "field_width" %></td>
+    <td><%= f.submit %></td>
+  </tr>
+<% end %>

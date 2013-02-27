@@ -2,19 +2,21 @@ class BowlsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @bowls = Bowl.all
+    @bowls = current_user.bowls.all
   end
 
   def show
-    @bowl = Bowl.find(params[:id])
+    @bowl = current_user.bowls.find(params[:id])
+    @test_result = @bowl.test_results.new
+    @test_results = @bowl.test_results.all
   end
 
   def new
-    @bowl = Bowl.new
+    @bowl = current_user.bowls.new
   end
 
   def create
-    @bowl = Bowl.new(params[:bowl])
+    @bowl = current_user.bowls.new(params[:bowl])
     if @bowl.save
       redirect_to @bowl, :notice => "Successfully created bowl."
     else
@@ -23,11 +25,11 @@ class BowlsController < ApplicationController
   end
 
   def edit
-    @bowl = Bowl.find(params[:id])
+    @bowl = current_user.bowls.find(params[:id])
   end
 
   def update
-    @bowl = Bowl.find(params[:id])
+    @bowl = current_user.bowls.find(params[:id])
     if @bowl.update_attributes(params[:bowl])
       redirect_to @bowl, :notice  => "Successfully updated bowl."
     else
@@ -36,7 +38,7 @@ class BowlsController < ApplicationController
   end
 
   def destroy
-    @bowl = Bowl.find(params[:id])
+    @bowl = current_user.bowls.find(params[:id])
     @bowl.destroy
     redirect_to bowls_url, :notice => "Successfully destroyed bowl."
   end
