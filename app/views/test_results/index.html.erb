@@ -2,5 +2,4 @@
 
 <%= render 'test_results' %>
 
-<%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
-<%= link_to "Bowl Directory", bowls_path %>
+<%= link_to "#{@bowl.name} Fish Bowl", bowl_path(@bowl) %>
