@@ -2,9 +2,7 @@
 
 <p>
   <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
-  <%= link_to "Bowl Directory", bowls_path %>
+  <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "Water Test", bowl_test_results_path(@bowl) %>
 </p>
 
-<h3>Tank Levels</h3>
-
-<%= render 'test_results/index' %>
