@@ -1,7 +1,6 @@
 <h3>Tank Levels</h3>
 
-<div id="annual"></div>
-
+<%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
 <%= render 'form' %>
 
 <%= link_to "#{@bowl.name} Fish Bowl", bowl_path(@bowl) %>
