@@ -2,8 +2,14 @@
 
 /* universal */
 
-.field_width{
-  width: 5em;
+.center_fields{
+  td{
+    text-align: center !important;
+
+    input[type="text"]{
+      width: 5em;
+    }
+  }
 }
 
 /* devise form errors */
