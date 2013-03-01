@@ -1,6 +1,9 @@
 <h3>Tank Levels</h3>
 
+<%= link_to "Back to Fish Bowl", bowl_path(@bowl) %>
+
 <%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
+
 <%= render 'form' %>
 
-<%= link_to "#{@bowl.name} Fish Bowl", bowl_path(@bowl) %>
+<%= link_to "Back to Fish Bowl", bowl_path(@bowl) %>
