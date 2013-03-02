@@ -1,9 +1,14 @@
-<h3>Tank Levels</h3>
+<h2><%= "#{@bowl.name} Fish Bowl Water Health" %></h2>
 
-<%= link_to "Back to Fish Bowl", bowl_path(@bowl) %>
+<p>
+  <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %>
+</p>
 
 <%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
 
+<h3>Water Test</h3>
+
 <%= render 'form' %>
 
-<%= link_to "Back to Fish Bowl", bowl_path(@bowl) %>
+<p><%= link_to "Back to Fish Bowl", bowl_path(@bowl) %></p>

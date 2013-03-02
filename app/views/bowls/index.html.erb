@@ -1,26 +1,27 @@
 <h2><%= "#{current_user.name}'s Fish #{one_or_more_bowls(@bowls)}" %></h2>
 
-<table class="table table-striped">
-  <tr>
-    <th><%= "Fish #{one_or_more_bowls(@bowls)} Name" %></th>
-    <th>Edit</th>
-    <th>Delete</th>
-  </tr>
-  <% @bowls.each do |bowl| %>
-    <tr>
-      <td><%= link_to bowl.name, bowl %></td>
-      <td>
-        <%= link_to edit_bowl_path(bowl) do %>
-          <i class="icon-pencil"></i>
-        <% end %>
-      </td>
-      <td>
-        <%= link_to bowl, confirm: 'Are you sure?', method: :delete do %>
-          <i class="icon-remove"></i>
-        <% end %>
-      </td>
-    </tr>
-  <% end %>
-</table>
+<div class="row">
+  <div class="span12">
+    <% @bowls.each do |bowl| %>
+      <section>
+        <div class="row">
+          <div class="span3">
+            <p><%= link_to bowl.name, bowl %></p>
+            <p><%= link_to image_tag("cool_fish_bowl.jpg", alt: bowl.name), bowl %></p>
+            <p>
+              <%= link_to bowl, confirm: 'Are you sure?', method: :delete do %>
+                <i class="icon-remove"></i>Delete Bowl
+              <% end %>
+            </p>
+          </div>
+          <div class="span9">
+            <h3>Water Health</h3>
+            <%= content_tag :div, "", id: "results_chart", data: {results: bowl.test_results} %>
+          </div>
+        </div>
+      </section>
+    <% end %>
+  </div>
+</div>
 
 <p><%= link_to "Create New Bowl", new_bowl_path, class: "btn btn-primary" %></p>

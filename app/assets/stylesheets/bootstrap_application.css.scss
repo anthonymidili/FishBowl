@@ -2,6 +2,18 @@
 
 /* universal */
 
+.hero-unit{
+  min-height: 600px;
+  background-image: url('/assets/glass-fish-bowl.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px 600px;
+  .sign-up{
+    padding-left: 2em;
+    background-position: left top;
+  }
+}
+
 .center_fields{
   td{
     text-align: center !important;
@@ -10,6 +22,16 @@
       width: 5em;
     }
   }
+}
+
+.center{
+  text-align: center !important;
+}
+
+section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #999;
 }
 
 /* devise form errors */

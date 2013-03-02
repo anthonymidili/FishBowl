@@ -1,8 +1,9 @@
-<h2><%= "#{current_user.name}'s, #{@bowl.name} Fish Bowl" %></h2>
+<h2><%= "#{@bowl.name} Fish Bowl" %></h2>
 
 <p>
-  <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
   <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
+  <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %> |
   <%= link_to "Water Test", bowl_test_results_path(@bowl) %>
 </p>
 
