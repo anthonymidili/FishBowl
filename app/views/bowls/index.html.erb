@@ -5,20 +5,24 @@
     <% @bowls.each do |bowl| %>
       <section>
         <div class="row">
+
           <div class="span3">
             <p><%= link_to bowl.name, bowl %></p>
             <p><%= link_to image_tag("cool_fish_bowl.jpg", alt: bowl.name), bowl %></p>
             <p>
+              <%= link_to "Edit Fish Bowl", edit_bowl_path(bowl) %> |
               <%= link_to bowl, confirm: 'Are you sure?', method: :delete do %>
                 <i class="icon-remove"></i>Delete Bowl
               <% end %>
             </p>
           </div>
+
           <div class="span9">
             <h3>Water Health</h3>
             <p>where graph would be if i could write coffee script!</p>
             <!-- <%= content_tag :div, "", id: "results_chart", data: {results: bowl.test_results} %> -->
           </div>
+
         </div>
       </section>
     <% end %>
