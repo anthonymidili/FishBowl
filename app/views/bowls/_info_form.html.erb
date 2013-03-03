@@ -1,8 +1,20 @@
 <%= form_for @bowl, url: { action: "update_info" } do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
-    <%= f.label :name, "Fish Bowl Name" %>
-    <%= f.text_field :name, autofocus: true %>
+    <%= f.label :size, "Fish Bowl Size" %>
+    <%= f.text_field :size, autofocus: true %>
+  </div>
+  <div class="control-group">
+    <%= f.label :temperature, "Temperature" %>
+    <%= f.text_field :temperature %>
+  </div>
+  <div class="control-group">
+    <%= f.label :bowl_type, "Fish Bowl Type" %>
+    <%= f.text_field :bowl_type %>
+  </div>
+  <div class="control-group">
+    <%= f.label :fish_type, "Fish Type" %>
+    <%= f.text_field :fish_type %>
   </div>
   <div class="control-group"><%= f.submit "Update Info", class: "btn btn-primary" %></div>
 <% end %>

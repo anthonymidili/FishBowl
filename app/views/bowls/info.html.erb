@@ -1,3 +1,8 @@
-info page
+<h2><%= "#{current_user.name}, Edit Fish Bowl Info" %></h2>
+
+<p>
+  <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "#{@bowl.name} Fish Bowl", @bowl %>
+</p>
 
 <%= render 'info_form' %>
