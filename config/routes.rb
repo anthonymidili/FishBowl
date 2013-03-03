@@ -3,6 +3,10 @@ FishBowl::Application.routes.draw do
   devise_for :users
 
   resources :bowls do
+    member do
+      get 'info'
+      put 'update_info'
+    end
     resources :test_results, only: [:index, :create, :destroy]
   end
 

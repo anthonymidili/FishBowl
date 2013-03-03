@@ -40,4 +40,17 @@ class BowlsController < ApplicationController
     @bowl.destroy
     redirect_to bowls_url, :notice => "Successfully destroyed bowl."
   end
+
+  def info
+    @bowl = current_user.bowls.find(params[:id])
+  end
+
+  def update_info
+    @bowl = current_user.bowls.find(params[:id])
+    if @bowl.update_attributes(params[:bowl])
+      redirect_to @bowl, :notice  => "Successfully updated info."
+    else
+      render :action => 'info'
+    end
+  end
 end
