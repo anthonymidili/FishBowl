@@ -2,11 +2,49 @@
 
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
-  <%= link_to "Water Test", bowl_test_results_path(@bowl) %>
-</p>
-
-<p>
   <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
-  <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %>
+  <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %> |
+  <%= link_to "Water Health Test", bowl_test_results_path(@bowl) %>
 </p>
 
+<div class="row">
+  <div class="span12">
+
+    <div class="row">
+      <div class="span6">
+        <h3>Bowl Info</h3><br>
+        <p>Number of Gallons:</p><br>
+        <p>Temperature:</p><br>
+        <p>Fish bowl type: [salt / brackish / fresh]</p><br>
+        <p>Fish type: [Aggressive / Semi Aggressive / Non Aggressive]</p><br>
+        <p>Number of Fish:</p>
+      </div>
+
+      <div class="span6">
+        <h3><%= link_to "Water Health Test", bowl_test_results_path(@bowl) %></h3>
+        <%= content_tag :div, "", id: "results_chart", data: {results: @bowl.test_results} %>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="span12">
+        <h3>Your Fish</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span4">
+        <p>Column 1</p>
+      </div>
+
+      <div class="span4">
+        <p>Column 2</p>
+      </div>
+
+      <div class="span4">
+        <p>Column 3</p>
+      </div>
+    </div>
+
+  </div>
+</div>
