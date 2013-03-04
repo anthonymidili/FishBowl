@@ -3,7 +3,7 @@
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
   <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %> |
-  <%= link_to "Graph Results History", health_history_bowl_test_result_path(@bowl, @test_results) %>
+  <%= link_to "Graph Water Health History", health_history_bowl_test_result_path(@bowl, @test_results) %>
 </p>
 
 <%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
