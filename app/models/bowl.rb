@@ -6,4 +6,6 @@ class Bowl < ActiveRecord::Base
 
   validates :name, presence: true
   validates :user_id, presence: true
+  validates :size, numericality: true, allow_blank: true
+  validates :temperature, numericality: true, allow_blank: true
 end
