@@ -6,12 +6,9 @@ FishBowl::Application.routes.draw do
     member do
       get 'info'
       put 'update_info'
+      get 'test_results_history'
     end
-    resources :test_results, only: [:index, :create, :destroy] do
-      member do
-        get 'health_history'
-      end
-    end
+    resources :test_results, only: [:index, :create, :destroy]
   end
 
   root :to => 'welcome#index'

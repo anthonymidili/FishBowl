@@ -54,4 +54,9 @@ class BowlsController < ApplicationController
       render :action => 'info'
     end
   end
+
+  def test_results_history
+    @bowl = current_user.bowls.find(params[:id])
+    @test_results = @bowl.test_results.all
+  end
 end
