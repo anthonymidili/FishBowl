@@ -23,6 +23,10 @@ class TestResultsController < ApplicationController
     redirect_to bowl_test_results_path(@bowl), :notice => "Successfully destroyed test result."
   end
 
+  def health_history
+    @test_results = @bowl.test_results.all
+  end
+
   private
 
   def set_bowl

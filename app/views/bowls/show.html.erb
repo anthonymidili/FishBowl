@@ -22,7 +22,7 @@
 
       <div class="span6">
         <h3><%= link_to "Water Health Test", bowl_test_results_path(@bowl) %></h3>
-        <%= content_tag :div, "", id: "results_chart", data: {results: @bowl.test_results} %>
+        <%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
       </div>
     </div>
 

@@ -1,0 +1,9 @@
+<h2><%= "All #{@bowl.name} Fish Bowl Water Health History" %></h2>
+
+<p>
+  <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %> |
+  <%= link_to "Water Health Test", bowl_test_results_path(@bowl) %>
+</p>
+
+<%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>

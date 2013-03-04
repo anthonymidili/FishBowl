@@ -7,7 +7,11 @@ FishBowl::Application.routes.draw do
       get 'info'
       put 'update_info'
     end
-    resources :test_results, only: [:index, :create, :destroy]
+    resources :test_results, only: [:index, :create, :destroy] do
+      member do
+        get 'health_history'
+      end
+    end
   end
 
   root :to => 'welcome#index'

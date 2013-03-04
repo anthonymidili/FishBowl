@@ -7,6 +7,7 @@ class BowlsController < ApplicationController
 
   def show
     @bowl = current_user.bowls.find(params[:id])
+    @test_results = @bowl.test_results.page(params[:page]).per(10)
   end
 
   def new
