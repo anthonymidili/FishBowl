@@ -2,19 +2,31 @@
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
     <%= f.label :size, "Fish Bowl Size" %>
-    <%= f.text_field :size, autofocus: true %>
+    <div class="input-append">
+      <%= f.text_field :size, autofocus: true %>
+      <span class="add-on">Gallons</span>
+    </div>
   </div>
   <div class="control-group">
     <%= f.label :temperature, "Temperature" %>
-    <%= f.text_field :temperature %>
+    <div class="input-append">
+      <%= f.text_field :temperature %>
+      <span class="add-on">&degF</span>
+    </div>
   </div>
   <div class="control-group">
     <%= f.label :bowl_type, "Fish Bowl Type" %>
-    <%= f.text_field :bowl_type %>
+    <%= f.select :bowl_type,
+                 'Fresh Water'    => 'Fresh',
+                 'Brackish Water' => 'Brackish',
+                 'Salt Water'     => 'Salt' %>
   </div>
   <div class="control-group">
     <%= f.label :fish_type, "Fish Type" %>
-    <%= f.text_field :fish_type %>
+    <%= f.select :fish_type,
+                 'Non Aggressive'  => 'Non Aggressive',
+                 'Semi Aggressive' => 'Semi Aggressive',
+                 'Aggressive'      => 'Aggressive' %>
   </div>
   <div class="control-group"><%= f.submit "Update Info", class: "btn btn-primary" %></div>
 <% end %>
