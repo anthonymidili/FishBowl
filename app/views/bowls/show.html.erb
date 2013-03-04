@@ -13,13 +13,11 @@
     <div class="row">
       <div class="span6">
         <h3><%= link_to "Bowl Info", info_bowl_path(@bowl) %></h3><br>
-        <p><%= "Bowl size: #{@bowl.size}" %></p><br>
-        <p><%= "Temperature: #{@bowl.temperature}" %></p><br>
-        <p> [salt / brackish / fresh]</p>
-        <p><%= "Fish bowl type: #{@bowl.bowl_type}" %></p><br>
-        <p> [Aggressive / Semi Aggressive / Non Aggressive]</p>
-        <p><%= "Fish type: #{@bowl.fish_type}" %></p><br>
-        <p>Number of Fish:</p>
+        <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p><br>
+        <p>Temperature:<b><%= " #{@bowl.temperature}" %>&degF</b></p><br>
+        <p>Fish bowl type:<b><%= " #{@bowl.bowl_type} Water" %></b></p><br>
+        <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p><br>
+        <p>Number of Fish: <b>##</b></p>
       </div>
 
       <div class="span6">
