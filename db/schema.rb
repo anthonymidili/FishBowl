@@ -11,15 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130303180938) do
+ActiveRecord::Schema.define(:version => 20130304073602) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
-    t.string   "size"
-    t.string   "temperature"
-    t.string   "bowl_type"
-    t.string   "fish_type"
     t.integer  "user_id"
+    t.integer  "size"
+    t.integer  "temperature"
+    t.string   "water_type"
+    t.string   "fish_type"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
