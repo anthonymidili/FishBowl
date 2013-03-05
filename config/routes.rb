@@ -8,7 +8,7 @@ FishBowl::Application.routes.draw do
       put 'update_info'
       get 'test_results_history'
     end
-    resources :test_results, only: [:index, :create, :destroy]
+    resources :water_healths, only: [:index, :create, :destroy]
   end
 
   root :to => 'welcome#index'

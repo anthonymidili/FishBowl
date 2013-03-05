@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe TestResult do
+describe WaterHealth do
   it "should be valid" do
-    TestResult.new.should be_valid
+    WaterHealth.new.should be_valid
   end
 end

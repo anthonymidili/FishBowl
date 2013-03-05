@@ -6,12 +6,12 @@
   <%= link_to "Graph Test Results History", test_results_history_bowl_path(@bowl) %>
 </p>
 
-<%= content_tag :div, "", id: "results_chart", data: {results: @test_results} %>
+<%= content_tag :div, "", id: "results_chart", data: {results: @water_healths} %>
 
 <h3>Water Health Test</h3>
 
-<%= paginate @test_results %>
+<%= paginate @water_healths %>
 <%= render 'form' %>
-<%= paginate @test_results %>
+<%= paginate @water_healths %>
 
 <p><%= link_to "Back to Fish Bowl", bowl_path(@bowl) %></p>

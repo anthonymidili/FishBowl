@@ -1,4 +1,4 @@
-class TestResult < ActiveRecord::Base
+class WaterHealth < ActiveRecord::Base
   attr_accessible :nitrate, :nitrite, :hardness, :alkalinity, :ph, :bowl_id
 
   belongs_to :bowl
@@ -10,5 +10,5 @@ class TestResult < ActiveRecord::Base
   validates :ph, presence: true
   validates :bowl_id, presence: true
 
-  default_scope order: 'test_results.created_at DESC'
+  default_scope order: 'water_healths.created_at DESC'
 end

@@ -7,7 +7,7 @@ class BowlsController < ApplicationController
 
   def show
     @bowl = current_user.bowls.find(params[:id])
-    @test_results = @bowl.test_results.page(params[:page]).per(10)
+    @water_healths = @bowl.water_healths.page(params[:page]).per(10)
   end
 
   def new
@@ -57,6 +57,6 @@ class BowlsController < ApplicationController
 
   def test_results_history
     @bowl = current_user.bowls.find(params[:id])
-    @test_results = @bowl.test_results.all
+    @water_healths = @bowl.water_healths.all
   end
 end
