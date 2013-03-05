@@ -9,16 +9,16 @@
     <th></th>
   </tr>
   <%= render 'fields', f: f %>
-  <% @water_healths.each do |water_health| %>
+  <% @water_health_tests.each do |water_health_test| %>
     <tr>
-      <td><%= water_health.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
-      <td><%= water_health.nitrate %></td>
-      <td><%= water_health.nitrite %></td>
-      <td><%= water_health.hardness %></td>
-      <td><%= water_health.alkalinity %></td>
-      <td><%= water_health.ph %></td>
+      <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
+      <td><%= water_health_test.nitrate %></td>
+      <td><%= water_health_test.nitrite %></td>
+      <td><%= water_health_test.hardness %></td>
+      <td><%= water_health_test.alkalinity %></td>
+      <td><%= water_health_test.ph %></td>
       <td class="center">
-        <%= link_to [@bowl, water_health],
+        <%= link_to [@bowl, water_health_test],
                     confirm: 'Are you sure? This will permanently delete your water health test!',
                     method: :delete do %>
           <i class="icon-remove"></i>

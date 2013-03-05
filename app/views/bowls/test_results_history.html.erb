@@ -3,7 +3,7 @@
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
   <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %> |
-  <%= link_to "Water Health Test", bowl_water_healths_path(@bowl) %>
+  <%= link_to "Water Health Test", bowl_water_health_tests_path(@bowl) %>
 </p>
 
-<%= content_tag :div, "", id: "results_chart", data: {results: @water_healths} %>
+<%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130304235100) do
+ActiveRecord::Schema.define(:version => 20130305004111) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20130304235100) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
-  create_table "water_healths", :force => true do |t|
+  create_table "water_health_tests", :force => true do |t|
     t.decimal  "nitrate",    :precision => 6, :scale => 2
     t.decimal  "nitrite",    :precision => 6, :scale => 2
     t.decimal  "hardness",   :precision => 6, :scale => 2

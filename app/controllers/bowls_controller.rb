@@ -7,7 +7,7 @@ class BowlsController < ApplicationController
 
   def show
     @bowl = current_user.bowls.find(params[:id])
-    @water_healths = @bowl.water_healths.page(params[:page]).per(10)
+    @water_health_tests = @bowl.water_health_tests.page(params[:page]).per(10)
   end
 
   def new
@@ -17,7 +17,7 @@ class BowlsController < ApplicationController
   def create
     @bowl = current_user.bowls.new(params[:bowl])
     if @bowl.save
-      redirect_to @bowl, :notice => "Successfully created bowl."
+      redirect_to @bowl, :notice => "Successfully created fish bowl."
     else
       render :action => 'new'
     end
@@ -30,7 +30,7 @@ class BowlsController < ApplicationController
   def update
     @bowl = current_user.bowls.find(params[:id])
     if @bowl.update_attributes(params[:bowl])
-      redirect_to @bowl, :notice  => "Successfully updated bowl."
+      redirect_to @bowl, :notice  => "Successfully updated fish bowl."
     else
       render :action => 'edit'
     end
@@ -39,7 +39,7 @@ class BowlsController < ApplicationController
   def destroy
     @bowl = current_user.bowls.find(params[:id])
     @bowl.destroy
-    redirect_to bowls_url, :notice => "Successfully destroyed bowl."
+    redirect_to bowls_url, :notice => "Successfully destroyed fish bowl."
   end
 
   def info
@@ -49,7 +49,7 @@ class BowlsController < ApplicationController
   def update_info
     @bowl = current_user.bowls.find(params[:id])
     if @bowl.update_attributes(params[:bowl])
-      redirect_to @bowl, :notice  => "Successfully updated info."
+      redirect_to @bowl, :notice  => "Successfully updated fish bowl info."
     else
       render :action => 'info'
     end
@@ -57,6 +57,6 @@ class BowlsController < ApplicationController
 
   def test_results_history
     @bowl = current_user.bowls.find(params[:id])
-    @water_healths = @bowl.water_healths.all
+    @water_health_tests = @bowl.water_health_tests.all
   end
 end

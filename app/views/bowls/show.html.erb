@@ -4,7 +4,7 @@
   <%= link_to "Bowl Directory", bowls_path %> |
   <%= link_to "Edit Fish Bowl Name", edit_bowl_path(@bowl) %> |
   <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %> |
-  <%= link_to "Water Health Test", bowl_water_healths_path(@bowl) %>
+  <%= link_to "Water Health Test", bowl_water_health_tests_path(@bowl) %>
 </p>
 
 <div class="row">
@@ -21,8 +21,8 @@
       </div>
 
       <div class="span6">
-        <h3><%= link_to "Water Health", bowl_water_healths_path(@bowl) %></h3>
-        <%= content_tag :div, "", id: "results_chart", data: {results: @water_healths} %>
+        <h3><%= link_to "Water Health", bowl_water_health_tests_path(@bowl) %></h3>
+        <%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>
       </div>
     </div>
 
