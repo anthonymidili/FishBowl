@@ -3,11 +3,11 @@ class WaterHealthTest < ActiveRecord::Base
 
   belongs_to :bowl
 
-  validates :nitrate, presence: true
-  validates :nitrite, presence: true
-  validates :hardness, presence: true
-  validates :alkalinity, presence: true
-  validates :ph, presence: true
+  validates :nitrate, presence: true, numericality: true
+  validates :nitrite, presence: true, numericality: true
+  validates :hardness, presence: true, numericality: true
+  validates :alkalinity, presence: true, numericality: true
+  validates :ph, presence: true, numericality: true
   validates :bowl_id, presence: true
 
   default_scope order: 'water_health_tests.created_at DESC'
