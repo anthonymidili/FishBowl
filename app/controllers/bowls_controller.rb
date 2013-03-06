@@ -42,19 +42,6 @@ class BowlsController < ApplicationController
     redirect_to bowls_url, :notice => "Successfully destroyed fish bowl."
   end
 
-  def info
-    @bowl = current_user.bowls.find(params[:id])
-  end
-
-  def update_info
-    @bowl = current_user.bowls.find(params[:id])
-    if @bowl.update_attributes(params[:bowl])
-      redirect_to @bowl, :notice  => "Successfully updated fish bowl info."
-    else
-      render :action => 'info'
-    end
-  end
-
   def test_results_history
     @bowl = current_user.bowls.find(params[:id])
     @water_health_tests = @bowl.water_health_tests.all

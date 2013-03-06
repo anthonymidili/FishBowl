@@ -4,8 +4,6 @@ FishBowl::Application.routes.draw do
 
   resources :bowls do
     member do
-      get 'info'
-      put 'update_info'
       get 'test_results_history'
     end
     resources :water_health_tests, only: [:index, :create, :destroy]

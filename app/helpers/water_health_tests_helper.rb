@@ -21,8 +21,6 @@ module WaterHealthTestsHelper
       else
         normal
       end
-    else
-      normal
     end
   end
 
