@@ -9,7 +9,7 @@ class WaterHealthTestsController < ApplicationController
 
   def create
     @water_health_test = @bowl.water_health_tests.new(params[:water_health_test])
-    @water_health_tests = @bowl.water_health_tests.all
+    @water_health_tests = @bowl.water_health_tests.page(params[:page]).per(10)
     if @water_health_test.save
       redirect_to bowl_water_health_tests_path(@bowl), :notice => "Successfully saved water health test."
     else
