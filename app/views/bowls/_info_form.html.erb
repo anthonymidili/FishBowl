@@ -11,14 +11,13 @@
     <%= f.label :temperature, "Temperature" %>
     <div class="input-append">
       <%= f.text_field :temperature %>
-      <span class="add-on">&degF</span>
+      <span class="add-on">&deg;F</span>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :water_type, "Fish Bowl Type" %>
     <%= f.select :water_type,
                  'Fresh Water'    => 'Fresh Water',
-                 'Brackish Water' => 'Brackish Water',
                  'Salt Water'     => 'Salt Water' %>
   </div>
   <div class="control-group">

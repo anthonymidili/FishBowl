@@ -14,14 +14,14 @@
 ActiveRecord::Schema.define(:version => 20130305004111) do
 
   create_table "bowls", :force => true do |t|
-    t.string   "name"
     t.integer  "user_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "name"
     t.integer  "size"
     t.integer  "temperature"
     t.string   "water_type"
     t.string   "fish_type"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -44,12 +44,12 @@ ActiveRecord::Schema.define(:version => 20130305004111) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "water_health_tests", :force => true do |t|
+    t.integer  "bowl_id"
     t.decimal  "nitrate",    :precision => 6, :scale => 2
     t.decimal  "nitrite",    :precision => 6, :scale => 2
     t.decimal  "hardness",   :precision => 6, :scale => 2
     t.decimal  "alkalinity", :precision => 6, :scale => 2
     t.decimal  "ph",         :precision => 6, :scale => 2
-    t.integer  "bowl_id"
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
   end

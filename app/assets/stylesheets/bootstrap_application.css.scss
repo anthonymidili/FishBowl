@@ -17,6 +17,7 @@
 .center_fields{
   td{
     text-align: center !important;
+    vertical-align: middle !important;
 
     input[type="text"]{
       width: 5em;
@@ -32,6 +33,20 @@ section{
   padding-top: 20px;
   padding-bottom: 20px;
   border-top: 1px solid #999;
+}
+
+/* water health test results */
+
+.caution{
+  background-color: yellow !important;
+}
+
+.unsafe{
+  background-color: orange !important;
+}
+
+.danger{
+  background-color: red !important;
 }
 
 /* devise form errors */
