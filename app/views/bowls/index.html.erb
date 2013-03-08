@@ -8,10 +8,10 @@
 
           <div class="span3">
             <h3><%= link_to bowl.name, bowl %></h3>
-            <p><%= link_to image_tag("cool_fish_bowl.jpg",
+            <p><%= link_to image_tag(default_or_avatar(bowl),
                                      alt: bowl.name,
                                      class: "thumbnail img-polaroid"), bowl %></p><br>
-            <p><%= link_to "Edit Fish Bowl Name", edit_bowl_path(bowl) %></p><br>
+            <p><%= link_to "Edit Fish Bowl", edit_bowl_path(bowl) %></p><br>
             <p>
               <%= link_to bowl,
                           confirm: 'Are you sure? This will permanently delete your fish bowl!',

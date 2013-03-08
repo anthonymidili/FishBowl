@@ -5,6 +5,7 @@ gem 'jquery-rails', '2.2.1'
 gem 'devise', '2.2.3'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'kaminari', '0.14.1'
+gem 'carrierwave', '0.8.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

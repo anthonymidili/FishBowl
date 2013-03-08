@@ -1,4 +1,4 @@
-<%= form_for @bowl do |f| %>
+<%= form_for @bowl, html: {multipart: true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
     <%= f.label :name, "Fish bowl name" %>
@@ -30,6 +30,9 @@
                  'Non Aggressive'  => 'Non Aggressive',
                  'Semi Aggressive' => 'Semi Aggressive',
                  'Aggressive'      => 'Aggressive' %>
+  </div>
+  <div class="control-group">
+    <%= f.file_field :avatar %>
   </div>
   <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
 <% end %>
