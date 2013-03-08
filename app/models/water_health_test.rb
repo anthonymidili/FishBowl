@@ -3,11 +3,31 @@ class WaterHealthTest < ActiveRecord::Base
 
   belongs_to :bowl
 
-  validates :nitrate, presence: true, numericality: true
-  validates :nitrite, presence: true, numericality: true
-  validates :hardness, presence: true, numericality: true
-  validates :alkalinity, presence: true, numericality: true
-  validates :ph, presence: true, numericality: true
+  validates :nitrate, presence: true ,numericality: {
+      greater_than_or_equal_to: 0,
+      less_than_or_equal_to: 200,
+      message: "must be a number from 0 - 200"
+  }
+  validates :nitrite, presence: true, numericality: {
+      greater_than_or_equal_to: 0,
+      less_than_or_equal_to: 200,
+      message: "must be a number from 0 - 200"
+  }
+  validates :hardness, presence: true, numericality: {
+      greater_than_or_equal_to: 0,
+      less_than_or_equal_to: 300,
+      message: "must be a number from 0 - 300"
+  }
+  validates :alkalinity, presence: true, numericality: {
+      greater_than_or_equal_to: 0,
+      less_than_or_equal_to: 300,
+      message: "must be a number from 0 - 300"
+  }
+  validates :ph, presence: true, numericality: {
+      greater_than_or_equal_to: 6.2,
+      less_than_or_equal_to: 8.8,
+      message: "must be a number from 6.2 - 8.8"
+  }
   validates :bowl_id, presence: true
 
   default_scope order: 'water_health_tests.created_at DESC'
