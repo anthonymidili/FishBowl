@@ -1,31 +1,31 @@
 <%= form_for @bowl do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="control-group">
-    <%= f.label :name, "Fish Bowl Name" %>
+    <%= f.label :name, "Fish bowl name" %>
     <%= f.text_field :name, autofocus: true %>
   </div>
   <div class="control-group">
-    <%= f.label :size, "Fish Bowl Size" %>
+    <%= f.label :size, "Fish bowl size" %>
     <div class="input-append">
       <%= f.text_field :size, autofocus: true %>
       <span class="add-on">Gallons</span>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :temperature, "Temperature" %>
+    <%= f.label :temperature %>
     <div class="input-append">
       <%= f.text_field :temperature %>
       <span class="add-on">&deg;F</span>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :water_type, "Fish Bowl Type" %>
+    <%= f.label :water_type %>
     <%= f.select :water_type,
                  'Fresh Water'    => 'Fresh Water',
                  'Salt Water'     => 'Salt Water' %>
   </div>
   <div class="control-group">
-    <%= f.label :fish_type, "Fish Type" %>
+    <%= f.label :fish_type %>
     <%= f.select :fish_type,
                  'Non Aggressive'  => 'Non Aggressive',
                  'Semi Aggressive' => 'Semi Aggressive',
