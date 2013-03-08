@@ -10,8 +10,8 @@ class WaterHealthTest < ActiveRecord::Base
   }
   validates :nitrite, presence: true, numericality: {
       greater_than_or_equal_to: 0,
-      less_than_or_equal_to: 200,
-      message: "must be a number from 0 - 200"
+      less_than_or_equal_to: 10,
+      message: "must be a number from 0 - 10"
   }
   validates :hardness, presence: true, numericality: {
       greater_than_or_equal_to: 0,
