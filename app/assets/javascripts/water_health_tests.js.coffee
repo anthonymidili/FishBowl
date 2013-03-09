@@ -1,14 +1,15 @@
 jQuery ->
-  $("div[id^='results_chart']").each (index, element) =>
-    Morris.Line
-      element: $(element).attr("id")
-      data: $(element).data("results")
-      xkey: "created_at"
-      ykeys: ["nitrate", "nitrite", "hardness", "alkalinity", "ph"]
-      labels: ["Nitrate", "Nitrite", "Hardness", "Alkalinity", "pH"]
-
-      xLabelFormat: (x) ->
-        x.toDateString()
-
-      dateFormat: (x) ->
-        new Date(x).toDateString()
+  Morris.Line
+    element: 'annual'
+    data: [
+      {y: '2012', a: 100}
+      {y: '2011', a: 75}
+      {y: '2010', a: 50}
+      {y: '2009', a: 75}
+      {y: '2008', a: 50}
+      {y: '2007', a: 75}
+      {y: '2006', a: 100}
+    ]
+    xkey: 'y'
+    ykeys: ['a']
+    labels: ['Series a']
