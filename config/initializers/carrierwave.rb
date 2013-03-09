@@ -23,5 +23,8 @@ CarrierWave.configure do |config|
     config.storage = :fog
   end
 
+  # To let CarrierWave work on heroku
+  config.cache_dir = "#{Rails.root}/tmp/uploads"
+
   config.fog_directory    = ENV['S3_BUCKET_NAME']
 end
