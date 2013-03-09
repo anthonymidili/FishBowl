@@ -32,7 +32,13 @@
                  'Aggressive'      => 'Aggressive' %>
   </div>
   <div class="control-group">
+    <%= f.label :avatar, "Upload Image for Fish Bowl Avatar" %>
     <%= f.file_field :avatar %>
+  </div>
+  <div class="control-group">
+    <label class="checkbox">
+      <%= f.check_box :remove_avatar %> Remove Fish Bowl Avatar
+    </label>
   </div>
   <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
 <% end %>
