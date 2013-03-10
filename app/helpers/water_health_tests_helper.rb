@@ -1,4 +1,14 @@
 module WaterHealthTestsHelper
+
+  def table_cell_for_level(level_method, object)
+    water_type = object.water_type == "Fresh Water" ? :fresh, :salt    
+    actual_level = object.send(level_method)
+    
+    class_name = WaterHealthTest::RESULTS_RANGES[level_method][water_type].detect { |key, value| k === actual_level }[1]
+
+    content_tag(:td, actual_level, class: class_name)
+  end
+
   def nitrate_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
