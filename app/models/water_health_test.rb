@@ -1,6 +1,11 @@
 class WaterHealthTest < ActiveRecord::Base
   attr_accessible :nitrate, :nitrite, :hardness, :alkalinity, :ph, :bowl_id
-
+  
+  # NITRATE_RANGES = {
+  #   normal: [ 0..40 ],
+  #   caution: [ 41..79 ]
+  # }
+  
   belongs_to :bowl
 
   validates :nitrate, presence: true ,numericality: {
