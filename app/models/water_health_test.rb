@@ -1,5 +1,23 @@
 class WaterHealthTest < ActiveRecord::Base
   attr_accessible :nitrate, :nitrite, :hardness, :alkalinity, :ph, :bowl_id
+  
+  RESULTS_RANGES = {
+    nitrate: {
+      fresh: {
+        (   0..40  ) => :ideal,
+        (  41..79  ) => :caution,
+        (  80..160 ) => :warning,
+        ( 161..200 ) => :danger
+      },
+      salt: {
+        (   0..19  ) => :ideal,
+        (  20..40  ) => :acceptable,
+        (  41..79  ) => :caution,
+        (  80..160 ) => :warning,
+        ( 161..200 ) => :danger
+      }
+    }
+  }
 
   belongs_to :bowl
 
