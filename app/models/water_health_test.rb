@@ -11,8 +11,8 @@ class WaterHealthTest < ActiveRecord::Base
       }
       
       salt: {
-        ideal:      [   0..19 ],
-        acceptable: [  20..40 ],
+        ideal:      [   0..19  ],
+        acceptable: [  20..40  ],
         caution:    [  41..79  ],
         warning:    [  80..160 ],
         danger:     [ 161..200 ]
