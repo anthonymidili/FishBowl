@@ -12,7 +12,7 @@
   <% @water_health_tests.each do |water_health_test| %>
     <tr>
       <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
-      <%= nitrate_level(water_health_test.nitrate) %>
+      <%= table_cell_for_level(:nitrate, water_health_test).html_safe %>
       <%= nitrite_level(water_health_test.nitrite) %>
       <%= hardness_level(water_health_test.hardness) %>
       <%= alkalinity_level(water_health_test.alkalinity) %>
