@@ -4,21 +4,21 @@ class WaterHealthTest < ActiveRecord::Base
   RESULTS_RANGES = {
     nitrate: {
       fresh: {
-        ideal:   [   0..40  ],
-        caution: [  41..79  ],
-        warning: [  80..160 ],
-        danger:  [ 161..200 ]
+        (   0..40  ) => :ideal,
+        (  41..79  ) => :caution,
+        (  80..160 ) => :warning,
+        ( 161..200 ) => :danger
       },
       salt: {
-        ideal:      [   0..19  ],
-        acceptable: [  20..40  ],
-        caution:    [  41..79  ],
-        warning:    [  80..160 ],
-        danger:     [ 161..200 ]
+        (   0..19  ) => :ideal,
+        (  20..40  ) => :acceptable,
+        (  41..79  ) => :caution,
+        (  80..160 ) => :warning,
+        ( 161..200 ) => :danger
       }
     }
   }
-  
+
   belongs_to :bowl
 
   validates :nitrate, presence: true ,numericality: {
