@@ -11,7 +11,7 @@
   <div class="span12">
 
     <div class="row">
-      <div class="span5">
+      <div class="span4">
         <h3><%= link_to "Bowl Info", edit_bowl_path(@bowl) %></h3>
         <p><%= link_to image_tag(default_or_avatar(@bowl),
                                  alt: @bowl.name,
@@ -23,7 +23,7 @@
         <p>Number of Fish: <b>##</b></p>
       </div>
 
-      <div class="span7">
+      <div class="span8">
         <h3><%= link_to "Water Health", bowl_water_health_tests_path(@bowl) %></h3>
         <%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>
       </div>
