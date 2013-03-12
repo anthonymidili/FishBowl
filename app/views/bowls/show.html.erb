@@ -2,7 +2,7 @@
 
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
-  <%= link_to "Edit Fish Bowl Name", edit_bowl_path(@bowl) %> |
+  <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
   <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %> |
   <%= link_to "Water Health Test", bowl_water_health_tests_path(@bowl) %>
 </p>
@@ -11,16 +11,19 @@
   <div class="span12">
 
     <div class="row">
-      <div class="span6">
-        <h3><%= link_to "Bowl Info", edit_bowl_path(@bowl) %></h3><br>
-        <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p><br>
-        <p>Temperature:<b><%= " #{@bowl.temperature} " %>&deg;F</b></p><br>
-        <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p><br>
-        <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p><br>
+      <div class="span5">
+        <h3><%= link_to "Bowl Info", edit_bowl_path(@bowl) %></h3>
+        <p><%= link_to image_tag(default_or_avatar(@bowl),
+                                 alt: @bowl.name,
+                                 class: "thumbnail img-polaroid"), edit_bowl_path(@bowl) %></p><br>
+        <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p>
+        <p>Temperature:<b><%= " #{@bowl.temperature} " %>&deg;F</b></p>
+        <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p>
+        <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p>
         <p>Number of Fish: <b>##</b></p>
       </div>
 
-      <div class="span6">
+      <div class="span7">
         <h3><%= link_to "Water Health", bowl_water_health_tests_path(@bowl) %></h3>
         <%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>
       </div>

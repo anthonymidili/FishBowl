@@ -4,6 +4,6 @@ module BowlsHelper
   end
 
   def default_or_avatar(bowl)
-    bowl.avatar_url || "cool_fish_bowl.jpg"
+    bowl.avatar_url(:thumb) || "cool_fish_bowl.jpg"
   end
 end
