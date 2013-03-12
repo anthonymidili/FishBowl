@@ -2,16 +2,17 @@
 
 /* universal */
 
-.hero-unit{
+.welcome{
   min-height: 600px;
   background-image: url('/assets/glass-fish-bowl.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 800px 600px;
-  .sign-up{
-    padding-left: 2em;
-    background-position: left top;
-  }
+}
+
+.sign-up{
+  padding-left: 2em;
+  background-position: left top;
 }
 
 .center_fields{
