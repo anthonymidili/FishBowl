@@ -3,7 +3,9 @@
     <th>Date Taken</th>
     <th>Nitrate</th>
     <th>Nitrite</th>
-    <th>Hardness</th>
+    <% if @bowl.water_type == "Fresh Water" %>
+      <th>Hardness</th>
+    <% end %>
     <th>Alkalinity</th>
     <th>pH</th>
     <th></th>
@@ -14,7 +16,7 @@
       <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
       <%= nitrate_level(water_health_test.nitrate) %>
       <%= nitrite_level(water_health_test.nitrite) %>
-      <%= hardness_level(water_health_test.hardness) %>
+      <%= hardness_level(water_health_test.hardness) if @bowl.water_type == "Fresh Water" %>
       <%= alkalinity_level(water_health_test.alkalinity) %>
       <%= ph_level(water_health_test.ph) %>
       <td class="center">

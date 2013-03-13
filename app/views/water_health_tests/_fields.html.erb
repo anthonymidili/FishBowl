@@ -7,7 +7,9 @@
   </td>
   <td><%= f.text_field :nitrate, autofocus: true %></td>
   <td><%= f.text_field :nitrite %></td>
-  <td><%= f.text_field :hardness %></td>
+  <% if @bowl.water_type == "Fresh Water" %>
+    <td><%= f.text_field :hardness  %></td>
+  <% end %>
   <td><%= f.text_field :alkalinity %></td>
   <td><%= f.text_field :ph %></td>
   <td><%= f.submit "Save Test Results", class: "btn btn-small btn-primary" %></td>
