@@ -1,35 +1,32 @@
 <h2><%= "#{current_user.name}'s Fish #{one_or_more_bowls(@bowls)}" %></h2>
 
-<div class="row">
-  <div class="span12">
-    <% @bowls.each do |bowl| %>
-      <section>
-        <div class="row">
-
-          <div class="span4">
-            <h3><%= link_to bowl.name, bowl %></h3>
-            <p><%= link_to image_tag(default_or_avatar(bowl),
-                                     alt: bowl.name,
-                                     class: "thumbnail img-polaroid"), bowl %></p><br>
-            <p><%= link_to "Edit Fish Bowl", edit_bowl_path(bowl) %></p><br>
-            <p>
-              <%= link_to bowl,
-                          confirm: 'Are you sure? This will permanently delete your fish bowl!',
-                          method: :delete do %>
-                <i class="icon-remove"></i>Delete Bowl
-              <% end %>
-            </p>
-          </div>
-
-          <div class="span8">
-            <h3><%= link_to "Water Health", bowl_water_health_tests_path(bowl) %></h3>
-            <%= content_tag :div, "", id: "results_chart_#{bowl.id}", data: {results: bowl.water_health_tests} %>
-          </div>
-
-        </div>
-      </section>
-    <% end %>
-  </div>
-</div>
+<ul class="thumbnails">
+  <% @bowls.each do |bowl| %>
+    <li class="span6">
+      <div class="thumbnail">
+        <h3><%= link_to bowl.name, bowl %></h3>
+        <p>
+          <%= link_to image_tag(default_or_avatar(bowl),
+                                alt: bowl.name,
+                                class: "thumbnail img-polaroid"), bowl %>
+        </p>
+        <p>
+          <%= content_tag :div, "",
+                           id: "results_chart_#{bowl.id}",
+                           data: {results: paginate_test_results(bowl)} %>
+        </p>
+        <p class="center">
+          <%= link_to "Edit Fish Bowl", edit_bowl_path(bowl) %> |
+          <%= link_to "Water Health Test", bowl_water_health_tests_path(bowl) %> |
+          <%= link_to bowl,
+                      confirm: 'Are you sure? This will permanently delete your fish bowl!',
+                      method: :delete do %>
+            <i class="icon-remove"></i>Delete Bowl
+          <% end %>
+        </p>
+      </div>
+    </li>
+  <% end %>
+</ul>
 
 <p><%= link_to "Create New Bowl", new_bowl_path, class: "btn btn-primary" %></p>
