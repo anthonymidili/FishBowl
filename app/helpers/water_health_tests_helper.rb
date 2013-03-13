@@ -2,6 +2,8 @@ module WaterHealthTestsHelper
   def nitrate_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..40
           raw("<td>#{level}</td>")
         when 41..79
@@ -13,6 +15,8 @@ module WaterHealthTestsHelper
       end
     elsif @bowl.water_type == "Salt Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..19
           raw("<td>#{level}</td>")
         when 20..40
@@ -29,6 +33,8 @@ module WaterHealthTestsHelper
 
   def nitrite_level(level)
     case level
+      when nil
+        raw("<td>N/A</td>")
       when 0..0.4
         raw("<td>#{level}</td>")
       when 0.5..0.9
@@ -43,6 +49,8 @@ module WaterHealthTestsHelper
   def hardness_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..25
           raw("<td>#{level} very soft</td>")
         when 26..75
@@ -60,6 +68,8 @@ module WaterHealthTestsHelper
   def alkalinity_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..79
           raw("<td class='caution'>#{level} low</td>")
         when 80..119
@@ -71,6 +81,8 @@ module WaterHealthTestsHelper
       end
     elsif @bowl.water_type == "Salt Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..120
           raw("<td class='caution'>#{level} not desired</td>")
         else
@@ -82,6 +94,8 @@ module WaterHealthTestsHelper
   def ph_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..6.7
           raw("<td>#{level} acidic</td>")
         when 6.8..7.2
@@ -91,6 +105,8 @@ module WaterHealthTestsHelper
       end
     elsif @bowl.water_type == "Salt Water"
       case level
+        when nil
+          raw("<td>N/A</td>")
         when 0..7.4
           raw("<td class='caution'>#{level} too low</td>")
         when 7.5..7.8
