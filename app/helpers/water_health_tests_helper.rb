@@ -82,7 +82,7 @@ module WaterHealthTestsHelper
   def ph_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
-        when 6.2..6.7
+        when 0..6.7
           raw("<td>#{level} acidic</td>")
         when 6.8..7.2
           raw("<td>#{level} neutral</td>")
@@ -91,7 +91,7 @@ module WaterHealthTestsHelper
       end
     elsif @bowl.water_type == "Salt Water"
       case level
-        when 7..7.4
+        when 0..7.4
           raw("<td class='caution'>#{level} too low</td>")
         when 7.5..7.8
           raw("<td>#{level} acceptable</td>")
