@@ -1,13 +1,13 @@
 <table class="table table-striped table-bordered">
   <tr>
     <th>Date Taken</th>
-    <th>Nitrate</th>
-    <th>Nitrite</th>
+    <th><%= link_to "Nitrate", water_health_help_path(anchor: "nitrate") %></th>
+    <th><%= link_to "Nitrite", water_health_help_path(anchor: "nitrite") %></th>
     <% if @bowl.water_type == "Fresh Water" %>
-      <th>Hardness</th>
+      <th><%= link_to "Hardness", water_health_help_path(anchor: "hardness") %></th>
     <% end %>
-    <th>Alkalinity</th>
-    <th>pH</th>
+    <th><%= link_to "Alkalinity", water_health_help_path(anchor: "alkalinity") %></th>
+    <th><%= link_to "pH", water_health_help_path(anchor: "ph") %></th>
     <th></th>
   </tr>
   <%= render 'fields', f: f %>
