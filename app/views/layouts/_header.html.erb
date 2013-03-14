@@ -9,6 +9,11 @@
       </li>
       <% if user_signed_in? %>
         <li>
+          <%= link_to about_water_health_path do %>
+            <i class="icon-list"></i> About Water Health
+          <% end %>
+        </li>
+        <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <i class="icon-user"></i> Sign out
           <% end %>

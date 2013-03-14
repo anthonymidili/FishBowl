@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
     redirect_to bowls_path if signed_in?
   end
 
-  def water_health_help
+  def about_water_health
 
   end
 end
