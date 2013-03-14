@@ -4,6 +4,8 @@ class WelcomeController < ApplicationController
   end
 
   def about_water_health
+  end
 
+  def info_sources
   end
 end

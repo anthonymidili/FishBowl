@@ -12,6 +12,7 @@ FishBowl::Application.routes.draw do
   root :to => 'welcome#index'
 
   match 'about_water_health', to: 'welcome#about_water_health'
+  match 'info_sources', to: 'welcome#info_sources'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
