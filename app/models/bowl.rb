@@ -3,6 +3,9 @@ class Bowl < ActiveRecord::Base
 
   belongs_to :user
   has_many :water_health_tests, dependent: :destroy
+  has_many :occupancies, dependent: :destroy
+  has_many :species, through: :occupancies, dependent: :destroy
+
   mount_uploader :avatar, BowlAvatarUploader
 
   validates :name, presence: true

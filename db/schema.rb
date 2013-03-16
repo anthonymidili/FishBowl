@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130308230243) do
+ActiveRecord::Schema.define(:version => 20130316035507) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,20 @@ ActiveRecord::Schema.define(:version => 20130308230243) do
     t.string   "water_type"
     t.string   "fish_type"
     t.string   "avatar"
+  end
+
+  create_table "occupancies", :force => true do |t|
+    t.integer  "bowl_id"
+    t.integer  "species_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "species", :force => true do |t|
+    t.string   "name"
+    t.text     "info"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
