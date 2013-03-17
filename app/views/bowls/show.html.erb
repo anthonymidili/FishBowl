@@ -38,10 +38,16 @@
 
     <div class="row">
       <div class="span12">
-        <% @species.each do |species| %>
-          <%= species.name %>
-          <%= species.info %><br>
-        <% end %>
+        <ul class="thumbnails">
+          <% @species.each do |species| %>
+            <li class="span4">
+              <div class="thumbnail">
+                <%= species.name %>
+                <%= species.info %><br>
+              </div>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
 
