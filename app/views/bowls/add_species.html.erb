@@ -1,0 +1,18 @@
+<h1>Select Your Species</h1>
+
+<p>
+  <%= link_to "Bowl Directory", bowls_path %> |
+  <%= link_to "#{@bowl.name} Fish Bowl", @bowl %>
+</p>
+
+<%= form_for @bowl do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="control-group">
+    <%= hidden_field_tag "bowl[species_ids][]", nil%>
+    <% Species.all.each do |species| %>
+      <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
+      <%= species.name %>
+      <%= species.info %><br/>
+    <% end %>  </div>
+  <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
+<% end %>

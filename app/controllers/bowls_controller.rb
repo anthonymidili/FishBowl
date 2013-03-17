@@ -8,6 +8,7 @@ class BowlsController < ApplicationController
   def show
     @bowl = current_user.bowls.find(params[:id])
     @water_health_tests = @bowl.water_health_tests.page(params[:page]).per(10)
+    @species = @bowl.species.all
   end
 
   def new
@@ -45,5 +46,9 @@ class BowlsController < ApplicationController
   def test_results_history
     @bowl = current_user.bowls.find(params[:id])
     @water_health_tests = @bowl.water_health_tests.all
+  end
+
+  def add_species
+    @bowl = current_user.bowls.find(params[:id])
   end
 end

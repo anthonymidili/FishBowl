@@ -32,20 +32,16 @@
     <div class="row center">
       <div class="span12">
         <h3>Your Fish</h3>
+        <%= link_to 'Select Your Species', add_species_bowl_path(@bowl) %>
       </div>
     </div>
 
     <div class="row">
-      <div class="span4">
-        <p>Column 1</p>
-      </div>
-
-      <div class="span4">
-        <p>Column 2</p>
-      </div>
-
-      <div class="span4">
-        <p>Column 3</p>
+      <div class="span12">
+        <% @species.each do |species| %>
+          <%= species.name %>
+          <%= species.info %><br>
+        <% end %>
       </div>
     </div>
 
