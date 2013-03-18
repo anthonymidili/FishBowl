@@ -42,6 +42,7 @@
           <% @species.each do |species| %>
             <li class="span4">
               <div class="thumbnail">
+                <%= image_tag(species.image) %>
                 <%= species.name %>
                 <%= species.info %><br>
               </div>

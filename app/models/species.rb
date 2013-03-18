@@ -5,4 +5,6 @@ class Species < ActiveRecord::Base
   has_many :bowls, through: :occupancies
 
   validates :name, presence: true
+  validates :info, presence: true
+  validates :image, presence: true
 end
