@@ -1,0 +1,24 @@
+<section>
+  <div class="row center">
+    <div class="span12">
+      <h3>Your Species</h3>
+      <%= link_to 'Select Your Species', add_species_bowl_path(@bowl) %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <ul class="thumbnails">
+        <% @species.each do |species| %>
+          <li class="span4">
+            <div class="thumbnail">
+              <%= image_tag(species.image) %>
+              <%= species.name %>
+              <%= species.info %><br>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</section>
