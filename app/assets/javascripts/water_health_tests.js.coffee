@@ -4,8 +4,8 @@ jQuery ->
       element: $(element).attr("id")
       data: $(element).data("results")
       xkey: "created_at"
-      ykeys: ["nitrate", "nitrite", "hardness", "alkalinity", "ph"]
-      labels: ["Nitrate", "Nitrite", "Hardness", "Alkalinity", "pH"]
+      ykeys: ["ammonia", "nitrate", "nitrite", "hardness", "alkalinity", "ph"]
+      labels: ["Ammonia", "Nitrate", "Nitrite", "Hardness", "Alkalinity", "pH"]
 
       xLabelFormat: (x) ->
         x.toDateString()
