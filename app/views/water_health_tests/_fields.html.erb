@@ -5,7 +5,8 @@
     <div class="unsafe">Unsafe</div>
     <div class="danger">Danger</div>
   </td>
-  <td><%= f.text_field :nitrate, autofocus: true %></td>
+  <td><%= f.text_field :ammonia, autofocus: true %></td>
+  <td><%= f.text_field :nitrate %></td>
   <td><%= f.text_field :nitrite %></td>
   <% if @bowl.water_type == "Fresh Water" %>
     <td><%= f.text_field :hardness  %></td>

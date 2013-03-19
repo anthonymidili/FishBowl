@@ -1,32 +1,47 @@
 module WaterHealthTestsHelper
+  def ammonia_level(level)
+    case level
+      when nil
+        level_nil
+      when 0..0.25
+        level_ideal(level)
+      when 0.26..1
+        level_caution(level)
+      when 1.1..3
+        level_unsafe(level)
+      else
+        level_danger(level)
+    end
+  end
+
   def nitrate_level(level)
     if @bowl.water_type == "Fresh Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..40
-          raw("<td>#{level}</td>")
+          level_ideal(level)
         when 41..79
-          raw("<td class='caution'>#{level}</td>")
+          level_caution(level)
         when 80..160
-          raw("<td class='unsafe'>#{level}</td>")
+          level_unsafe(level)
         else
-          raw("<td class='danger'>#{level}</td>")
+          level_danger(level)
       end
     elsif @bowl.water_type == "Salt Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..19
-          raw("<td>#{level}</td>")
+          level_ideal(level)
         when 20..40
           raw("<td>#{level} Okay</td>")
         when 41..79
-          raw("<td class='caution'>#{level}</td>")
+          level_caution(level)
         when 80..160
-          raw("<td class='unsafe'>#{level}</td>")
+          level_unsafe(level)
         else
-          raw("<td class='danger'>#{level}</td>")
+          level_danger(level)
       end
     end
   end
@@ -34,15 +49,15 @@ module WaterHealthTestsHelper
   def nitrite_level(level)
     case level
       when nil
-        raw("<td>N/A</td>")
-      when 0..0.4
-        raw("<td>#{level}</td>")
-      when 0.5..0.9
-        raw("<td class='caution'>#{level}</td>")
+        level_nil
+      when 0..0.5
+        level_ideal(level)
+      when 0.6..0.9
+        level_caution(level)
       when 1..3
-        raw("<td class='unsafe'>#{level}</td>")
+        level_unsafe(level)
       else
-        raw("<td class='danger'>#{level}</td>")
+        level_danger(level)
     end
   end
 
@@ -50,7 +65,7 @@ module WaterHealthTestsHelper
     if @bowl.water_type == "Fresh Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..25
           raw("<td>#{level} very soft</td>")
         when 26..75
@@ -61,7 +76,7 @@ module WaterHealthTestsHelper
           raw("<td>#{level} very hard</td>")
       end
     elsif @bowl.water_type == "Salt Water"
-      raw("<td>N/A</td>")
+      level_nil
     end
   end
 
@@ -69,24 +84,24 @@ module WaterHealthTestsHelper
     if @bowl.water_type == "Fresh Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..79
           raw("<td class='caution'>#{level} low</td>")
         when 80..119
           raw("<td>#{level} moderate</td>")
         when 120..180
-          raw("<td>#{level}</td>")
+          level_ideal(level)
         else
           raw("<td class='caution'>#{level} high</td>")
       end
     elsif @bowl.water_type == "Salt Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..120
           raw("<td class='caution'>#{level} not desired</td>")
         else
-          raw("<td>#{level}</td>")
+          level_ideal(level)
       end
     end
   end
@@ -95,7 +110,7 @@ module WaterHealthTestsHelper
     if @bowl.water_type == "Fresh Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..6.7
           raw("<td>#{level} acidic</td>")
         when 6.8..7.2
@@ -106,16 +121,38 @@ module WaterHealthTestsHelper
     elsif @bowl.water_type == "Salt Water"
       case level
         when nil
-          raw("<td>N/A</td>")
+          level_nil
         when 0..7.4
           raw("<td class='caution'>#{level} too low</td>")
         when 7.5..7.8
           raw("<td>#{level} acceptable</td>")
         when 7.9..8.7
-          raw("<td>#{level}</td>")
+          level_ideal(level)
         else
           raw("<td class='caution'>#{level} too high</td>")
       end
     end
+  end
+
+  private
+
+  def level_nil
+    raw("<td>N/A</td>")
+  end
+
+  def level_ideal(level)
+    raw("<td>#{level}</td>")
+  end
+
+  def level_caution(level)
+    raw("<td class='caution'>#{level}</td>")
+  end
+
+  def level_unsafe(level)
+    raw("<td class='unsafe'>#{level}</td>")
+  end
+
+  def level_danger(level)
+    raw("<td class='danger'>#{level}</td>")
   end
 end

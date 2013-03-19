@@ -1,6 +1,7 @@
 <table class="table table-striped table-bordered">
   <tr>
     <th>Date Taken</th>
+    <th><%= link_to "Ammonia", about_water_health_path(anchor: "ammonia") %></th>
     <th><%= link_to "Nitrate", about_water_health_path(anchor: "nitrate") %></th>
     <th><%= link_to "Nitrite", about_water_health_path(anchor: "nitrite") %></th>
     <% if @bowl.water_type == "Fresh Water" %>
@@ -14,6 +15,7 @@
   <% @water_health_tests.each do |water_health_test| %>
     <tr>
       <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
+      <%= ammonia_level(water_health_test.ammonia) %>
       <%= nitrate_level(water_health_test.nitrate) %>
       <%= nitrite_level(water_health_test.nitrite) %>
       <%= hardness_level(water_health_test.hardness) if @bowl.water_type == "Fresh Water" %>
