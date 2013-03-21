@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Species.destroy_all
 
 species = Species.find_or_create_by_name(name: 'Blue Gourami')
 species.update_attributes(
