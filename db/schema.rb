@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130318225029) do
+ActiveRecord::Schema.define(:version => 20130319232333) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
     t.integer  "user_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
     t.integer  "size"
     t.integer  "temperature"
     t.string   "water_type"
     t.string   "fish_type"
     t.string   "avatar"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "occupancies", :force => true do |t|
@@ -35,9 +35,10 @@ ActiveRecord::Schema.define(:version => 20130318225029) do
   create_table "species", :force => true do |t|
     t.string   "name"
     t.text     "info"
+    t.string   "image"
+    t.string   "water_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "image"
   end
 
   create_table "users", :force => true do |t|
