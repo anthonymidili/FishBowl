@@ -15,7 +15,11 @@
               <%= image_tag(species.image) %>
               <b><em><%= species.name %></em></b>
               <section>
-                <%= Kramdown::Document.new(species.info).to_html.html_safe %>
+                <b>Water type:</b> <%= species.water_type %><br>
+                <% species.info.each do |name,value| %>
+                  <b><%= name.to_s.humanize %>:</b>
+                  <%= value %><br>
+                <% end %>
               </section>
             </div>
           </li>

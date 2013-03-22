@@ -4,6 +4,8 @@ class Species < ActiveRecord::Base
   has_many :occupancies
   has_many :bowls, through: :occupancies
 
+  serialize :info
+
   validates :name, presence: true
   validates :info, presence: true
   validates :image, presence: true
