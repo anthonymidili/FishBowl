@@ -4,7 +4,7 @@
     <th><%= link_to "Ammonia", about_water_health_path(anchor: "ammonia") %></th>
     <th><%= link_to "Nitrate", about_water_health_path(anchor: "nitrate") %></th>
     <th><%= link_to "Nitrite", about_water_health_path(anchor: "nitrite") %></th>
-    <% if @bowl.water_type == "Fresh Water" %>
+    <% if @bowl.water_type == "Freshwater" %>
       <th><%= link_to "Hardness", about_water_health_path(anchor: "hardness") %></th>
     <% end %>
     <th><%= link_to "Alkalinity", about_water_health_path(anchor: "alkalinity") %></th>
@@ -18,7 +18,7 @@
       <%= ammonia_level(water_health_test.ammonia) %>
       <%= nitrate_level(water_health_test.nitrate) %>
       <%= nitrite_level(water_health_test.nitrite) %>
-      <%= hardness_level(water_health_test.hardness) if @bowl.water_type == "Fresh Water" %>
+      <%= hardness_level(water_health_test.hardness) if @bowl.water_type == "Freshwater" %>
       <%= alkalinity_level(water_health_test.alkalinity) %>
       <%= ph_level(water_health_test.ph) %>
       <td class="center">

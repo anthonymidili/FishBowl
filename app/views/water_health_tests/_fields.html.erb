@@ -8,7 +8,7 @@
   <td><%= f.text_field :ammonia, autofocus: true %></td>
   <td><%= f.text_field :nitrate %></td>
   <td><%= f.text_field :nitrite %></td>
-  <% if @bowl.water_type == "Fresh Water" %>
+  <% if @bowl.water_type == "Freshwater" %>
     <td><%= f.text_field :hardness  %></td>
   <% end %>
   <td><%= f.text_field :alkalinity %></td>
