@@ -16,9 +16,9 @@
           <%= image_tag(species.image) %>
           <label class="checkbox">
             <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
-            <b><em><%= species.name %></em></b>
+            <h4><em><%= species.name %></em></h4>
           </label>
-          <section>
+          <section class="height">
             <b>Water type:</b> <%= species.water_type %><br>
             <% species.info.each do |name,value| %>
               <b><%= name.to_s.humanize %>:</b>
