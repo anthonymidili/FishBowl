@@ -1,5 +1,5 @@
 class Occupancy < ActiveRecord::Base
-  attr_accessible :bowl_id, :species_id
+  attr_accessible :bowl_id, :species_id, :amount
 
   belongs_to :bowl
   belongs_to :species

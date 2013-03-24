@@ -6,25 +6,26 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="span12">
-      <ul class="thumbnails">
-        <% @species.each do |species| %>
-          <li class="span4">
-            <div class="thumbnail">
-              <%= image_tag(species.image) %>
-              <h4><em><%= species.name %></em></h4>
-              <section>
-                <b>Water type:</b> <%= species.water_type %><br>
-                <% species.info.each do |name,value| %>
-                  <b><%= name.to_s.humanize %>:</b>
-                  <%= value %><br>
-                <% end %>
-              </section>
-            </div>
-          </li>
-        <% end %>
-      </ul>
+  <%= form_for @bowl do |f| %>
+    <div class="row">
+      <div class="span12">
+        <%= f.submit "Update Species" %>
+        <ul class="thumbnails">
+          <%= f.fields_for :occupancies do |occupancy_builder| %>
+            <li class="span4">
+              <div class="thumbnail">
+                <%= image_tag(occupancy_builder.object.species.image) %>
+                <h4><em><%=occupancy_builder.object.species.name %></em></h4>
+                <div class="control-group form-inline">
+                  <%= occupancy_builder.label :amount %>
+                  <%= occupancy_builder.number_field :amount, class: 'span1' %>
+                </div>
+                <%= render 'species_info', species: occupancy_builder.object.species %>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
-  </div>
+  <% end %>
 </section>

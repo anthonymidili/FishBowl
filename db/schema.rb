@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130319232333) do
+ActiveRecord::Schema.define(:version => 20130324155610) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
     t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "size"
     t.integer  "temperature"
     t.string   "water_type"
     t.string   "fish_type"
     t.string   "avatar"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
   end
 
   create_table "occupancies", :force => true do |t|
@@ -30,15 +30,16 @@ ActiveRecord::Schema.define(:version => 20130319232333) do
     t.integer  "species_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "amount"
   end
 
   create_table "species", :force => true do |t|
     t.string   "name"
     t.text     "info"
-    t.string   "image"
-    t.string   "water_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "image"
+    t.string   "water_type"
   end
 
   create_table "users", :force => true do |t|
@@ -61,7 +62,6 @@ ActiveRecord::Schema.define(:version => 20130319232333) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "water_health_tests", :force => true do |t|
-    t.decimal  "ammonia",    :precision => 6, :scale => 2
     t.decimal  "nitrate",    :precision => 6, :scale => 2
     t.decimal  "nitrite",    :precision => 6, :scale => 2
     t.decimal  "hardness",   :precision => 6, :scale => 2
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20130319232333) do
     t.integer  "bowl_id"
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
+    t.decimal  "ammonia",    :precision => 6, :scale => 2
   end
 
 end

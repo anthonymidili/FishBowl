@@ -17,10 +17,10 @@
                                  alt: @bowl.name,
                                  class: "thumbnail img-polaroid"), edit_bowl_path(@bowl) %></p><br>
         <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p>
-        <p>Temperature:<b><%= " #{@bowl.temperature} " %>&deg;F</b></p>
+        <p>Temperature:<b><%= " #{@bowl.temperature}" %>&deg;F</b></p>
         <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p>
         <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p>
-        <p>Number of Fish: <b>##</b></p>
+        <p>Total bowl occupants:<b><%= " #{@bowl.total_occupants}" %></b></p>
       </div>
 
       <div class="span8">
