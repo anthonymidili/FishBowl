@@ -116,7 +116,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Fantail Goldfish')
+species = Species.find_or_create_by_name(name: 'Assorted Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -170,7 +170,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Mickey Mouse Platy')
+species = Species.find_or_create_by_name(name: 'Assorted Mickey Mouse Platies')
 species.update_attributes(
     image: 'freshwater/mickey_mouse_platy.jpg',
     water_type: 'Freshwater',
@@ -206,7 +206,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Swordtail')
+species = Species.find_or_create_by_name(name: 'Assorted Swordtails')
 species.update_attributes(
     image: 'freshwater/swordtail.jpg',
     water_type: 'Freshwater',
@@ -224,7 +224,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Veiled Angelfish')
+species = Species.find_or_create_by_name(name: 'Assorted Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/veiled_angelfish.jpg',
     water_type: 'Freshwater',
