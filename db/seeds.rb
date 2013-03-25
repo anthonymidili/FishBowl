@@ -10,12 +10,12 @@ species = Species.find_or_create_by_name(name: 'Blue Gourami')
 species.update_attributes(
     image: 'freshwater/blue_gourami.jpg',
     water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
     info: {
-        temperament: 'Semi-aggressive',
         family: 'Osphronemidae',
         native_to: 'India, Malaysia, Thailand, Burma',
         diet: 'Omnivore',
-        adult_size: 'Up to 6"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '20+ gallons',
@@ -28,12 +28,12 @@ species = Species.find_or_create_by_name(name: 'Albino Tiger Barb')
 species.update_attributes(
     image: 'freshwater/albino_tiger_barb.jpg',
     water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3,
     info: {
-        temperament: 'Semi-aggressive',
         family: 'Cyprinidae',
         native_to: 'Borneo, Indonesia, Sumatra',
         diet: 'Omnivore',
-        adult_size: 'Up to 3"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -46,12 +46,12 @@ species = Species.find_or_create_by_name(name: 'Albino Cory')
 species.update_attributes(
     image: 'freshwater/albino_cory.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
     info: {
-        temperament: 'Community',
         family: 'Callichthyidae',
         native_to: 'Amazon River',
         diet: 'Omnivore',
-        adult_size: 'Up to 2"',
         temperature: '72 - 79&deg;F',
         water_parameters: 'pH 5.8-7.0; KH 2-12',
         care_level: 'Easy',
@@ -65,12 +65,12 @@ species = Species.find_or_create_by_name(name: 'Albino Peacock Cichlid')
 species.update_attributes(
     image: 'freshwater/albino_peacock_cichlid.jpg',
     water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
     info: {
-        temperament: 'Semi-aggressive',
         family: 'Cichlidae',
         native_to: 'Africa: Lake Malawi',
         diet: 'Omnivore',
-        adult_size: 'Up to 6"',
         temperature: '72 - 82&deg;F',
         water_parameters: 'pH 7.5-8.5; KH 6-10',
         care_level: 'Easy',
@@ -84,12 +84,12 @@ species = Species.find_or_create_by_name(name: 'Albino Rainbow Shark')
 species.update_attributes(
     image: 'freshwater/albino_rainbow_shark.jpg',
     water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
     info: {
-        temperament: 'Semi-aggressive',
         family: 'Cyprinidae',
         native_to: 'Thailand',
         diet: 'Omnivore',
-        adult_size: 'Up to 6"',
         temperature: '72 - 82&deg;F',
         care_level: 'Moderate',
         tank_size: '20+ gallons',
@@ -102,12 +102,12 @@ species = Species.find_or_create_by_name(name: 'Albino Tiger Oscar Cichlid')
 species.update_attributes(
     image: 'freshwater/albino_tiger_oscar_cichlid.jpg',
     water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 12,
     info: {
-        temperament: 'Aggressive',
         family: 'Cichlidae',
         native_to: 'South America: Amazon',
         diet: 'Carnivore',
-        adult_size: 'Up to 12"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '55+ gallons',
@@ -120,12 +120,12 @@ species = Species.find_or_create_by_name(name: 'Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/fantail_goldfish.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
     info: {
-        temperament: 'Community',
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        adult_size: 'Up to 8"',
         temperature: '64 - 75&deg;F',
         care_level: 'Easy',
         tank_size: '30+ gallons',
@@ -134,16 +134,16 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Fancy Guppy - Female')
+species = Species.find_or_create_by_name(name: 'Assorted Fancy Guppies - Female')
 species.update_attributes(
     image: 'freshwater/fancy_guppy_female.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
     info: {
-        temperament: 'Community',
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        adult_size: 'Up to 2.5"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -152,16 +152,16 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Fancy Guppy - Male')
+species = Species.find_or_create_by_name(name: 'Assorted Fancy Guppies - Male')
 species.update_attributes(
     image: 'freshwater/fancy_guppy_male.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
     info: {
-        temperament: 'Community',
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        adult_size: 'Up to 2.5"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -174,12 +174,12 @@ species = Species.find_or_create_by_name(name: 'Mickey Mouse Platy')
 species.update_attributes(
     image: 'freshwater/mickey_mouse_platy.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
     info: {
-        temperament: 'Community',
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        adult_size: 'Up to 2"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -188,16 +188,16 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Platy')
+species = Species.find_or_create_by_name(name: 'Assorted Platies')
 species.update_attributes(
     image: 'freshwater/platy.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
     info: {
-        temperament: 'Community',
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        adult_size: 'Up to 2"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -210,12 +210,12 @@ species = Species.find_or_create_by_name(name: 'Swordtail')
 species.update_attributes(
     image: 'freshwater/swordtail.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
     info: {
-        temperament: 'Community',
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        adult_size: 'Up to 4"',
         temperature: '72 - 82&deg;F',
         care_level: 'Easy',
         tank_size: '10+ gallons',
@@ -228,12 +228,12 @@ species = Species.find_or_create_by_name(name: 'Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/veiled_angelfish.jpg',
     water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
     info: {
-        temperament: 'Semi-aggressive',
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        adult_size: 'Up to 12"',
         temperature: '75 - 82&deg;F',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
@@ -246,12 +246,12 @@ species = Species.find_or_create_by_name(name: 'Bala Shark')
 species.update_attributes(
     image: 'freshwater/bala_shark.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 14,
     info: {
-        temperament: 'Community',
         family: 'Cyprinidae',
         native_to: 'Sumatra, Thailand, Malaysia, and Borneo',
         diet: 'Omnivore',
-        adult_size: 'Up to 14"',
         temperature: '72 - 82&deg;F',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
@@ -264,12 +264,12 @@ species = Species.find_or_create_by_name(name: 'Black Moor Goldfish')
 species.update_attributes(
     image: 'freshwater/black_moor_goldfish.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 10,
     info: {
-        temperament: 'Community',
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        adult_size: 'Up to 10"',
         temperature: '64 - 75&deg;F',
         care_level: 'Easy',
         tank_size: '30+ gallons',
@@ -282,12 +282,12 @@ species = Species.find_or_create_by_name(name: 'Black Phantom Tetra')
 species.update_attributes(
     image: 'freshwater/black_phantom_tetra.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
     info: {
-        temperament: 'Community',
         family: 'Characidae',
         native_to: 'Central Brazil',
         diet: 'Omnivore',
-        adult_size: 'Up to 2"',
         temperature: '72 - 82&deg;F',
         water_parameters: 'pH 6.0-7.5; KH 4-8',
         care_level: 'Moderate',
@@ -301,12 +301,12 @@ species = Species.find_or_create_by_name(name: 'Black Ruby Barb')
 species.update_attributes(
     image: 'freshwater/black_ruby_barb.jpg',
     water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
     info: {
-        temperament: 'Community',
         family: 'Cyprinidae',
         native_to: 'Sri-Lanka, India',
         diet: 'Omnivore',
-        adult_size: 'Up to 3"',
         temperature: '74 - 79&deg;F',
         water_parameters: 'pH 6.0-7.0; KH 4-10',
         care_level: 'Easy',

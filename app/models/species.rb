@@ -1,5 +1,5 @@
 class Species < ActiveRecord::Base
-  attr_accessible :info, :name, :image, :water_type
+  attr_accessible :info, :name, :image, :water_type, :temperament, :adult_size
 
   has_many :occupancies
   has_many :bowls, through: :occupancies
@@ -7,9 +7,11 @@ class Species < ActiveRecord::Base
   serialize :info
 
   validates :name, presence: true
-  validates :info, presence: true
   validates :image, presence: true
   validates :water_type, presence: true
+  validates :temperament, presence: true
+  validates :adult_size, presence: true
+  validates :info, presence: true
 
   default_scope order: 'species.name ASC'
 
