@@ -9,11 +9,11 @@
   <%= form_for @bowl do |f| %>
     <div class="row">
       <div class="span12">
-        <%= f.submit "Update Species" %>
+        <%= f.submit "Update Species", class: "btn btn-primary" %>
         <ul class="thumbnails">
           <%= f.fields_for :occupancies do |occupancy_builder| %>
             <li class="span4">
-              <div class="thumbnail">
+              <div class="thumbnail height">
                 <%= image_tag(occupancy_builder.object.species.image) %>
                 <h4><em><%=occupancy_builder.object.species.name %></em></h4>
                 <div class="control-group form-inline">

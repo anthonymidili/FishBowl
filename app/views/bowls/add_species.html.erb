@@ -12,7 +12,7 @@
   <ul class="thumbnails">
     <% Species.by_bowl_water_type(f.object.water_type).each do |species| %>
       <li class="span4">
-        <div class="thumbnail">
+        <div class="thumbnail height">
           <%= image_tag(species.image) %>
           <label class="checkbox">
             <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
@@ -23,7 +23,7 @@
       </li>
     <% end %>
   </ul>
-  <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
+  <div class="fixed-button"><%= f.submit "Update Selection", class: "btn btn-primary" %></div>
 <% end %>
 
 <p>More Species To Select From Coming Soon.</p>

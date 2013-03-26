@@ -2,7 +2,7 @@
 
 /* universal */
 
-.welcome{
+.welcome {
   min-height: 600px;
   background-image: url('/assets/glass-fish-bowl.jpg');
   background-repeat: no-repeat;
@@ -10,13 +10,13 @@
   background-size: 800px 600px;
 }
 
-.sign-up{
+.sign-up {
   padding-left: 2em;
   background-position: left top;
 }
 
-.center_fields{
-  td{
+.center_fields {
+  td {
     text-align: center !important;
     vertical-align: middle !important;
 
@@ -26,32 +26,32 @@
   }
 }
 
-.center{
+.center {
   text-align: center !important;
 }
 
-section{
+section {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #999;
 }
 /* species */
 
-.height{
-  min-height: 24em;
+.height {
+  min-height: 50em;
 }
 
 /* water health test results */
 
-.caution{
+.caution {
   background-color: yellow !important;
 }
 
-.unsafe{
+.unsafe {
   background-color: orange !important;
 }
 
-.danger{
+.danger {
   background-color: red !important;
 }
 
@@ -66,4 +66,16 @@ section{
 footer {
   margin-top: 30px;
   border-top: 1px solid #999;
+}
+
+div.fixed-button {
+  position: fixed;
+  bottom: 4em;
+  right: 3em;
+  z-index: 10;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
 }
