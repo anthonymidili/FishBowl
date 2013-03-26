@@ -21,6 +21,9 @@
         <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p>
         <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p>
         <p>Total bowl occupants:<b><%= " #{@bowl.total_occupants}" %></b></p>
+        <p title="The rule is 1 gallon of water for every inch of fish.">
+          Estimated length of all occupants:<b><%= " #{species_total_length(@bowl)}" %>&quot;</b>
+        </p>
       </div>
 
       <div class="span8">

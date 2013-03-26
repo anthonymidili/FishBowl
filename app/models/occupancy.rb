@@ -6,4 +6,8 @@ class Occupancy < ActiveRecord::Base
 
   validates :bowl_id, presence: true
   validates :species_id, presence: true
+
+  def total_length_in_inches
+    self.amount * self.species.adult_size
+  end
 end
