@@ -38,7 +38,8 @@ section {
 /* species */
 
 .height {
-  min-height: 50em;
+  height: 49em;
+  overflow-y: auto;
 }
 
 /* water health test results */
@@ -70,8 +71,8 @@ footer {
 
 div.fixed-button {
   position: fixed;
-  bottom: 4em;
-  right: 3em;
+  bottom: 3em;
+  right: 2em;
   z-index: 10;
   -moz-border-radius: 5px;
   border-radius: 5px;

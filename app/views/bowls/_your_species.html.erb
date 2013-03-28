@@ -7,9 +7,9 @@
   </div>
 
   <%= form_for @bowl do |f| %>
+    <p class="pull-right"><%= f.submit "Update Species", class: "btn btn-primary" %></p>
     <div class="row">
       <div class="span12">
-        <%= f.submit "Update Species", class: "btn btn-primary" %>
         <ul class="thumbnails">
           <%= f.fields_for :occupancies do |occupancy_builder| %>
             <li class="span4">
