@@ -12,6 +12,7 @@ FishBowl::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  match 'bowls/:bowl_id/occupancy/:id' => 'bowls#occupancy', via: :delete
   match 'about_water_health', to: 'welcome#about_water_health'
   match 'info_sources', to: 'welcome#info_sources'
 

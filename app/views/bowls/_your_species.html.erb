@@ -14,6 +14,13 @@
           <%= f.fields_for :occupancies do |occupancy_builder| %>
             <li class="span4">
               <div class="thumbnail height">
+                <div class="pull-right">
+                  <%= link_to "Remove", { controller: "bowls", action: "occupancy",
+                                          bowl_id: @bowl, id: occupancy_builder.object },
+                              class:"btn btn-mini btn-danger",
+                              method: :delete,
+                              confirm: "Are you sure you want to remove this species from your list?" %>
+                </div>
                 <%= image_tag(occupancy_builder.object.species.image) %>
                 <h4><em><%=occupancy_builder.object.species.name %></em></h4>
                 <div class="control-group form-inline">
