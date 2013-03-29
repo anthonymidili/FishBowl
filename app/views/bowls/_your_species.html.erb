@@ -15,8 +15,7 @@
             <li class="span4">
               <div class="thumbnail height">
                 <div class="pull-right">
-                  <%= link_to "Remove", { controller: "bowls", action: "occupancy",
-                                          bowl_id: @bowl, id: occupancy_builder.object },
+                  <%= link_to "Remove", destroy_occupancy_path(bowl_id: @bowl, id: occupancy_builder.object),
                               class:"btn btn-mini btn-danger",
                               method: :delete,
                               confirm: "Are you sure you want to remove this species from your list?" %>
