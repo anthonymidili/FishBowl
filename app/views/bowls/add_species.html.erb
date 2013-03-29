@@ -12,12 +12,14 @@
   <ul class="thumbnails">
     <% Species.by_bowl_water_type(f.object.water_type).each do |species| %>
       <li class="span4">
-        <div class="thumbnail height">
-          <%= image_tag(species.image) %>
-          <label class="checkbox">
-            <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
-            <h4><em><%= species.name %></em></h4>
-          </label>
+        <div class="thumbnail">
+          <div class="add-thumbnail-height">
+            <%= image_tag(species.image) %>
+            <label class="checkbox">
+              <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
+              <h4><em><%= species.name %></em></h4>
+            </label>
+          </div>
           <%= render 'species_info', species: species %>
         </div>
       </li>
