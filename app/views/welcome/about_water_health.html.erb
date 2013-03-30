@@ -4,41 +4,58 @@
 
   <h3>AQUARIUM CYCLING</h3>
 
-  <p>Your aquarium is a delicately balanced ecosystem that depends on the nitrogen cycle. By breaking down the unhealthy elements within the water, this cycle helps generate the “good” bacteria your aquarium needs. Critical to the health and survival of your fish, this cycle is a vital part of every aquarium.</p>
+  <p>Your aquarium is a delicately balanced ecosystem that depends on the nitrogen cycle. By breaking down the unhealthy elements within the water, this cycle helps generate the "good" bacteria your aquarium needs. Critical to the health and survival of your fish, this cycle is a vital part of every aquarium.</p>
 
   <p>The first cycle can take 4-6 weeks to complete. Here’s how you can get the cycle started:</p>
   <ol>
     <li>Start slowly and let the aquarium run at least a day before adding any fish.</li>
-    <li>Add a few hardy fish such as danios, gouramis or livebearers that can withstand the presence of ammonia and nitrites. Never add more than three fish to your aquarium per week.</li>
+    <li>Add a few hardy fish such as danios, gouramis or livebearers that can withstand the presence of
+      <%= link_to "ammonia", about_water_health_path(anchor: "ammonia") %> and
+      <%= link_to "nitrites", about_water_health_path(anchor: "nitrite") %>. Never add more than three fish to your aquarium per week.</li>
     <li>Seed the aquarium with bacteria by purchasing a cycling aid product.</li>
     <li>Do not overcrowd your aquarium. This is sure to lead to toxic ammonia levels.</li>
     <li>Do not overfeed. This is the most common cause of fish loss.</li>
-    <li>Frequently test levels of pH, ammonia, nitrite and nitrate. Change some of the water if the levels are elevated.</li>
-    <li>Be sure water is at the right temperature for your fish.</li>
+    <li>Frequently
+      <%= link_to "test", about_water_health_path(anchor: "water-test") %> levels of
+      <%= link_to "pH", about_water_health_path(anchor: "ph") %>,
+      <%= link_to "ammonia", about_water_health_path(anchor: "ammonia") %>,
+      <%= link_to "nitrite", about_water_health_path(anchor: "nitrite") %> and
+      <%= link_to "nitrate", about_water_health_path(anchor: "nitrate") %>. Change some of the water if the levels are elevated.</li>
+    <li>Be sure water is at the right
+      <%= link_to "temperature", about_water_health_path(anchor: "temperature") %> for your fish.</li>
   </ol>
 
 <hr>
 
-  <h3>WATER CARE SCHEDULE</h3>
+  <h3 id="care-schedule">WATER CARE SCHEDULE</h3>
 
   <p>Maintaining a healthy environment for your fish is an ongoing commitment. You can keep your aquarium in great shape with minimal effort by following this schedule:</p>
 
   <p><b>Daily:</b></p>
   <ul>
-    <li>Check water temperature.</li>
+    <li>Check water <%= link_to "temperature", about_water_health_path(anchor: "temperature") %>.</li>
   </ul>
 
   <p><b>Weekly:</b></p>
   <ul>
     <li>Remove 10% of the water and replace with dechlorinated water.</li>
-    <li>Test the water conditions on a regular basis to be sure that pH, ammonia, nitrite, nitrate, hardness, alkalinity and chlorine levels are normal. Water test kits are available for measuring these conditions in stores and at <%=  link_to 'PetSmart.com', 'http://www.petsmart.com', target: '_blank' %>.</li>
+    <li>Test the water conditions on a regular basis to be sure that
+      <%= link_to "pH", about_water_health_path(anchor: "ph") %>,
+      <%= link_to "ammonia", about_water_health_path(anchor: "ammonia") %>,
+      <%= link_to "nitrite", about_water_health_path(anchor: "nitrite") %>,
+      <%= link_to "nitrate", about_water_health_path(anchor: "nitrate") %>,
+      <%= link_to "hardness", about_water_health_path(anchor: "hardness") %>,
+      <%= link_to "alkalinity", about_water_health_path(anchor: "alkalinity") %> and
+      <%= link_to "chlorine", about_water_health_path(anchor: "chlorine") %> levels are normal. Water test kits are available for measuring these conditions in stores and at
+      <%=  link_to 'PetSmart.com', 'http://www.petsmart.com', target: '_blank' %>.</li>
     <li>Scrub for algae (if necessary).</li>
   </ul>
 
   <p><b>Monthly:</b></p>
   <ul>
     <li>Perform a 25% water change/gravel vacuum and replace with dechlorinated water.</li>
-    <li>Perform filter maintenance (i.e., replace filter cartridge, replace carbon, rinse pre-filter, etc.).</li>
+    <li>Perform
+      <%= link_to "filter maintenance", about_water_health_path(anchor: "filter") %> (i.e., replace filter cartridge, replace carbon, rinse pre-filter, etc.).</li>
     <li>Scrub aquarium for algae.</li>
     <li>Remove plastic plants/decorations and clean (if necessary).</li>
     <li>Replace air stone if used (allows for more efficient operation and makes the air pump last longer).</li>
@@ -50,10 +67,13 @@
   <h3 id="how-many">HOW MANY FISH ARE SAFE TO HAVE</h3>
 
   <P>When adding fish to you aquarium, it's important to keep in mind that there is a limit to the amount of fish you can have in your tank. <b>The rule of thumb is for every gallon of water in your aquarium you can have 1 inch of fish.</b> Meaning, if your aquarium is 10 gallons you can put (10) 1 inch fish, (5) 2 inch fish, or just (1) 10 inch fish in your tank at one time. The reason for this is that each fish creates waste and the waste needs to be broken down by your aquarium's ecosystem. If there are to many fish per gallon, the waste could throw your aquarium's delicately balanced ecosystem out of balance causing your unhealthy elements to rise to dangerous levels.</P>
+  <p>If you do exceed your ideal <b>estimated length of all occupants to aquarium size</b>, you should do more
+    <%= link_to "water changes", about_water_health_path(anchor: "care-schedule") %> than recommended to try and keep you unhealthy elements at a safe level. It is also recommended that you
+    <%= link_to "test your aquarium's water", about_water_health_path(anchor: "water-test") %>  more often.</p>
 
 <hr>
 
-  <h3>WATER TEST LOG</h3>
+  <h3 id="water-test">WATER TEST LOG</h3>
 
   <p>When preparing your aquarium, it’s important to closely monitor water quality. The information below will help you gauge where your levels should be as well as understand the results.</p>
 
@@ -112,7 +132,7 @@
 
 <hr>
 
-  <h3>Understanding Aquatic Filtration</h3>
+  <h3 id="filter">Understanding Aquatic Filtration</h3>
 
   <p>Proper filtration is critical to keeping happy, healthy fish. A complete filtration system should neutralize ammonia and nitrites, and remove floating debris and contamination from the water. There are three basic filtration methods: Mechanical, biological and chemical. Each is important, and your filtration system should incorporate all three.</p>
 
