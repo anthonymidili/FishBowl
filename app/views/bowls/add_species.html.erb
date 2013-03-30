@@ -15,10 +15,10 @@
         <div class="thumbnail">
           <div class="add-thumbnail-height">
             <%= image_tag(species.image) %>
-            <label class="checkbox">
+            <div class="checkbox">
               <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
               <h4><em><%= species.name %></em></h4>
-            </label>
+            </div>
           </div>
           <%= render 'species_info', species: species %>
         </div>

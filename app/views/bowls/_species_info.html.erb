@@ -1,7 +1,7 @@
 <section class="info-height">
   <b>Water type:</b> <%= species.water_type %><br>
   <b>Temperament:</b> <%= species.temperament %><br>
-  <b>Adult size:</b> <%= ("up to #{species.adult_size}&quot;").html_safe %><br>
+  <b>Adult size:</b> <%= ("up to #{sprintf("%g", species.adult_size)}&quot;").html_safe %><br>
   <% species.info.each do |name, value| %>
     <b><%= name.to_s.humanize %>:</b>
     <%= value.html_safe %><br>

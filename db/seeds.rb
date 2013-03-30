@@ -139,7 +139,7 @@ species.update_attributes(
     image: 'freshwater/fancy_guppy_female.jpg',
     water_type: 'Freshwater',
     temperament: 'Community',
-    adult_size: 3,
+    adult_size: 2.5,
     info: {
         family: 'Poeciliidae',
         native_to: 'Central and South America',
@@ -157,7 +157,7 @@ species.update_attributes(
     image: 'freshwater/fancy_guppy_male.jpg',
     water_type: 'Freshwater',
     temperament: 'Community',
-    adult_size: 3,
+    adult_size: 2.5,
     info: {
         family: 'Poeciliidae',
         native_to: 'Central and South America',

@@ -12,7 +12,7 @@ module BowlsHelper
   end
 
   def species_total_length(bowl)
-    @species_total_length ||= bowl.occupancies.map(&:total_length_in_inches).compact.sum
+    @species_total_length ||= sprintf("%g", bowl.occupancies.map(&:total_length_in_inches).compact.sum)
   end
 
 end
