@@ -2,7 +2,13 @@
   <div class="row center">
     <div class="span12">
       <h3>Your Species</h3>
-      <%= link_to 'Find Your Species', add_species_bowl_path(@bowl) %>
+      <%= form_for [@bowl, @occupancy] do |f| %>
+        <div class="form-inline">
+          <%= link_to 'Find Your Species', add_species_bowl_path(@bowl) %>&nbsp;
+          <%= f.collection_select :species_id, Species.order(:name), :id, :name %>
+          <%= f.submit 'Add one', class: 'btn' %>
+        </div>
+    <%end %>
     </div>
   </div>
 
@@ -16,7 +22,7 @@
               <div class="thumbnail">
                 <div class="your-thumbnail-height">
                   <div class="pull-right">
-                    <%= link_to destroy_occupancy_path(@bowl, occupancy_builder.object),
+                    <%= link_to [@bowl, occupancy_builder.object],
                                 confirm: "Are you sure you want to remove this species from your list?",
                                 method: :delete do %>
                       <i class="icon-remove"></i>

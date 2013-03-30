@@ -8,6 +8,7 @@ FishBowl::Application.routes.draw do
       get 'add_species'
     end
     resources :water_health_tests, only: [:index, :create, :destroy]
+    resources :occupancies, only: [:create, :destroy]
   end
 
   root :to => 'welcome#index'

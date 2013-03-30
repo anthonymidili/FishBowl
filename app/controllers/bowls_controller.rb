@@ -8,6 +8,7 @@ class BowlsController < ApplicationController
   def show
     @bowl = current_user.bowls.find(params[:id])
     @water_health_tests = @bowl.water_health_tests.page(params[:page]).per(10)
+    @occupancy = Occupancy.new
   end
 
   def new
@@ -52,8 +53,5 @@ class BowlsController < ApplicationController
   end
 
   def destroy_occupancy
-    @bowl = current_user.bowls.find(params[:bowl_id])
-    Occupancy.find(params[:id]).destroy
-    redirect_to @bowl, notice: "Removed species from list."
   end
 end
