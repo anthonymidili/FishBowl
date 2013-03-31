@@ -5,7 +5,7 @@ class OccupanciesController < ApplicationController
     if @occupancy.save
       redirect_to @bowl, notice: "Added species to list."
     else
-      render action: 'bowls/show'
+      redirect_to @bowl, notice: "Must select a new species!"
     end
   end
 

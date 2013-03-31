@@ -5,7 +5,7 @@
       <%= form_for [@bowl, @occupancy] do |f| %>
         <div class="form-inline">
           <%= link_to 'Find Your Species', add_species_bowl_path(@bowl) %>&nbsp;
-          <%= f.collection_select :species_id, Species.order(:name), :id, :name %>
+          <%= f.collection_select :species_id, Species.all_not_shown(@bowl.species_ids), :id, :name, { :prompt => 'Select a Species' } %>
           <%= f.submit 'Add one', class: 'btn' %>
         </div>
     <%end %>
