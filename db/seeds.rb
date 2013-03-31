@@ -825,3 +825,229 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Glowlight Tetra')
+species.update_attributes(
+    image: 'freshwater/glowlight_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 80&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-8',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hemigrammus erythroznus',
+        info: "Requires plenty of hiding space and swimming room. Has a combination of translucent body coloration with a orange stripe through the center of the body. Does best with tall plants and driftwood."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Gold Barb')
+species.update_attributes(
+    image: 'freshwater/gold_barb.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '74 - 79&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-10',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Puntius sachsi',
+        info: "Hardy, schooling fish that is a great choice for beginners. Eats small snails along with its regular diet. Does best in groups of three or more."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Gold Gourami')
+species.update_attributes(
+    image: 'freshwater/gold_gourami.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Osphronemidae',
+        native_to: 'India',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '20+ gallons',
+        scientific_name: 'Trichogastor trichopterus',
+        info: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with similar-sized fish with similar temperaments."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Gold Veiled Angelfish')
+species.update_attributes(
+    image: 'freshwater/gold_veiled_angelfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '75 - 82&deg;F',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterophyllum sp.',
+        info: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Gold White Cloud')
+species.update_attributes(
+    image: 'freshwater/gold_white_cloud.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'China',
+        diet: 'Omnivore',
+        temperature: '65 - 72&deg;F',
+        water_parameters: 'pH 6.0-8.0; KH 10-15',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Tanichthys albonubes',
+        info: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Grade A Butterfly Koi')
+species.update_attributes(
+    image: 'freshwater/grade_a_butterfly_koi.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 36,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '36 - 90&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond or 1000+ gallons',
+        scientific_name: 'Cyprinus carpio',
+        info: "Long flowing fins. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Grade A Koi')
+species.update_attributes(
+    image: 'freshwater/grade_a_koi.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 36,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '36 - 90&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond or 1000+ gallons',
+        scientific_name: 'Cyprinus carpio',
+        info: "Large outdoor pond fish. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Green Crowntail Betta - Female')
+species.update_attributes(
+    image: 'freshwater/green_female_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Green Veiltail Betta - Female')
+species.update_attributes(
+    image: 'freshwater/green_female_veiltail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Green Fire Tetra')
+species.update_attributes(
+    image: 'freshwater/green_fire_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-7.0, KH 4-8',
+        care_level: 'Moderate',
+        tank_size: '10+ gallons',
+        scientific_name: 'Aphyocharax rathbuni',
+        info: "Requires plenty of hiding space and swimming room. Has a combination of green translucent body coloration with a red underbelly. Does best with tall plants and driftwood."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Green Crowntail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/green_male_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Green Tiger Barb')
+species.update_attributes(
+    image: 'freshwater/green_tiger_barb.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'Indonesia, Sumatra',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Barbus tetrazona',
+        info: "Hardy and active schooling fish. Does best in odd numbers a school of five or more. Barbs tend to nip at the fins of larger, slower moving fish."
+    }
+)
+
