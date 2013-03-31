@@ -315,3 +315,194 @@ species.update_attributes(
         info: "Prefers rocks and driftwood, while having horizontal space to swim back and forth in a tank while schooling. In smaller than recommended tanks, the Ruby Barb tends to be a bit nippy towards other fish. Does best in groups of three or more."
     }
 )
+
+species = Species.find_or_create_by_name(name: 'Bloodfin Tetra')
+species.update_attributes(
+    image: 'freshwater/bloodfin_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 80&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-8',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Prionobrama filigera',
+        info: "Requires plenty of hiding space and swimming room. Has a combination of shiny silver body coloration with red fins. Does best with tall plants and driftwood."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Emperor Tetra')
+species.update_attributes(
+    image: 'freshwater/blue_emperor_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-8',
+        care_level: 'Moderate',
+        tank_size: '10+ gallons',
+        scientific_name: 'Inpaichthys kerri',
+        info: "Similar appearance to Black Neon Tetras , but completely different and larger species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Crowntail Betta - Female')
+species.update_attributes(
+    image: 'freshwater/blue_female_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        water_current: 'Low',
+        water_parameters: 'pH 6.0-8.0; KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Veiltail Betta - Female')
+species.update_attributes(
+    image: 'freshwater/blue_female_veiltial_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        water_current: 'Low',
+        water_parameters: 'pH 6.0-8.0; KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Crowntail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/blue_male_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        water_current: 'Low',
+        water_parameters: 'pH 6.0-8.0; KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in different shades of blue including Steel Blue and Royal Blue. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Veiltail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/blue_male_veiltail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Neon Guppy')
+species.update_attributes(
+    image: 'freshwater/blue_neon_guppy.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia reticulata',
+        info: "Stunning, flowing neon blue tail. Does best in a school of five or more. Does best in a planted community tank with no fin nippers."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Peacock Cichlid')
+species.update_attributes(
+    image: 'freshwater/blue_peacock_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa: Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 7.5-8.5; KH 6-10',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Aulonocara nyassae',
+        info: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Beautiful blue coloration. Needs plenty of rocks to set up territories."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Boesemani Rainbow')
+species.update_attributes(
+    image: 'freshwater/boesemani_rainbow.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Melanotaeniidae',
+        native_to: 'Asia and Australia',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Melanotaenia boesemani',
+        info: "Gorgeous blue, yellow, and orange fish. Schooling fish that does best in a planted tank. Does best in long tanks with dark gravel."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Borneo Sucker')
+species.update_attributes(
+    image: 'freshwater/borneo_sucker.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Balitoridae',
+        native_to: 'China',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0; KH 4-12',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Gastromyzon sp.',
+        info: "Attach themselves to hard surfaces using specially adapted mouth parts. Borneo Suckers are scavengers and will eat almost anything. Provide plenty of rocks, plants and driftwood."
+    }
+)
+

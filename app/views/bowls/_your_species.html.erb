@@ -1,7 +1,7 @@
 <section>
   <div class="row center">
     <div class="span12">
-      <h3>Your Species</h3>
+      <h3><%= "Your #{@bowl.water_type} Species" %></h3>
       <%= form_for [@bowl, @occupancy] do |f| %>
         <div class="form-inline">
           <%= link_to 'Select Your Species', add_species_bowl_path(@bowl) %> |
