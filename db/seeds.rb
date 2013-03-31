@@ -376,7 +376,7 @@ species.update_attributes(
 
 species = Species.find_or_create_by_name(name: 'Blue Veiltail Betta - Female')
 species.update_attributes(
-    image: 'freshwater/blue_female_veiltial_betta.jpg',
+    image: 'freshwater/blue_female_veiltail_betta.jpg',
     water_type: 'Freshwater',
     temperament: 'Community',
     adult_size: 3,
