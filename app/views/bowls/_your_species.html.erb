@@ -4,8 +4,8 @@
       <h3>Your Species</h3>
       <%= form_for [@bowl, @occupancy] do |f| %>
         <div class="form-inline">
-          <%= link_to 'Find Your Species', add_species_bowl_path(@bowl) %>&nbsp;
-          <%= f.collection_select :species_id, Species.all_not_shown(@bowl.species_ids), :id, :name, { :prompt => 'Select a Species' } %>
+          <%= link_to 'Select Your Species', add_species_bowl_path(@bowl) %> |
+          <%= f.collection_select :species_id, Species.by_bowl_water_type(@bowl.water_type).all_but_shown(@bowl.species_ids), :id, :name, { :prompt => 'Select a Species' } %>
           <%= f.submit 'Add one', class: 'btn' %>
         </div>
     <%end %>
