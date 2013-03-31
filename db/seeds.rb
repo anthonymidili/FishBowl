@@ -1051,3 +1051,130 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Head and Tail Light Tetra')
+species.update_attributes(
+    image: 'freshwater/head_and_tail_light_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '64 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hemigrammus ocellifer',
+        info: "Schooling community fish that does best in a group of six of more. Live plants and soft water are desired for this species. Needs plenty of hiding places as well as swimming space."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Honey Dwarf Gourami')
+species.update_attributes(
+    image: 'freshwater/honey_dwarf_gourami.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 2,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'India, Bangladesh',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '20+ gallons',
+        scientific_name: 'Colisa chuna',
+        info: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with relatively small fish with similar temperaments."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Jack Dempsey Cichlid')
+species.update_attributes(
+    image: 'freshwater/jack_dempsey_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 10,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Central America',
+        diet: 'Carnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Nandopsis octofasciatum/ Rocio octofasciata',
+        info: "Territorial fish that needs areas designated by piles of rocks. Named after 20th Century Boxer with the same name, Jack Dempsey. Live plants may be used as hiding places or territories only when using hardy plants."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Kissing Gourami')
+species.update_attributes(
+    image: 'freshwater/kissing_gourami.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Helostomatidae',
+        native_to: 'South East Asia',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Helostoma temminckii',
+        info: "Kissing is a form of harmless fighting for dominance. Does best in a planted tank with stones. Surface breather that must have access to the top of a tank."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Long Fin White Cloud')
+species.update_attributes(
+    image: 'freshwater/long_fin_white_cloud.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'China',
+        diet: 'Omnivore',
+        temperature: '65 - 72&deg;F',
+        water_parameters: 'pH 6.0-8.0; KH 10-15',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Tanichthys albonubes',
+        info: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Long Fin Zebra Danio')
+species.update_attributes(
+    image: 'freshwater/long_fin_zebra_danio.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'South East Asia',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Brachydanio rerio',
+        info: "Great for beginners. Active schooling fish. Commonly used as a dither fish, which essentially communicates to other fish that the open water activity of the Danio means everything is normal."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Lyretail Guppy')
+species.update_attributes(
+    image: 'freshwater/lyretail_guppy.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia reticulata',
+        info: "Unique coloration with a long flowing tail. Does best with peaceful tankmates. A variety of foods, both meaty and algae-based should be provided to maintain health and vivid coloration."
+    }
+)
+
