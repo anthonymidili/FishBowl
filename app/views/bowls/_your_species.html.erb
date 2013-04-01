@@ -3,12 +3,16 @@
     <div class="span12">
       <h3><%= "Your #{@bowl.water_type} Species" %></h3>
       <%= form_for [@bowl, @occupancy] do |f| %>
-        <div class="form-inline">
-          <%= link_to 'Select Your Species', add_species_bowl_path(@bowl) %> |
-          <%= f.collection_select :species_id, Species.by_bowl_water_type(@bowl.water_type).all_but_shown(@bowl.species_ids), :id, :name, { :prompt => 'Select a Species' } %>
-          <%= f.submit 'Add one', class: 'btn' %>
+        <div class="form-inline select-bar">
+          <%= link_to "List of #{@bowl.water_type} Species", add_species_bowl_path(@bowl) %>
+          <%= f.collection_select :species_id, Species.by_bowl_water_type(@bowl.water_type).all_but_shown(@bowl.species_ids), :id, :name, { prompt: 'Select One Species' } %>
+          <%= f.submit 'Add', class: 'btn' %>
+          <!--
+          Create Custom Species
+          <%= link_to 'Create Custom Species', '#' %>
+          -->
         </div>
-    <%end %>
+      <% end %>
     </div>
   </div>
 

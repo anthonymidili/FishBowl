@@ -16,6 +16,7 @@
 }
 
 .center_fields {
+
   td {
     text-align: center !important;
     vertical-align: middle !important;
@@ -48,6 +49,28 @@ section {
 .info-height {
   height: 20em;
   overflow-y: auto;
+}
+
+.select-bar {
+  background-color: midnightblue;
+  padding: 1em;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+
+  a {
+    color: deepskyblue;
+    &:first-child {
+      margin-right: 3em;
+    }
+
+    &:last-child {
+      margin-left: 3em;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 /* water health test results */
