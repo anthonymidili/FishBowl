@@ -23,7 +23,7 @@
         <p>Total bowl occupants:<b><%= " #{@bowl.total_occupants}" %></b></p>
         <p>
           <%= link_to 'Estimated length of all occupants:', about_water_health_path(anchor: "how-many") %>
-          <b><%= " #{species_total_length(@bowl)}" %>&quot;</b>
+          <b class=<%= crowded?(@bowl) %>><%= " #{species_total_length(@bowl)}" %>&quot;</b>
         </p>
       </div>
 
