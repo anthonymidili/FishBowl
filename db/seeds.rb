@@ -1178,3 +1178,441 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Cambodian Crowntail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_cambodian_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a cream or white body and colored fins. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Cambodian Veiltail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_cambodian_veiltail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        temperature: '74 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Crowntail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_crowntail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Deltatail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_deltatail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Doubletail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_doubletail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Halfmoon Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_halfmoon_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Halfmoon Doubletail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_halfmoon_doubletail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Halfmoon Doubletail Plakat Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_halfmoon_doubletail_plakat_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Halfmoon King Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_halfmoon_king_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ gallon',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Halfmoon Plakat Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_halfmoon_plakat_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'King Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_king_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '1+ gallon',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Veiltail Betta - Male')
+species.update_attributes(
+    image: 'freshwater/male_veiltail_betta.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Belontiidae',
+        native_to: 'S.E. Asia - Cambodia, Thailand',
+        diet: 'Carnivore',
+        water_current: 'Low',
+        temperature: '74 - 82&deg;F',
+        water_parameters: 'pH 6.0-8.0, KH 0-25',
+        care_level: 'Easy',
+        tank_size: '1+ liter',
+        scientific_name: 'Betta splendens',
+        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Marble Angelfish')
+species.update_attributes(
+    image: 'freshwater/marble_angelfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '75 - 82&deg;F',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterophyllum sp.',
+        info: "This fish does best in large tanks in groups of five or more. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Marble Veiled Angelfish')
+species.update_attributes(
+    image: 'freshwater/marble_veiled_angelfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '75 - 82&deg;F',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterophyllum sp.',
+        info: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Neon Tetra')
+species.update_attributes(
+    image: 'freshwater/neon_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-8',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Paracheirodon innesi',
+        info: "Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'OB Peacock Cichlid')
+species.update_attributes(
+    image: 'freshwater/ob_peacock_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 5,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa, Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 7.5-8.5; KH 6-10',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Aulonocara sp.',
+        info: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Not a naturally occuring species in the wild. Needs plenty of rocks to set up territories."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Orange Sailfin Molly')
+species.update_attributes(
+    image: 'freshwater/orange_sailfin_molly.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 6.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'North, Central, and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia latipinna',
+        info: "Mollies are a peaceful and popular aquarium favorite. The Sailfin Molly is so named due to its distinctive dorsal fin. Best kept with other peaceful fish in a planted tank with plenty of open swimming area."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Panda Cory')
+species.update_attributes(
+    image: 'freshwater/panda_cory.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Callichthyidae',
+        native_to: 'Amazon River',
+        diet: 'Omnivore',
+        temperature: '72 - 79&deg;F',
+        water_parameters: 'pH 5.8-7.0; KH 2-12',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Corydoras panda',
+        info: "Smooth substrate is a necessity due to the Cory's whiskers, which are also known as barbels. As it is somewhat sensitive to light, please provide the Panda Cory with plenty of plants, caves, and any other hiding places possible. Does best in groups of six or more."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Panda Oranda Goldfish')
+species.update_attributes(
+    image: 'freshwater/panda_oranda_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: "Stunning black and white coloration. Can damage live plants. Does great in a larger tank or in an outdoor pond."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Penguin Tetra')
+species.update_attributes(
+    image: 'freshwater/penguin_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 6.0-7.0; KH 4-8',
+        care_level: 'Easy',
+        tank_size: '20+ gallons',
+        scientific_name: 'Thayeria boehlkei',
+        info: "Looks similar to Black Neon Tetras , but completely different species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Pigeon Blood Discus')
+species.update_attributes(
+    image: 'freshwater/pigeon_blood_discus.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Amazon River Basin',
+        diet: 'Carnivore',
+        temperature: '80 - 84&deg;F',
+        care_level: 'Difficult',
+        tank_size: '30+ gallons',
+        scientific_name: 'Symphysodon sp.',
+        info: "Has a round and laterally compressed body, making it suitable for gliding through tall aquarium grasses. Provide plenty of substrate, rocks and hiding spots, especially plants. Requires soft water."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Plecostomus')
+species.update_attributes(
+    image: 'freshwater/plecostomus.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 24,
+    info: {
+        family: 'Loricariidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hypostomus plecostomus',
+        info: "Attach themselves to hard surfaces using specially adapted mouth parts. Primarily nocturnal, Plecos are scavengers and will eat almost anything, including live plants. Provide plenty of rocks, plants and driftwood."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Purple Fantail Goldfish')
+species.update_attributes(
+    image: 'freshwater/purple_fantail_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: "Unique coloration. Has a forked tail and egg shaped body. May damage live plants."
+    }
+)
+
