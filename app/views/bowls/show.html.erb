@@ -19,7 +19,7 @@
         <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p>
         <p>Temperature:<b><%= " #{@bowl.temperature}" %>&deg;F</b></p>
         <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p>
-        <p>Fish type:<b><%= " #{@bowl.fish_type}" %></b></p>
+        <p>Fish temperament:<b><%= " #{@bowl.fish_type}" %></b></p>
         <p>Total bowl occupants:<b><%= " #{@bowl.total_occupants}" %></b></p>
         <p>
           <%= link_to 'Estimated length of all occupants:', about_water_health_path(anchor: "how-many") %>
