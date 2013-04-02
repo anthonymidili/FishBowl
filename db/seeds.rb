@@ -1616,3 +1616,258 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Rainbow Shark')
+species.update_attributes(
+    image: 'freshwater/rainbow_shark.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Thailand',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Moderate',
+        tank_size: '20+ gallons',
+        scientific_name: 'Epalzeorhynchos frenatus',
+        info: 'The term "shark" is applied to many unrelated fish with a similar body shape. The Rainbow Shark is primarily a dark grayish black with bold red fins. This particular shark does best as the only shark with similarly sized fish in a planted tank with driftwood and rocks.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Rasbora Brigittae')
+species.update_attributes(
+    image: 'freshwater/rasbora_brigittae.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 1.25,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Indonesia',
+        diet: 'Omnivore',
+        temperature: '78 - 82&deg;F',
+        water_parameters: 'pH 5.0-7.0; KH 5-10',
+        care_level: 'Moderate',
+        tank_size: '10+ gallons',
+        scientific_name: 'Boraras brigittae',
+        info: 'Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red & White Fantail Goldfish')
+species.update_attributes(
+    image: 'freshwater/red_white_fantail_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: 'Striking coloration of red & white. Has a forked tail and egg shaped body. May damage live plants.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red & White Ryukin Goldfish')
+species.update_attributes(
+    image: 'freshwater/red_white_ryukin_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: "Ryukins have an arch behind their head. Red and white coloration is simple yet striking. May damage live plants. Make for a good beginner pond fish as they're easy to care for."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Blond Guppy')
+species.update_attributes(
+    image: 'freshwater/red_blond_guppy.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia reticulata',
+        info: "Classic aquarium fish. A schooling fish, it does best when housed in groups of five or more of the same species. Does best in a planted community tank with no fin nippers."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Cap Oranda Goldfish')
+species.update_attributes(
+    image: 'freshwater/red_cap_oranda_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: 'Bright red "hat" with a pearly white body. Egg-shaped body. May damage live plants. Pond fish that can live in a tank of 30 gallons or more.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Dalmatian Sailfin Molly')
+species.update_attributes(
+    image: 'freshwater/red_dalmatian_sailfin_molly.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 6.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Mexico: Yucatan',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia latipinna',
+        info: 'Peaceful and popular aquarium favorite. Named due to its distinctive dorsal fin. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Devil Cichlid')
+species.update_attributes(
+    image: 'freshwater/red_devil_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Amphilophus labiatus',
+        info: 'Primarily peach to yellow in coloration with some having a white belly. Tends to dig up plants, so live plants are not recommended. Should be kept with fish that can defend themselves as this particular Cichlid can be quite aggressive.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Fantail Goldfish')
+species.update_attributes(
+    image: 'freshwater/red_fantail_goldfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Asia',
+        diet: 'Omnivore',
+        temperature: '64 - 75&deg;F',
+        care_level: 'Easy',
+        tank_size: 'Pond/ 30+ gallons',
+        scientific_name: 'Carassius auratus',
+        info: 'Simply red with some hints of orange. Has a forked tail and egg shaped body. May damage live plants.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Fin Kadango Cichlid')
+species.update_attributes(
+    image: 'freshwater/red_fin_kadango_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa, Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        water_parameters: 'pH 7.5-8.5; KH 6-10',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Copadichromis borleyi',
+        info: 'This species does well in a community tank with other peaceful mid-sized fish and several hiding spots. Comes in several color variations. Needs plenty of rocks to set up territories.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Oscar Cichlid')
+species.update_attributes(
+    image: 'freshwater/red_oscar_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America, Amazon',
+        diet: 'Carnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Astronotus ocellatus',
+        info: 'Tends to dig up plants, as well as rearrange rocks and gravel. Will grow to enormous size regardless of tank size. Should be kept with fish of similar size as they will eat smaller fish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Phantom Tetra')
+species.update_attributes(
+    image: 'freshwater/red_phantom_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 1.5,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '68 - 78&deg;F',
+        water_parameters: 'pH 6.0-7.5; KH 4-8',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hyphessobrycon sweglesi',
+        info: 'Requires plenty of hiding space and swimming room. Has an intense reddish orange body coloration. Does best with tall plants, and driftwood.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Sailfin Molly')
+species.update_attributes(
+    image: 'freshwater/red_sailfin_molly.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 6.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'North, Central, and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia latipinna',
+        info: 'Peaceful and popular aquarium favorite. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area. They prefer a degree of salinity in their water.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Swordtail')
+species.update_attributes(
+    image: 'freshwater/red_swordtail.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central America',
+        diet: 'Omnivore',
+        temperature: '72 - 82&deg;F',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Xiphophorus helleri',
+        info: 'The most active of the common livebearers. Males have the long "sword" extending from the bottom of their tails. A well planted tank with plenty of swimming space is ideal.'
+    }
+)
+
