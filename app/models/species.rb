@@ -1,10 +1,10 @@
 class Species < ActiveRecord::Base
-  attr_accessible :info, :name, :image, :water_type, :temperament, :adult_size
+  attr_accessible :name, :image, :water_type, :temperament, :adult_size, :info, :family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about
 
   has_many :occupancies
   has_many :bowls, through: :occupancies
 
-  serialize :info
+  store :info, accessors: [:family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about]
 
   validates :name, presence: true
   validates :image, presence: true

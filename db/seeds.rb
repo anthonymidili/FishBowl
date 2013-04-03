@@ -16,11 +16,11 @@ species.update_attributes(
         family: 'Osphronemidae',
         native_to: 'India, Malaysia, Thailand, Burma',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '20+ gallons',
         scientific_name: 'Trichogaster trichopterus',
-        info: "Does best in a planted tank with driftwood, rocks and several hiding spots. Should be housed with tank-mates with similar temperaments. Can breathe from the surface due to modified gills."
+        about: "Does best in a planted tank with driftwood, rocks and several hiding spots. Should be housed with tank-mates with similar temperaments. Can breathe from the surface due to modified gills."
     }
 )
 
@@ -34,11 +34,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Borneo, Indonesia, Sumatra',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Barbus tetrazona',
-        info: "Active fish with striped pattern. May nip at the fins of larger, slow moving fish. Best kept in a school of five or more in odd numbers to prevent nipping."
+        about: "Active fish with striped pattern. May nip at the fins of larger, slow moving fish. Best kept in a school of five or more in odd numbers to prevent nipping."
     }
 )
 
@@ -52,12 +52,12 @@ species.update_attributes(
         family: 'Callichthyidae',
         native_to: 'Amazon River',
         diet: 'Omnivore',
-        temperature: '72 - 79&deg;F',
+        temperature: '72 - 79',
         water_parameters: 'pH 5.8-7.0; KH 2-12',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Corydoras aeneus',
-        info: "Provides contrast in color due to its white and pink coloration. Provide plenty of hiding places as it is slightly sensitive to light. Does best in groups of six or more."
+        about: "Provides contrast in color due to its white and pink coloration. Provide plenty of hiding places as it is slightly sensitive to light. Does best in groups of six or more."
     }
 )
 
@@ -71,12 +71,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa: Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 7.5-8.5; KH 6-10',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Aulonocara sp.',
-        info: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Not a naturally occuring species in the wild. Needs plenty of rocks to set up territories."
+        about: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Not a naturally occuring species in the wild. Needs plenty of rocks to set up territories."
     }
 )
 
@@ -90,11 +90,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Thailand',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '20+ gallons',
         scientific_name: 'Epalzeorhynchos frenatus',
-        info: "Very hardy and curious. Can get territorial. Despite its name, this is not a true shark."
+        about: "Very hardy and curious. Can get territorial. Despite its name, this is not a true shark."
     }
 )
 
@@ -108,11 +108,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America: Amazon',
         diet: 'Carnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Astronotus ocellatus',
-        info: "Extroverted personality and interactive. Grows to a very large size regardless of tank size. Tends to dig up plants and eat smaller tank mates."
+        about: "Extroverted personality and interactive. Grows to a very large size regardless of tank size. Tends to dig up plants and eat smaller tank mates."
     }
 )
 
@@ -126,11 +126,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Assorted colors and patterns such as Calico, Red, Metallic, Speckled, or Silver. Has a forked tail and egg shaped body. May damage live plants."
+        about: "Assorted colors and patterns such as Calico, Red, Metallic, Speckled, or Silver. Has a forked tail and egg shaped body. May damage live plants."
     }
 )
 
@@ -144,11 +144,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia reticulata',
-        info: "Larger than male guppies, but with less coloration. Other peaceful fish make great tankmates. Breeds quite easily."
+        about: "Larger than male guppies, but with less coloration. Other peaceful fish make great tankmates. Breeds quite easily."
     }
 )
 
@@ -162,11 +162,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia reticulata',
-        info: "Smaller than females, but more variety in coloration. Does best with peaceful tankmates. A variety of foods, both meaty and algae-based should be provided to maintain health and vivid coloration."
+        about: "Smaller than females, but more variety in coloration. Does best with peaceful tankmates. A variety of foods, both meaty and algae-based should be provided to maintain health and vivid coloration."
     }
 )
 
@@ -180,11 +180,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Xiphophorus maculatus',
-        info: "Male Platies are smaller and more colorful than female. Great for beginners and experts alike. Can reproduce very easily."
+        about: "Male Platies are smaller and more colorful than female. Great for beginners and experts alike. Can reproduce very easily."
     }
 )
 
@@ -198,11 +198,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Xiphophorus maculatus',
-        info: "Comes in a variety of colors and patterns with males being brighter and smaller than females. Great for beginners and experts alike. Reproduces quite easily."
+        about: "Comes in a variety of colors and patterns with males being brighter and smaller than females. Great for beginners and experts alike. Reproduces quite easily."
     }
 )
 
@@ -216,11 +216,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Xiphophorus helleri',
-        info: "Female Swordtails lack the long sword that male swordtails have. Well suited for community tanks. Come in a variety of patterns and colorations."
+        about: "Female Swordtails lack the long sword that male swordtails have. Well suited for community tanks. Come in a variety of patterns and colorations."
     }
 )
 
@@ -234,11 +234,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '75 - 82&deg;F',
+        temperature: '75 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Pterophyllum sp.',
-        info: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+        about: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
     }
 )
 
@@ -252,11 +252,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Sumatra, Thailand, Malaysia, and Borneo',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Balantiocheilus melanopterus',
-        info: "Not a true shark, but has a similar body shape. Active and hardy fish that can grow to a larger size. Does best in groups of three or more."
+        about: "Not a true shark, but has a similar body shape. Active and hardy fish that can grow to a larger size. Does best in groups of three or more."
     }
 )
 
@@ -270,11 +270,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Has an egg shaped body and protruding eyes. Has deep black coloration. Should not be kept with highly competitive tank mates."
+        about: "Has an egg shaped body and protruding eyes. Has deep black coloration. Should not be kept with highly competitive tank mates."
     }
 )
 
@@ -288,12 +288,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'Central Brazil',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.5; KH 4-8',
         care_level: 'Moderate',
         tank_size: '10+ gallons',
         scientific_name: 'Megalamphodus megalopterus',
-        info: "Requires plenty of hiding space and swimming room. Has a combination of stone gray and translucent body coloration. Does best with tall plants, and driftwood."
+        about: "Requires plenty of hiding space and swimming room. Has a combination of stone gray and translucent body coloration. Does best with tall plants, and driftwood."
     }
 )
 
@@ -307,12 +307,12 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Sri-Lanka, India',
         diet: 'Omnivore',
-        temperature: '74 - 79&deg;F',
+        temperature: '74 - 79',
         water_parameters: 'pH 6.0-7.0; KH 4-10',
         care_level: 'Easy',
         tank_size: '20+ gallons',
         scientific_name: 'Puntius nigrofasciatus',
-        info: "Prefers rocks and driftwood, while having horizontal space to swim back and forth in a tank while schooling. In smaller than recommended tanks, the Ruby Barb tends to be a bit nippy towards other fish. Does best in groups of three or more."
+        about: "Prefers rocks and driftwood, while having horizontal space to swim back and forth in a tank while schooling. In smaller than recommended tanks, the Ruby Barb tends to be a bit nippy towards other fish. Does best in groups of three or more."
     }
 )
 
@@ -326,12 +326,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 80&deg;F',
+        temperature: '72 - 80',
         water_parameters: 'pH 6.0-7.0; KH 4-8',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Prionobrama filigera',
-        info: "Requires plenty of hiding space and swimming room. Has a combination of shiny silver body coloration with red fins. Does best with tall plants and driftwood."
+        about: "Requires plenty of hiding space and swimming room. Has a combination of shiny silver body coloration with red fins. Does best with tall plants and driftwood."
     }
 )
 
@@ -345,12 +345,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.0; KH 4-8',
         care_level: 'Moderate',
         tank_size: '10+ gallons',
         scientific_name: 'Inpaichthys kerri',
-        info: "Similar appearance to Black Neon Tetras , but completely different and larger species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
+        about: "Similar appearance to Black Neon Tetras , but completely different and larger species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
     }
 )
 
@@ -364,13 +364,13 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_current: 'Low',
         water_parameters: 'pH 6.0-8.0; KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
     }
 )
 
@@ -384,13 +384,13 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_current: 'Low',
         water_parameters: 'pH 6.0-8.0; KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
     }
 )
 
@@ -404,13 +404,13 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_current: 'Low',
         water_parameters: 'pH 6.0-8.0; KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in different shades of blue including Steel Blue and Royal Blue. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in different shades of blue including Steel Blue and Royal Blue. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -424,11 +424,11 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
+        about: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
     }
 )
 
@@ -442,11 +442,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia reticulata',
-        info: "Stunning, flowing neon blue tail. Does best in a school of five or more. Does best in a planted community tank with no fin nippers."
+        about: "Stunning, flowing neon blue tail. Does best in a school of five or more. Does best in a planted community tank with no fin nippers."
     }
 )
 
@@ -460,12 +460,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa: Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 7.5-8.5; KH 6-10',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Aulonocara nyassae',
-        info: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Beautiful blue coloration. Needs plenty of rocks to set up territories."
+        about: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Beautiful blue coloration. Needs plenty of rocks to set up territories."
     }
 )
 
@@ -479,11 +479,11 @@ species.update_attributes(
         family: 'Melanotaeniidae',
         native_to: 'Asia and Australia',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Melanotaenia boesemani',
-        info: "Gorgeous blue, yellow, and orange fish. Schooling fish that does best in a planted tank. Does best in long tanks with dark gravel."
+        about: "Gorgeous blue, yellow, and orange fish. Schooling fish that does best in a planted tank. Does best in long tanks with dark gravel."
     }
 )
 
@@ -497,12 +497,12 @@ species.update_attributes(
         family: 'Balitoridae',
         native_to: 'China',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-8.0; KH 4-12',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Gastromyzon sp.',
-        info: "Attach themselves to hard surfaces using specially adapted mouth parts. Borneo Suckers are scavengers and will eat almost anything. Provide plenty of rocks, plants and driftwood."
+        about: "Attach themselves to hard surfaces using specially adapted mouth parts. Borneo Suckers are scavengers and will eat almost anything. Provide plenty of rocks, plants and driftwood."
     }
 )
 
@@ -516,11 +516,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Has black, red, orange markings. Has a forked tail and egg shaped body. May damage live plants."
+        about: "Has black, red, orange markings. Has a forked tail and egg shaped body. May damage live plants."
     }
 )
 
@@ -534,11 +534,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '65 - 75&deg;F',
+        temperature: '65 - 75',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Ryukins have a prominent arch behind their head. Coloration provides a variety of patterns of red, orange, white, and black. Pond fish that do well in larger tanks in addition to outdoor ponds."
+        about: "Ryukins have a prominent arch behind their head. Coloration provides a variety of patterns of red, orange, white, and black. Pond fish that do well in larger tanks in addition to outdoor ponds."
     }
 )
 
@@ -552,11 +552,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Narrow bodied fish able to swim faster than other goldfish. Has a mottled appearance with red, black, orange, and white coloration. Similar to koi without the whiskers or barbs and a much stockier body."
+        about: "Narrow bodied fish able to swim faster than other goldfish. Has a mottled appearance with red, black, orange, and white coloration. Similar to koi without the whiskers or barbs and a much stockier body."
     }
 )
 
@@ -570,11 +570,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Sri-Lanka',
         diet: 'Omnivore',
-        temperature: '74 - 79&deg;F',
+        temperature: '74 - 79',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Puntius titteya/ Barbus titteya',
-        info: "Timid fish that gets its name from red coloration of males during spawning. Excellent community fish. Needs plenty of hiding places to feel safe, but also needs open space to swim."
+        about: "Timid fish that gets its name from red coloration of males during spawning. Excellent community fish. Needs plenty of hiding places to feel safe, but also needs open space to swim."
     }
 )
 
@@ -588,11 +588,11 @@ species.update_attributes(
         family: 'Gyrinocheilidae',
         native_to: 'Asia',
         diet: 'Herbivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Gyrinocheilus aymonieri',
-        info: "Able to attach to almost anything in a tank with its mouth. Young specimens are peaceful, while adults are territorial. Does best in an established tank with plenty of circulation in the tank."
+        about: "Able to attach to almost anything in a tank with its mouth. Young specimens are peaceful, while adults are territorial. Does best in an established tank with plenty of circulation in the tank."
     }
 )
 
@@ -606,12 +606,12 @@ species.update_attributes(
         family: 'Cobitidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.5, KH 8-12',
         care_level: 'Moderate',
         tank_size: '50+ gallons',
         scientific_name: 'Botia macracanthus',
-        info: "Peaceful bottom dweller that may school with Tiger Barbs. Active during the day and eats both ornamental snails as well as pests. Highly sensitive to treatments containing copper or malachite green."
+        about: "Peaceful bottom dweller that may school with Tiger Barbs. Active during the day and eats both ornamental snails as well as pests. Highly sensitive to treatments containing copper or malachite green."
     }
 )
 
@@ -625,12 +625,12 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'North, Central, and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.5, KH 8-12',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia latipinna',
-        info: "Peaceful aquarium favorite. Best kept with other peaceful fish in a well planted tank. Prefers some salinity in their water, approximately one teaspoon of aquarium salt to every two gallons."
+        about: "Peaceful aquarium favorite. Best kept with other peaceful fish in a well planted tank. Prefers some salinity in their water, approximately one teaspoon of aquarium salt to every two gallons."
     }
 )
 
@@ -644,11 +644,11 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'India',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '10+ gallons',
         scientific_name: 'Colisa sp.',
-        info: "Well suited for community tanks. does best in a well planted tank. Recommended that the tank is located in a quiet location and that frequent water changes are performed."
+        about: "Well suited for community tanks. does best in a well planted tank. Recommended that the tank is located in a quiet location and that frequent water changes are performed."
     }
 )
 
@@ -662,12 +662,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa - Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 7.8-8.5; KH 10-15',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Labidochromis caeruleus',
-        info: "Bright yellow coloration becomes more apparent with age. Also known as a Yellow Lab. Needs plenty of hiding places as well as open swimming areas."
+        about: "Bright yellow coloration becomes more apparent with age. Also known as a Yellow Lab. Needs plenty of hiding places as well as open swimming areas."
     }
 )
 
@@ -681,12 +681,12 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0; KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
     }
 )
 
@@ -700,11 +700,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa - Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '30+ gallons',
         scientific_name: 'Pseudotropheus elongatus',
-        info: "Has a longer body than most Pseudotropheus cichlids. One of the more aggressive cichlids. Prefers plenty of hiding spots as well as open space for swimming."
+        about: "Has a longer body than most Pseudotropheus cichlids. One of the more aggressive cichlids. Prefers plenty of hiding spots as well as open space for swimming."
     }
 )
 
@@ -719,12 +719,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
     }
 )
 
@@ -739,12 +739,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Delta Tail Bettas have tails in the shape of a splendid triangle."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Delta Tail Bettas have tails in the shape of a splendid triangle."
     }
 )
 
@@ -759,12 +759,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Halfmoon Bettas have a fragile tail in the shape of a beautiful halfmoon."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Halfmoon Bettas have a fragile tail in the shape of a beautiful halfmoon."
     }
 )
 
@@ -779,12 +779,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
+        about: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
     }
 )
 
@@ -798,11 +798,11 @@ species.update_attributes(
         family: 'Mastacembelidae',
         native_to: 'South East Asia',
         diet: 'Carnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '50+ gallons',
         scientific_name: 'Mastacembelus erythoraenia',
-        info: "Not a true eel, but an elongated fish with spines. Needs fine, non-abrasive substrate for burrowing. Does best as the only Fire Eel in a tank, and needs a tight fitting lid to prevent escape."
+        about: "Not a true eel, but an elongated fish with spines. Needs fine, non-abrasive substrate for burrowing. Does best as the only Fire Eel in a tank, and needs a tight fitting lid to prevent escape."
     }
 )
 
@@ -816,12 +816,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Central & South America',
         diet: 'Carnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.8; KH 4-10',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Cichlasoma meeki',
-        info: "Territorial fish that needs areas designated by piles of rocks. Beautiful cichlid with a bright red throat and underbelly. Live plants may be used as hiding places or territories only when using hardy plants."
+        about: "Territorial fish that needs areas designated by piles of rocks. Beautiful cichlid with a bright red throat and underbelly. Live plants may be used as hiding places or territories only when using hardy plants."
     }
 )
 
@@ -835,12 +835,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 80&deg;F',
+        temperature: '72 - 80',
         water_parameters: 'pH 6.0-7.0; KH 4-8',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Hemigrammus erythroznus',
-        info: "Requires plenty of hiding space and swimming room. Has a combination of translucent body coloration with a orange stripe through the center of the body. Does best with tall plants and driftwood."
+        about: "Requires plenty of hiding space and swimming room. Has a combination of translucent body coloration with a orange stripe through the center of the body. Does best with tall plants and driftwood."
     }
 )
 
@@ -854,12 +854,12 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '74 - 79&deg;F',
+        temperature: '74 - 79',
         water_parameters: 'pH 6.0-7.0; KH 4-10',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Puntius sachsi',
-        info: "Hardy, schooling fish that is a great choice for beginners. Eats small snails along with its regular diet. Does best in groups of three or more."
+        about: "Hardy, schooling fish that is a great choice for beginners. Eats small snails along with its regular diet. Does best in groups of three or more."
     }
 )
 
@@ -873,11 +873,11 @@ species.update_attributes(
         family: 'Osphronemidae',
         native_to: 'India',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '20+ gallons',
         scientific_name: 'Trichogastor trichopterus',
-        info: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with similar-sized fish with similar temperaments."
+        about: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with similar-sized fish with similar temperaments."
     }
 )
 
@@ -891,11 +891,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '75 - 82&deg;F',
+        temperature: '75 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Pterophyllum sp.',
-        info: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+        about: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
     }
 )
 
@@ -909,12 +909,12 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'China',
         diet: 'Omnivore',
-        temperature: '65 - 72&deg;F',
+        temperature: '65 - 72',
         water_parameters: 'pH 6.0-8.0; KH 10-15',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Tanichthys albonubes',
-        info: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
+        about: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
     }
 )
 
@@ -928,11 +928,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '36 - 90&deg;F',
+        temperature: '36 - 90',
         care_level: 'Easy',
         tank_size: 'Pond or 1000+ gallons',
         scientific_name: 'Cyprinus carpio',
-        info: "Long flowing fins. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
+        about: "Long flowing fins. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
     }
 )
 
@@ -946,11 +946,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '36 - 90&deg;F',
+        temperature: '36 - 90',
         care_level: 'Easy',
         tank_size: 'Pond or 1000+ gallons',
         scientific_name: 'Cyprinus carpio',
-        info: "Large outdoor pond fish. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
+        about: "Large outdoor pond fish. With proper care, can live upwards of 35 years or more. Will dig up plants if the roots are not protected."
     }
 )
 
@@ -965,12 +965,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
+        about: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Crown Tail Bettas have stunning tails with long fringes."
     }
 )
 
@@ -985,12 +985,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
+        about: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Female Bettas have short, but colorful fins."
     }
 )
 
@@ -1004,12 +1004,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-7.0, KH 4-8',
         care_level: 'Moderate',
         tank_size: '10+ gallons',
         scientific_name: 'Aphyocharax rathbuni',
-        info: "Requires plenty of hiding space and swimming room. Has a combination of green translucent body coloration with a red underbelly. Does best with tall plants and driftwood."
+        about: "Requires plenty of hiding space and swimming room. Has a combination of green translucent body coloration with a red underbelly. Does best with tall plants and driftwood."
     }
 )
 
@@ -1024,12 +1024,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Color ranges from Blue Green to Forest Green. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1043,11 +1043,11 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'Indonesia, Sumatra',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Barbus tetrazona',
-        info: "Hardy and active schooling fish. Does best in odd numbers a school of five or more. Barbs tend to nip at the fins of larger, slower moving fish."
+        about: "Hardy and active schooling fish. Does best in odd numbers a school of five or more. Barbs tend to nip at the fins of larger, slower moving fish."
     }
 )
 
@@ -1061,11 +1061,11 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '64 - 82&deg;F',
+        temperature: '64 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Hemigrammus ocellifer',
-        info: "Schooling community fish that does best in a group of six of more. Live plants and soft water are desired for this species. Needs plenty of hiding places as well as swimming space."
+        about: "Schooling community fish that does best in a group of six of more. Live plants and soft water are desired for this species. Needs plenty of hiding places as well as swimming space."
     }
 )
 
@@ -1079,11 +1079,11 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'India, Bangladesh',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '20+ gallons',
         scientific_name: 'Colisa chuna',
-        info: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with relatively small fish with similar temperaments."
+        about: "Must have access to the surface to breathe properly. Does best in a planted tank with driftwood, rocks and several hiding spots. Can be housed with relatively small fish with similar temperaments."
     }
 )
 
@@ -1097,11 +1097,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Central America',
         diet: 'Carnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Nandopsis octofasciatum/ Rocio octofasciata',
-        info: "Territorial fish that needs areas designated by piles of rocks. Named after 20th Century Boxer with the same name, Jack Dempsey. Live plants may be used as hiding places or territories only when using hardy plants."
+        about: "Territorial fish that needs areas designated by piles of rocks. Named after 20th Century Boxer with the same name, Jack Dempsey. Live plants may be used as hiding places or territories only when using hardy plants."
     }
 )
 
@@ -1115,11 +1115,11 @@ species.update_attributes(
         family: 'Helostomatidae',
         native_to: 'South East Asia',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Helostoma temminckii',
-        info: "Kissing is a form of harmless fighting for dominance. Does best in a planted tank with stones. Surface breather that must have access to the top of a tank."
+        about: "Kissing is a form of harmless fighting for dominance. Does best in a planted tank with stones. Surface breather that must have access to the top of a tank."
     }
 )
 
@@ -1133,12 +1133,12 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'China',
         diet: 'Omnivore',
-        temperature: '65 - 72&deg;F',
+        temperature: '65 - 72',
         water_parameters: 'pH 6.0-8.0; KH 10-15',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Tanichthys albonubes',
-        info: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
+        about: "Great for beginners. Active schooling fish. Does great in cooler water temperatures."
     }
 )
 
@@ -1152,11 +1152,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'South East Asia',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Brachydanio rerio',
-        info: "Great for beginners. Active schooling fish. Commonly used as a dither fish, which essentially communicates to other fish that the open water activity of the Danio means everything is normal."
+        about: "Great for beginners. Active schooling fish. Commonly used as a dither fish, which essentially communicates to other fish that the open water activity of the Danio means everything is normal."
     }
 )
 
@@ -1170,11 +1170,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia reticulata',
-        info: "Unique coloration with a long flowing tail. Does best with peaceful tankmates. A variety of foods, both meaty and algae-based should be provided to maintain health and vivid coloration."
+        about: "Unique coloration with a long flowing tail. Does best with peaceful tankmates. A variety of foods, both meaty and algae-based should be provided to maintain health and vivid coloration."
     }
 )
 
@@ -1188,12 +1188,12 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a cream or white body and colored fins. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a cream or white body and colored fins. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1207,11 +1207,11 @@ species.update_attributes(
         family: 'Belontiidae',
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
+        about: "Attractive tail shape, similar to a wedding veil. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male bettas should never be housed together for any reason."
     }
 )
 
@@ -1226,12 +1226,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1246,12 +1246,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1266,12 +1266,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1286,12 +1286,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1306,12 +1306,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1326,12 +1326,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1346,12 +1346,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ gallon',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1366,12 +1366,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1386,11 +1386,11 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         care_level: 'Easy',
         tank_size: '1+ gallon',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1405,12 +1405,12 @@ species.update_attributes(
         native_to: 'S.E. Asia - Cambodia, Thailand',
         diet: 'Carnivore',
         water_current: 'Low',
-        temperature: '74 - 82&deg;F',
+        temperature: '74 - 82',
         water_parameters: 'pH 6.0-8.0, KH 0-25',
         care_level: 'Easy',
         tank_size: '1+ liter',
         scientific_name: 'Betta splendens',
-        info: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
+        about: "Comes in a wide variety of colors. Can breathe from the surface due to modified gills, known as the labyrinth organ. Male Bettas should never be housed together for any reason."
     }
 )
 
@@ -1424,11 +1424,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '75 - 82&deg;F',
+        temperature: '75 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Pterophyllum sp.',
-        info: "This fish does best in large tanks in groups of five or more. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+        about: "This fish does best in large tanks in groups of five or more. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
     }
 )
 
@@ -1442,11 +1442,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '75 - 82&deg;F',
+        temperature: '75 - 82',
         care_level: 'Moderate',
         tank_size: '30+ gallons',
         scientific_name: 'Pterophyllum sp.',
-        info: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
+        about: "Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended."
     }
 )
 
@@ -1460,12 +1460,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.0; KH 4-8',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Paracheirodon innesi',
-        info: "Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places."
+        about: "Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places."
     }
 )
 
@@ -1479,12 +1479,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa, Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 7.5-8.5; KH 6-10',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Aulonocara sp.',
-        info: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Not a naturally occuring species in the wild. Needs plenty of rocks to set up territories."
+        about: "This species does well in a community tank with other peacocks and peaceful mid-sized fish and several hiding spots. Not a naturally occuring species in the wild. Needs plenty of rocks to set up territories."
     }
 )
 
@@ -1498,11 +1498,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'North, Central, and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia latipinna',
-        info: "Mollies are a peaceful and popular aquarium favorite. The Sailfin Molly is so named due to its distinctive dorsal fin. Best kept with other peaceful fish in a planted tank with plenty of open swimming area."
+        about: "Mollies are a peaceful and popular aquarium favorite. The Sailfin Molly is so named due to its distinctive dorsal fin. Best kept with other peaceful fish in a planted tank with plenty of open swimming area."
     }
 )
 
@@ -1516,12 +1516,12 @@ species.update_attributes(
         family: 'Callichthyidae',
         native_to: 'Amazon River',
         diet: 'Omnivore',
-        temperature: '72 - 79&deg;F',
+        temperature: '72 - 79',
         water_parameters: 'pH 5.8-7.0; KH 2-12',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Corydoras panda',
-        info: "Smooth substrate is a necessity due to the Cory's whiskers, which are also known as barbels. As it is somewhat sensitive to light, please provide the Panda Cory with plenty of plants, caves, and any other hiding places possible. Does best in groups of six or more."
+        about: "Smooth substrate is a necessity due to the Cory's whiskers, which are also known as barbels. As it is somewhat sensitive to light, please provide the Panda Cory with plenty of plants, caves, and any other hiding places possible. Does best in groups of six or more."
     }
 )
 
@@ -1535,11 +1535,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Stunning black and white coloration. Can damage live plants. Does great in a larger tank or in an outdoor pond."
+        about: "Stunning black and white coloration. Can damage live plants. Does great in a larger tank or in an outdoor pond."
     }
 )
 
@@ -1553,12 +1553,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 6.0-7.0; KH 4-8',
         care_level: 'Easy',
         tank_size: '20+ gallons',
         scientific_name: 'Thayeria boehlkei',
-        info: "Looks similar to Black Neon Tetras , but completely different species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
+        about: "Looks similar to Black Neon Tetras , but completely different species. Does best in large schools in groups of five or more. Looks best in tanks with plenty of swimming room and proportionate hiding space."
     }
 )
 
@@ -1572,11 +1572,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Amazon River Basin',
         diet: 'Carnivore',
-        temperature: '80 - 84&deg;F',
+        temperature: '80 - 84',
         care_level: 'Difficult',
         tank_size: '30+ gallons',
         scientific_name: 'Symphysodon sp.',
-        info: "Has a round and laterally compressed body, making it suitable for gliding through tall aquarium grasses. Provide plenty of substrate, rocks and hiding spots, especially plants. Requires soft water."
+        about: "Has a round and laterally compressed body, making it suitable for gliding through tall aquarium grasses. Provide plenty of substrate, rocks and hiding spots, especially plants. Requires soft water."
     }
 )
 
@@ -1590,11 +1590,11 @@ species.update_attributes(
         family: 'Loricariidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Hypostomus plecostomus',
-        info: "Attach themselves to hard surfaces using specially adapted mouth parts. Primarily nocturnal, Plecos are scavengers and will eat almost anything, including live plants. Provide plenty of rocks, plants and driftwood."
+        about: "Attach themselves to hard surfaces using specially adapted mouth parts. Primarily nocturnal, Plecos are scavengers and will eat almost anything, including live plants. Provide plenty of rocks, plants and driftwood."
     }
 )
 
@@ -1608,11 +1608,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Unique coloration. Has a forked tail and egg shaped body. May damage live plants."
+        about: "Unique coloration. Has a forked tail and egg shaped body. May damage live plants."
     }
 )
 
@@ -1626,11 +1626,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Thailand',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Moderate',
         tank_size: '20+ gallons',
         scientific_name: 'Epalzeorhynchos frenatus',
-        info: 'The term "shark" is applied to many unrelated fish with a similar body shape. The Rainbow Shark is primarily a dark grayish black with bold red fins. This particular shark does best as the only shark with similarly sized fish in a planted tank with driftwood and rocks.'
+        about: 'The term "shark" is applied to many unrelated fish with a similar body shape. The Rainbow Shark is primarily a dark grayish black with bold red fins. This particular shark does best as the only shark with similarly sized fish in a planted tank with driftwood and rocks.'
     }
 )
 
@@ -1644,12 +1644,12 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Indonesia',
         diet: 'Omnivore',
-        temperature: '78 - 82&deg;F',
+        temperature: '78 - 82',
         water_parameters: 'pH 5.0-7.0; KH 5-10',
         care_level: 'Moderate',
         tank_size: '10+ gallons',
         scientific_name: 'Boraras brigittae',
-        info: 'Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places.'
+        about: 'Not recommended for new tanks. Does best in schools of five or more. Needs plenty of hiding places.'
     }
 )
 
@@ -1663,11 +1663,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: 'Striking coloration of red & white. Has a forked tail and egg shaped body. May damage live plants.'
+        about: 'Striking coloration of red & white. Has a forked tail and egg shaped body. May damage live plants.'
     }
 )
 
@@ -1681,11 +1681,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: "Ryukins have an arch behind their head. Red and white coloration is simple yet striking. May damage live plants. Make for a good beginner pond fish as they're easy to care for."
+        about: "Ryukins have an arch behind their head. Red and white coloration is simple yet striking. May damage live plants. Make for a good beginner pond fish as they're easy to care for."
     }
 )
 
@@ -1699,11 +1699,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia reticulata',
-        info: "Classic aquarium fish. A schooling fish, it does best when housed in groups of five or more of the same species. Does best in a planted community tank with no fin nippers."
+        about: "Classic aquarium fish. A schooling fish, it does best when housed in groups of five or more of the same species. Does best in a planted community tank with no fin nippers."
     }
 )
 
@@ -1717,11 +1717,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: 'Bright red "hat" with a pearly white body. Egg-shaped body. May damage live plants. Pond fish that can live in a tank of 30 gallons or more.'
+        about: 'Bright red "hat" with a pearly white body. Egg-shaped body. May damage live plants. Pond fish that can live in a tank of 30 gallons or more.'
     }
 )
 
@@ -1735,11 +1735,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Mexico: Yucatan',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia latipinna',
-        info: 'Peaceful and popular aquarium favorite. Named due to its distinctive dorsal fin. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area.'
+        about: 'Peaceful and popular aquarium favorite. Named due to its distinctive dorsal fin. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area.'
     }
 )
 
@@ -1753,11 +1753,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Amphilophus labiatus',
-        info: 'Primarily peach to yellow in coloration with some having a white belly. Tends to dig up plants, so live plants are not recommended. Should be kept with fish that can defend themselves as this particular Cichlid can be quite aggressive.'
+        about: 'Primarily peach to yellow in coloration with some having a white belly. Tends to dig up plants, so live plants are not recommended. Should be kept with fish that can defend themselves as this particular Cichlid can be quite aggressive.'
     }
 )
 
@@ -1771,11 +1771,11 @@ species.update_attributes(
         family: 'Cyprinidae',
         native_to: 'Asia',
         diet: 'Omnivore',
-        temperature: '64 - 75&deg;F',
+        temperature: '64 - 75',
         care_level: 'Easy',
         tank_size: 'Pond/ 30+ gallons',
         scientific_name: 'Carassius auratus',
-        info: 'Simply red with some hints of orange. Has a forked tail and egg shaped body. May damage live plants.'
+        about: 'Simply red with some hints of orange. Has a forked tail and egg shaped body. May damage live plants.'
     }
 )
 
@@ -1789,12 +1789,12 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'Africa, Lake Malawi',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         water_parameters: 'pH 7.5-8.5; KH 6-10',
         care_level: 'Moderate',
         tank_size: '55+ gallons',
         scientific_name: 'Copadichromis borleyi',
-        info: 'This species does well in a community tank with other peaceful mid-sized fish and several hiding spots. Comes in several color variations. Needs plenty of rocks to set up territories.'
+        about: 'This species does well in a community tank with other peaceful mid-sized fish and several hiding spots. Comes in several color variations. Needs plenty of rocks to set up territories.'
     }
 )
 
@@ -1808,11 +1808,11 @@ species.update_attributes(
         family: 'Cichlidae',
         native_to: 'South America, Amazon',
         diet: 'Carnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '55+ gallons',
         scientific_name: 'Astronotus ocellatus',
-        info: 'Tends to dig up plants, as well as rearrange rocks and gravel. Will grow to enormous size regardless of tank size. Should be kept with fish of similar size as they will eat smaller fish.'
+        about: 'Tends to dig up plants, as well as rearrange rocks and gravel. Will grow to enormous size regardless of tank size. Should be kept with fish of similar size as they will eat smaller fish.'
     }
 )
 
@@ -1826,12 +1826,12 @@ species.update_attributes(
         family: 'Characidae',
         native_to: 'South America',
         diet: 'Omnivore',
-        temperature: '68 - 78&deg;F',
+        temperature: '68 - 78',
         water_parameters: 'pH 6.0-7.5; KH 4-8',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Hyphessobrycon sweglesi',
-        info: 'Requires plenty of hiding space and swimming room. Has an intense reddish orange body coloration. Does best with tall plants, and driftwood.'
+        about: 'Requires plenty of hiding space and swimming room. Has an intense reddish orange body coloration. Does best with tall plants, and driftwood.'
     }
 )
 
@@ -1845,11 +1845,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'North, Central, and South America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Poecilia latipinna',
-        info: 'Peaceful and popular aquarium favorite. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area. They prefer a degree of salinity in their water.'
+        about: 'Peaceful and popular aquarium favorite. Best kept with other peaceful fish in a well planted tank with plenty of open swimming area. They prefer a degree of salinity in their water.'
     }
 )
 
@@ -1863,11 +1863,11 @@ species.update_attributes(
         family: 'Poeciliidae',
         native_to: 'Central America',
         diet: 'Omnivore',
-        temperature: '72 - 82&deg;F',
+        temperature: '72 - 82',
         care_level: 'Easy',
         tank_size: '10+ gallons',
         scientific_name: 'Xiphophorus helleri',
-        info: 'The most active of the common livebearers. Males have the long "sword" extending from the bottom of their tails. A well planted tank with plenty of swimming space is ideal.'
+        about: 'The most active of the common livebearers. Males have the long "sword" extending from the bottom of their tails. A well planted tank with plenty of swimming space is ideal.'
     }
 )
 

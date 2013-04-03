@@ -1,9 +1,15 @@
 <section class="info-height">
   <b>Water type:</b> <%= species.water_type %><br>
   <b>Temperament:</b> <%= species.temperament %><br>
-  <b>Adult size:</b> <%= ("up to #{sprintf("%g", species.adult_size)}&quot;").html_safe %><br>
-  <% species.info.each do |name, value| %>
-    <b><%= name.to_s.humanize %>:</b>
-    <%= value.html_safe %><br>
-  <% end %>
+  <b>Adult size:</b> <%= ("up to #{sprintf("%g", species.adult_size)}") %>&quot;<br>
+  <% if species.family.present? %><b>Family:</b> <%= species.family %><br><% end %>
+  <% if species.native_to.present? %><b>Native to:</b> <%= species.native_to %><br><% end %>
+  <% if species.diet.present? %><b>Diet:</b> <%= species.diet %><br><% end %>
+  <% if species.water_current.present? %><b>Water current:</b> <%= species.water_current %><br><% end %>
+  <% if species.temperature.present? %><b>Temperature:</b> <%= species.temperature %>&deg;F<br><% end %>
+  <% if species.water_parameters.present? %><b>Water parameters:</b> <%= species.water_parameters %><br><% end %>
+  <% if species.care_level.present? %><b>Care level:</b> <%= species.care_level %><br><% end %>
+  <% if species.tank_size.present? %><b>Tank size:</b> <%= species.tank_size %><br><% end %>
+  <% if species.scientific_name.present? %><b>Scientific name:</b> <%= species.scientific_name %><br><% end %>
+  <% if species.about.present? %><b>About:</b> <%= species.about %><br><% end %>
 </section>
