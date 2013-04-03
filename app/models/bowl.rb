@@ -1,5 +1,5 @@
 class Bowl < ActiveRecord::Base
-  attr_accessible :name, :user_id, :size, :temperature, :water_type, :fish_type, :avatar, :remove_avatar, :species_ids, :occupancies_attributes
+  attr_accessible :name, :size, :temperature, :water_type, :fish_type, :avatar, :remove_avatar, :species_ids, :occupancies_attributes
 
   belongs_to :user
   has_many :water_health_tests, dependent: :destroy

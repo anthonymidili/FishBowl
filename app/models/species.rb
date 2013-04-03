@@ -1,7 +1,7 @@
 class Species < ActiveRecord::Base
   attr_accessible :name, :image, :water_type, :temperament, :adult_size, :info, :family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about
 
-  has_many :occupancies
+  has_many :occupancies, dependent: :destroy
   has_many :bowls, through: :occupancies
 
   store :info, accessors: [:family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about]
@@ -10,7 +10,7 @@ class Species < ActiveRecord::Base
   validates :image, presence: true
   validates :water_type, presence: true
   validates :temperament, presence: true
-  validates :adult_size, presence: true
+  validates :adult_size, presence: true, numericality: true
   validates :info, presence: true
 
   default_scope order: 'species.name ASC'
