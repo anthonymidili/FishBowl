@@ -15,4 +15,15 @@
       <% end %>
     </td>
   </tr>
+  <tr>
+    <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
+    <td colspan="6">hi there, what happens here?</td>
+    <td class="center">
+      <%= link_to [@bowl, water_health_test],
+                  confirm: 'Are you sure? This will permanently delete your water health test!',
+                  method: :delete do %>
+        <i class="icon-remove"></i>
+      <% end %>
+    </td>
+  </tr>
 <% end %>
