@@ -18,5 +18,5 @@ class Species < ActiveRecord::Base
   default_scope order: 'species.name ASC'
 
   scope :by_bowl_water_type, lambda { |water_type| where('water_type = ?', water_type) }
-  scope :all_but_shown, lambda { |species_ids| where('id NOT IN (?)', (species_ids.blank? ? '' : species_ids)) }
+  scope :all_but_shown, lambda { |species_ids| where('id NOT IN (?)', (species_ids.blank? ? 0 : species_ids)) }
 end
