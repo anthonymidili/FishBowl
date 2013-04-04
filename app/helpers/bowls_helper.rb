@@ -12,11 +12,11 @@ module BowlsHelper
   end
 
   def count_species(bowl)
-    bowl.occupancies.map(&:total_occupants).compact.sum
+    bowl.occupancies.sum(&:total_occupants)
   end
 
   def species_total_length(bowl)
-    @species_total_length ||= sprintf("%g", bowl.occupancies.map(&:total_length_in_inches).compact.sum)
+    @species_total_length ||= sprintf("%g", bowl.occupancies.sum(&:total_length_in_inches))
   end
 
   def crowded?(bowl)

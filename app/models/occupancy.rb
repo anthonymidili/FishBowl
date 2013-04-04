@@ -12,6 +12,6 @@ class Occupancy < ActiveRecord::Base
   end
 
   def total_length_in_inches
-    self.species.present? ? self.amount * self.species.adult_size : 0
+    self.amount * self.species.adult_size if self.persisted?
   end
 end
