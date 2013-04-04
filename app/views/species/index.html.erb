@@ -13,7 +13,7 @@
               <i class="icon-remove"></i>
             <% end %>
           </div>
-          <%= image_tag("default_species.jpg") %>
+          <%= image_tag(default_or_image(species)) %>
           <h4><em><%= species.name %></em></h4>
         </div>
         <%= render species %>

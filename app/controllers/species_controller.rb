@@ -5,10 +5,6 @@ class SpeciesController < ApplicationController
     @species = current_user.custom_species.all
   end
 
-  def show
-    @species = current_user.custom_species.find(params[:id])
-  end
-
   def new
     @species = current_user.custom_species.new
   end
