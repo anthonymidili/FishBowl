@@ -1,5 +1,9 @@
 module SpeciesHelper
-  def default_or_image(species)
-    species.avatar_url(:thumb) || "default_species.jpg"
+  def default_or_species_avatar(species)
+    if species.avatar.present?
+      species.avatar_url(:thumb)
+    else
+      species.image || "default_species.jpg"
+    end
   end
 end

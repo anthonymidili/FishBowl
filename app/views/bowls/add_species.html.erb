@@ -16,7 +16,7 @@
       <li class="span4">
         <div class="thumbnail">
           <div class="add-thumbnail-height">
-            <%= image_tag(species.image) %>
+            <div class="center"><%= image_tag(default_or_species_avatar(species)) %></div>
             <div class="checkbox">
               <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
               <h4><em><%= species.name %></em></h4>

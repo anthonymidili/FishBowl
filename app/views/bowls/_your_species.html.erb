@@ -30,7 +30,7 @@
                         <i class="icon-remove"></i>
                       <% end %>
                     </div>
-                    <%= image_tag(occupancy_builder.object.species.image) %>
+                    <div class="center"><%= image_tag(default_or_species_avatar(occupancy_builder.object.species)) %></div>
                     <h4><em><%= occupancy_builder.object.species.name %></em></h4>
                     <div class="control-group form-inline">
                       <%= occupancy_builder.label :amount %>

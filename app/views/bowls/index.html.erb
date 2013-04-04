@@ -7,11 +7,10 @@
     <li class="span6">
       <div class="thumbnail">
         <h3><%= link_to bowl.name, bowl %></h3>
-        <p>
-          <%= link_to image_tag(default_or_avatar(bowl),
-                                alt: bowl.name,
-                                class: "thumbnail img-polaroid"), bowl %>
-        </p>
+        <div class="center">
+          <%= link_to image_tag(default_or_bowl_avatar(bowl),
+                                alt: bowl.name), bowl %>
+        </div>
         <p>
           <%= content_tag :div, "",
                            id: "results_chart_#{bowl.id}",

@@ -13,7 +13,7 @@
     <div class="row">
       <div class="span4">
         <h3><%= link_to "Bowl Info", edit_bowl_path(@bowl) %></h3>
-        <p><%= link_to image_tag(default_or_avatar(@bowl),
+        <p><%= link_to image_tag(default_or_bowl_avatar(@bowl),
                                  alt: @bowl.name,
                                  class: "thumbnail img-polaroid"), edit_bowl_path(@bowl) %></p><br>
         <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p>

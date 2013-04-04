@@ -10,7 +10,7 @@
     <li class="span4">
       <div class="thumbnail">
         <div class="your-species-height">
-          <%= link_to 'Edit', edit_species_path(species) %>
+          <div class="pull-left"><%= link_to 'Edit', edit_species_path(species) %></div>
           <div class="pull-right">
             <%= link_to species,
                         confirm: "Are you sure you want to remove this species from your list?",
@@ -18,7 +18,7 @@
               <i class="icon-remove"></i>
             <% end %>
           </div>
-          <%= image_tag(default_or_image(species)) %>
+          <div class="center"><%= image_tag(default_or_species_avatar(species)) %></div>
           <h4><em><%= species.name %></em></h4>
         </div>
         <%= render species %>

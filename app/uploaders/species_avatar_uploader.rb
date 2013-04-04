@@ -9,6 +9,6 @@ class SpeciesAvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_limit => [300, 300]
+    process :resize_to_limit => [280, 280]
   end
 end
