@@ -8,10 +8,10 @@ class Occupancy < ActiveRecord::Base
   validates :species_id, presence: true
 
   def total_occupants
-    self.amount if self.persisted?
+    self.amount
   end
 
   def total_length_in_inches
-    self.amount * self.species.adult_size if self.persisted?
+    self.amount * self.species.adult_size
   end
 end

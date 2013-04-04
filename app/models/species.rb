@@ -1,10 +1,10 @@
 class Species < ActiveRecord::Base
-  attr_accessible :name, :image, :water_type, :temperament, :adult_size, :info, :family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about
+  attr_accessible :name, :image, :water_type, :temperament, :adult_size, :info, :family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about, :created_by_id
 
   has_many :occupancies, dependent: :destroy
   has_many :bowls, through: :occupancies
 
-  belongs_to :created_by, foreign_key: :created_by_id, class_name: 'User'
+  belongs_to :created_by, class_name: 'User'
 
   store :info, accessors: [:family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about]
 
