@@ -1,5 +1,5 @@
 class WaterHealthTest < ActiveRecord::Base
-  attr_accessible :ammonia, :nitrate, :nitrite, :hardness, :alkalinity, :ph
+  attr_accessible :ammonia, :nitrate, :nitrite, :hardness, :alkalinity, :ph, :bowl_id
 
   belongs_to :bowl
 
