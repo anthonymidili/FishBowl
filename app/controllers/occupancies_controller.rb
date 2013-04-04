@@ -1,7 +1,7 @@
 class OccupanciesController < ApplicationController
   def create
     @bowl = current_user.bowls.find(params[:bowl_id])
-    @occupancy = @bowl.occupancies.new(params[:occupancy])
+    @occupancy = @bowl.occupancies.build(params[:occupancy])
     if @occupancy.save
       redirect_to @bowl, notice: "Added species to list."
     else

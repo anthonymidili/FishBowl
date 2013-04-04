@@ -16,8 +16,4 @@ class Bowl < ActiveRecord::Base
   validates :temperature, presence: true, numericality: true
   validates :water_type, presence: true
   validates :fish_type, presence: true
-
-  def total_occupants
-    self.occupancies.map(&:amount).compact.sum
-  end
 end

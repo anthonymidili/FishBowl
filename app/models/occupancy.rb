@@ -7,7 +7,11 @@ class Occupancy < ActiveRecord::Base
   validates :bowl_id, presence: true
   validates :species_id, presence: true
 
+  def total_occupants
+    self.amount if self.persisted?
+  end
+
   def total_length_in_inches
-    self.amount * self.species.adult_size
+    self.species.present? ? self.amount * self.species.adult_size : 0
   end
 end

@@ -22,26 +22,28 @@
       <div class="span12">
         <ul class="thumbnails">
           <%= f.fields_for :occupancies do |occupancy_builder| %>
-            <li class="span4">
-              <div class="thumbnail">
-                <div class="your-thumbnail-height">
-                  <div class="pull-right">
-                    <%= link_to [@bowl, occupancy_builder.object],
-                                confirm: "Are you sure you want to remove this species from your list?",
-                                method: :delete do %>
-                      <i class="icon-remove"></i>
-                    <% end %>
+            <% if occupancy_builder.object.persisted? %>
+              <li class="span4">
+                <div class="thumbnail">
+                  <div class="your-thumbnail-height">
+                    <div class="pull-right">
+                      <%= link_to [@bowl, occupancy_builder.object],
+                                  confirm: "Are you sure you want to remove this species from your list?",
+                                  method: :delete do %>
+                        <i class="icon-remove"></i>
+                      <% end %>
+                    </div>
+                    <%= image_tag(occupancy_builder.object.species.image) %>
+                    <h4><em><%= occupancy_builder.object.species.name %></em></h4>
+                    <div class="control-group form-inline">
+                      <%= occupancy_builder.label :amount %>
+                      <%= occupancy_builder.number_field :amount, class: 'span1' %>
+                    </div>
                   </div>
-                  <%= image_tag(occupancy_builder.object.species.image) %>
-                  <h4><em><%=occupancy_builder.object.species.name %></em></h4>
-                  <div class="control-group form-inline">
-                    <%= occupancy_builder.label :amount %>
-                    <%= occupancy_builder.number_field :amount, class: 'span1' %>
-                  </div>
+                  <%= render occupancy_builder.object.species %>
                 </div>
-                <%= render occupancy_builder.object.species %>
-              </div>
-            </li>
+              </li>
+            <% end %>
           <% end %>
         </ul>
       </div>

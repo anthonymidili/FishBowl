@@ -11,6 +11,10 @@ module BowlsHelper
     bowl.water_health_tests.page(params[:page]).per(10)
   end
 
+  def count_species(bowl)
+    bowl.occupancies.map(&:total_occupants).compact.sum
+  end
+
   def species_total_length(bowl)
     @species_total_length ||= sprintf("%g", bowl.occupancies.map(&:total_length_in_inches).compact.sum)
   end
