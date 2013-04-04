@@ -1,4 +1,4 @@
-class SpeciesImageUploader < CarrierWave::Uploader::Base
+class SpeciesAvatarUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
   storage :fog if Rails.env.production?

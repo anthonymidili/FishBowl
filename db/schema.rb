@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404171605) do
+ActiveRecord::Schema.define(:version => 20130404204938) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20130404171605) do
     t.string   "temperament"
     t.integer  "created_by_id"
     t.decimal  "adult_size",    :precision => 6, :scale => 2
+    t.string   "avatar"
   end
 
   create_table "users", :force => true do |t|

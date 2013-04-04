@@ -1,5 +1,10 @@
 <h2><%= "#{current_user.name}'s Custom Species" %></h2>
 
+<p>
+  <%= link_to 'Bowls Directory', bowls_path %> |
+  <%= link_to 'Back', :back %>
+</p>
+
 <ul class="thumbnails">
   <% @species.each do |species| %>
     <li class="span4">

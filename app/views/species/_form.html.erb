@@ -62,12 +62,12 @@
     <%= f.text_area :about, class: 'span6', rows: '5' %>
   </div>
   <div class="control-group">
-    <%= f.label :image, "Upload Image for your Species Avatar" %>
-    <%= f.file_field :image %>
+    <%= f.label :avatar, "Upload Image for your Species Avatar" %>
+    <%= f.file_field :avatar %>
   </div>
   <div class="control-group">
     <label class="checkbox">
-      <%= f.check_box :remove_image %> Check box to remove Species Avatar
+      <%= f.check_box :remove_avatar %> Check box to remove Species Avatar
     </label>
   </div>
   <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>

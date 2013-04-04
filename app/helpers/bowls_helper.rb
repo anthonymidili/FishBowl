@@ -7,10 +7,6 @@ module BowlsHelper
     bowl.avatar_url(:thumb) || "cool_fish_bowl.jpg"
   end
 
-  def default_or_image(species)
-    species.image_url(:thumb) || "default_species.jpg"
-  end
-
   def paginate_test_results(bowl)
     bowl.water_health_tests.page(params[:page]).per(10)
   end

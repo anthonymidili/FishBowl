@@ -6,6 +6,8 @@
   <%= link_to "#{@bowl.name} Fish Bowl", @bowl %>
 </p>
 
+<p>Didn't see your species? <%= link_to 'Create your own!', species_index_path %></p>
+
 <%= form_for @bowl do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <%= hidden_field_tag "bowl[species_ids][]", nil%>
