@@ -10,7 +10,6 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :bowls, dependent: :destroy
-  has_many :custom_species, class_name: 'Species'
 
   validates :name, presence: true
 end
