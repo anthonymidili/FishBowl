@@ -9,11 +9,9 @@ class Species < ActiveRecord::Base
   store :info, accessors: [:family, :native_to, :diet, :temperature, :care_level, :tank_size, :scientific_name, :water_current, :water_parameters, :about]
 
   validates :name, presence: true
-  validates :image, presence: true
   validates :water_type, presence: true
   validates :temperament, presence: true
   validates :adult_size, presence: true, numericality: true
-  validates :info, presence: true
 
   default_scope order: 'species.name ASC'
 

@@ -1,0 +1,65 @@
+<%= form_for @species, html: {multipart: true} do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="control-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div class="control-group">
+    <%= f.label :water_type %>
+    <%= f.select :water_type,
+                 'Freshwater'    => 'Freshwater',
+                 'Saltwater'     => 'Saltwater' %>
+  </div>
+  <div class="control-group">
+    <%= f.label :adult_size %>
+    <%= f.text_field :adult_size %>
+  </div>
+  <div class="control-group">
+    <%= f.label :temperament %>
+    <%= f.select :temperament,
+                 'Community'  => 'Community',
+                 'Semi-aggressive' => 'Semi-aggressive',
+                 'Aggressive'      => 'Aggressive' %>
+  </div>
+  <div class="control-group">
+    <%= f.label :family %>
+    <%= f.text_field :family %>
+  </div>
+  <div class="control-group">
+    <%= f.label :native_to %>
+    <%= f.text_field :native_to %>
+  </div>
+  <div class="control-group">
+    <%= f.label :diet %>
+    <%= f.text_field :diet %>
+  </div>
+  <div class="control-group">
+    <%= f.label :water_current %>
+    <%= f.text_field :water_current %>
+  </div>
+  <div class="control-group">
+    <%= f.label :temperature %>
+    <%= f.text_field :temperature %>
+  </div>
+  <div class="control-group">
+    <%= f.label :water_parameters %>
+    <%= f.text_field :water_parameters %>
+  </div>
+  <div class="control-group">
+    <%= f.label :care_level %>
+    <%= f.text_field :care_level %>
+  </div>
+  <div class="control-group">
+    <%= f.label :tank_size %>
+    <%= f.text_field :tank_size %>
+  </div>
+  <div class="control-group">
+    <%= f.label :scientific_name %>
+    <%= f.text_field :scientific_name %>
+  </div>
+  <div class="control-group">
+    <%= f.label :about %>
+    <%= f.text_area :about, class: 'span6', rows: '5' %>
+  </div>
+  <div class="control-group"><%= f.submit class: "btn btn-primary" %></div>
+<% end %>

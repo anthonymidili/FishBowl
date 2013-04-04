@@ -11,6 +11,8 @@ FishBowl::Application.routes.draw do
     resources :occupancies, only: [:create, :destroy]
   end
 
+  resources :species, except: [:show]
+
   root :to => 'welcome#index'
 
   delete 'bowls/:bowl_id/occupancy/:id' => 'bowls#destroy_occupancy', as: :destroy_occupancy

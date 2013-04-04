@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :bowls, dependent: :destroy
-  has_many :custom_species, foreign_key: 'created_by_id', class_name: 'Species'
+  has_many :custom_species, foreign_key: 'created_by_id', class_name: 'Species', dependent: :destroy
 
   validates :name, presence: true
 end

@@ -1,4 +1,6 @@
 class OccupanciesController < ApplicationController
+  before_filter :authenticate_user!
+
   def create
     @bowl = current_user.bowls.find(params[:bowl_id])
     @occupancy = @bowl.occupancies.new(params[:occupancy])
