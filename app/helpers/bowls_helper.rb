@@ -11,4 +11,11 @@ module BowlsHelper
     bowl.water_health_tests.page(params[:page]).per(10)
   end
 
+  def species_total_length(bowl)
+    @species_total_length ||= sprintf("%g", bowl.occupancies.map(&:total_length_in_inches).compact.sum)
+  end
+
+  def crowded?(bowl)
+    bowl.size < species_total_length(bowl).to_f ? "alert-text" : "nil"
+  end
 end
