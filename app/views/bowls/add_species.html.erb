@@ -12,7 +12,7 @@
   <%= render 'shared/error_messages', object: f.object %>
   <%= hidden_field_tag "bowl[species_ids][]", nil%>
   <ul class="thumbnails">
-    <% Species.by_bowl_water_type(f.object.water_type).each do |species| %>
+    <% Species.by_custom_species(current_user.id).by_bowl_water_type(f.object.water_type).each do |species| %>
       <li class="span4">
         <div class="thumbnail">
           <div class="add-thumbnail-height">
