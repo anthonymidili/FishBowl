@@ -8,7 +8,6 @@ class BowlsController < ApplicationController
   def show
     @bowl = current_user.bowls.find(params[:id])
     @water_health_tests = @bowl.water_health_tests.page(params[:page]).per(10)
-    @species = @bowl.species.build
     @occupancy = @bowl.occupancies.build
   end
 
