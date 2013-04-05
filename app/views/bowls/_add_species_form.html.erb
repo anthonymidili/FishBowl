@@ -7,12 +7,12 @@
         <div class="thumbnail">
           <div class="add-thumbnail-height">
             <div class="center">
-              <label for="clickable"><%= image_tag(default_or_species_avatar(species)) %></label>
+              <label for=<%= species.id %>><%= image_tag(default_or_species_avatar(species)) %></label>
             </div>
-            <label for="clickable" class="checkbox">
+            <label class="checkbox" for=<%= species.id %>>
               <%= check_box_tag "bowl[species_ids][]",
                                 species.id, @bowl.species_ids.include?(species.id),
-                                name: 'clickable', id: 'clickable' %>
+                                id: species.id %>
               <h4><em><%= species.name %></em></h4>
             </label>
           </div>
