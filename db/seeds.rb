@@ -1871,3 +1871,166 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Red Turquoise Discus')
+species.update_attributes(
+    image: 'freshwater/red_turquoise_discus.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Amazon River Basin',
+        diet: 'Carnivore',
+        temperature: '80 - 84',
+        care_level: 'Difficult',
+        tank_size: '30+ gallons',
+        scientific_name: 'Symphysodon spp',
+        about: 'Has a round and laterally compressed body, making it suitable for gliding through tall aquarium grasses. Provide plenty of substrate, rocks and hiding spots, especially plants. Requires soft water.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Wag Swordtail')
+species.update_attributes(
+    image: 'freshwater/red_wag_swordtail.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central America',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Xiphophorus helleri',
+        about: 'The most active of the common livebearers. Males have the long "sword" extending from the bottom of their tails. A well planted tank with plenty of swimming space is ideal.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Zebra Cichlid')
+species.update_attributes(
+    image: 'freshwater/red_zebra_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa, Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Metriaclima estherae',
+        about: 'Most notable for the lack of striping that is seen on other varieties. Can be aggressive requiring plenty of room to establish its territory. Best kept with similar-sized fish or in pairs.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Red Zebra Cichlid')
+species.update_attributes(
+    image: 'freshwater/red_zebra_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Thailand',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Moderate',
+        tank_size: '20+ gallons',
+        scientific_name: 'Epalzeorhynchos bicolor',
+        about: 'The term "shark" is applied to many unrelated fish with a similar body shape. The Redtail Shark is primarily a deep black color with a brilliantly contrasted red tail and white tip on the dorsal fin. This particular shark does best as the only shark with similarly sized fish in a planted tank with driftwood and rocks.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Rosy Barb')
+species.update_attributes(
+    image: 'freshwater/rosy_barb.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Sri-Lanka, India',
+        diet: 'Omnivore',
+        temperature: '72 - 79',
+        water_parameters: 'pH 6.0-7.0; KH 4-10',
+        care_level: 'Easy',
+        tank_size: '20+ gallons',
+        scientific_name: 'Barbus conchonius/ Puntius conchonius',
+        about: 'Prefers rocks and driftwood, while having horizontal space to swim back and forth in a tank while schooling. In smaller than recommended tanks, the Rosy Barb tends to be a bit nippy towards other fish. Does best in groups of three or more.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Serpae Tetra')
+species.update_attributes(
+    image: 'freshwater/serpae_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hyphessobrycon eques/ Hyphessobrycon callistus/ Hyphessobrycon serpae',
+        about: 'Brightly colored fish that add movement and color to any aquarium. Can be semi-aggressive and tends to nip at the fins of tank mates if the school is not large enough. A schooling fish that does best when housed in groups of five or more of the same species.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Silver Tip Tetra')
+species.update_attributes(
+    image: 'freshwater/silver_tip_tetra.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2,
+    info: {
+        family: 'Characidae',
+        native_to: 'South America, Brazil',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Hasemania nana',
+        about: 'Silver Tip Tetras are a generally non-aggressive schooling fish but have been known to nip fins. Best kept in a planted tank, these brightly colored fish add movement and color to any aquarium.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Silver Veiled Angelfish')
+species.update_attributes(
+    image: 'freshwater/silver_veiled_angelfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '75 - 82',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterophyllum sp.',
+        about: 'Long, flowing fins distinguish veiled angelfish from other types of freshwater angels. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Snow White Socolofi')
+species.update_attributes(
+    image: 'freshwater/snow_white_socolofi.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 6,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa, Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pseudotropheus socolofi',
+        about: 'Should be kept with fish that have similar levels of aggression, and not with highly aggressive fish. A great addition to a "Mbuna" or Cichlid Rock tank. Prefers a tank with many piles of rocks used as hiding places.'
+    }
+)
+
