@@ -9,7 +9,8 @@
         <h3><%= link_to bowl.name, bowl %></h3>
         <div class="center">
           <%= link_to image_tag(default_or_bowl_avatar(bowl),
-                                alt: bowl.name), bowl %>
+                                alt: bowl.name,
+                                class: 'picture-frame'), bowl %>
         </div>
         <p>
           <%= content_tag :div, "",

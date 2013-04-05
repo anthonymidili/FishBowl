@@ -36,6 +36,15 @@ section {
   padding-top: 20px;
   border-top: 1px solid #999;
 }
+
+.picture-frame {
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  transition: all 0.2s ease-in-out;
+}
+
 /* species */
 
 .your-thumbnail-height {

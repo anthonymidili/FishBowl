@@ -4,6 +4,8 @@
   <%= link_to 'Bowls Directory', bowls_path %>
 </p>
 
+<p><%= link_to "Create New Species", new_species_path, class: "btn btn-primary" %></p>
+
 <ul class="thumbnails">
   <% @species.each do |species| %>
     <li class="span4">
@@ -12,9 +14,9 @@
           <div class="pull-left"><%= link_to 'Edit', edit_species_path(species) %></div>
           <div class="pull-right">
             <%= link_to species,
-                        confirm: "Are you sure you want to remove this species from your list?",
+                        confirm: "Are you sure you want to permanently delete this species? This will remove your custom species from ALL of your Fish Bowls!",
                         method: :delete do %>
-              <i class="icon-remove"></i>
+              Delete <i class="icon-remove"></i>
             <% end %>
           </div>
           <div class="center"><%= image_tag(default_or_species_avatar(species)) %></div>
@@ -25,5 +27,3 @@
     </li>
   <% end %>
 </ul>
-
-<p><%= link_to "Create Species", new_species_path, class: "btn btn-primary" %></p>
