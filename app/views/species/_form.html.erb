@@ -7,17 +7,20 @@
   <div class="control-group">
     <%= f.label :water_type %>
     <%= f.select :water_type,
-                 'Freshwater'    => 'Freshwater',
-                 'Saltwater'     => 'Saltwater' %>
+                 'Freshwater' => 'Freshwater',
+                 'Saltwater'  => 'Saltwater' %>
   </div>
   <div class="control-group">
     <%= f.label :adult_size %>
-    <%= f.text_field :adult_size %>
+    <div class="input-append">
+      <%= f.text_field :adult_size %>
+      <span class="add-on">&quot;</span>
+    </div>
   </div>
   <div class="control-group">
     <%= f.label :temperament %>
     <%= f.select :temperament,
-                 'Community'  => 'Community',
+                 'Community'       => 'Community',
                  'Semi-aggressive' => 'Semi-aggressive',
                  'Aggressive'      => 'Aggressive' %>
   </div>
@@ -31,7 +34,10 @@
   </div>
   <div class="control-group">
     <%= f.label :diet %>
-    <%= f.text_field :diet %>
+    <%= f.select :diet,
+                 'Herbivore' => 'Herbivore',
+                 'Omnivore'  => 'Omnivore',
+                 'Carnivore' => 'Carnivore' %>
   </div>
   <div class="control-group">
     <%= f.label :water_current %>
@@ -39,7 +45,10 @@
   </div>
   <div class="control-group">
     <%= f.label :temperature %>
-    <%= f.text_field :temperature %>
+    <div class="input-append">
+      <%= f.text_field :temperature %>
+      <span class="add-on">&deg;F</span>
+    </div>
   </div>
   <div class="control-group">
     <%= f.label :water_parameters %>
@@ -47,7 +56,10 @@
   </div>
   <div class="control-group">
     <%= f.label :care_level %>
-    <%= f.text_field :care_level %>
+    <%= f.select :care_level,
+                     'Easy'      => 'Easy',
+                     'Moderate'  => 'Moderate',
+                     'Difficult' => 'Difficult' %>
   </div>
   <div class="control-group">
     <%= f.label :tank_size %>
@@ -59,7 +71,8 @@
   </div>
   <div class="control-group">
     <%= f.label :about %>
-    <%= f.text_area :about, class: 'span6', rows: '5' %>
+    <%= f.text_area :about, class: 'span6', rows: '5',
+                    placeholder: "Feel free to add a few lines of information about your custom species..." %>
   </div>
   <div class="control-group">
     <%= f.label :avatar, "Upload Image for your Species Avatar" %>
