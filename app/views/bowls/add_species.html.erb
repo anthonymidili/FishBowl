@@ -1,33 +1,16 @@
 <h2><%= "#{current_user.name}," %></h2>
-<h3><%= "Select Your #{@bowl.water_type} Species In #{@bowl.name} Fish Bowl" %></h3>
-
+<h3>
+  <%= "Select Your #{@bowl.water_type} Species In #{@bowl.name} Fish Bowl" %>
+  <small><%= link_to 'or create your own!', species_index_path %></small>
+</h3>
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
   <%= link_to "#{@bowl.name} Fish Bowl", @bowl %>
 </p>
 
-<p>Didn't see your species? <%= link_to 'Create your own!', species_index_path %></p>
+<%= render 'add_species_form' %>
 
-<%= form_for @bowl do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
-  <%= hidden_field_tag "bowl[species_ids][]", nil%>
-  <ul class="thumbnails">
-    <% Species.by_custom_species(current_user.id).by_bowl_water_type(f.object.water_type).each do |species| %>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="add-thumbnail-height">
-            <div class="center"><%= image_tag(default_or_species_avatar(species)) %></div>
-            <div class="checkbox">
-              <%= check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id) %>
-              <h4><em><%= species.name %></em></h4>
-            </div>
-          </div>
-          <%= render species %>
-        </div>
-      </li>
-    <% end %>
-  </ul>
-  <div class="fixed-button"><%= f.submit "Update Selection", class: "btn btn-primary" %></div>
-<% end %>
-
-<p>More Species To Select From Coming Soon.</p>
+<div class="center">
+  <p>Didn't see your species? <%= link_to 'Create your own!', species_index_path %></p> 
+  <p>More Species To Select From Coming Soon.</p>
+</div>
