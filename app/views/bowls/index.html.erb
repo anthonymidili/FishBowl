@@ -6,7 +6,9 @@
   <% @bowls.each do |bowl| %>
     <li class="span6">
       <div class="thumbnail">
-        <h3><%= link_to bowl.name, bowl %></h3>
+        <%= link_to bowl do %>
+          <h3><%= bowl.name %><small><%= " - #{bowl.water_type}" %></small></h3>
+        <% end %>
         <div class="center">
           <%= link_to image_tag(default_or_bowl_avatar(bowl),
                                 alt: bowl.name,

@@ -1,8 +1,8 @@
 <section class="info-height">
   <b>Water type:</b> <%= species.water_type %><br>
+  <% if species.reef_safe.present? %><b>Reef Safe:</b> <%= species.reef_safe %><br><% end %>
   <b>Temperament:</b> <%= species.temperament %><br>
   <b>Adult size:</b> <%= ("up to #{sprintf("%g", species.adult_size)}") %>&quot;<br>
-  <% if species.reef_safe.present? %><b>Reef Safe:</b> <%= species.reef_safe %><br><% end %>
   <% if species.family.present? %><b>Family:</b> <%= species.family %><br><% end %>
   <% if species.native_to.present? %><b>Native to:</b> <%= species.native_to %><br><% end %>
   <% if species.diet.present? %><b>Diet:</b> <%= species.diet %><br><% end %>
