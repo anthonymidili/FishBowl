@@ -11,6 +11,13 @@
                  'Saltwater'  => 'Saltwater' %>
   </div>
   <div class="control-group">
+    <%= f.label :reef_safe %>
+    <%= f.select :reef_safe,
+                 'Select One' => '',
+                 'Yes' => 'Yes',
+                 'No'  => 'No' %>
+  </div>
+  <div class="control-group">
     <%= f.label :adult_size %>
     <div class="input-append">
       <%= f.text_field :adult_size %>

@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Freshwater Seeds
+
 species = Species.find_or_create_by_name(name: 'Blue Gourami')
 species.update_attributes(
     image: 'freshwater/blue_gourami.jpg',
@@ -2198,3 +2200,26 @@ species.update_attributes(
         about: 'Great fish for beginning aquarists. Active schooling fish. Does best in aquariums with other community fish, plants to hide in and plenty of space to swim.'
     }
 )
+
+# Saltwater Seeds
+
+species = Species.find_or_create_by_name(name: '8 Line Fairy Wrasse')
+species.update_attributes(
+    image: 'saltwater/8_line_fairy_wrasse.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Aggressive',
+    adult_size: 5,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Labridae',
+        native_to: 'Hawaii',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pseudocheilinus octotaenia',
+        about: 'Easy to feed and hardy. One of the most aggressive wrasses. Does best with fish such as puffers, filefish, tangs, angels, and butterflies.'
+    }
+)
+
