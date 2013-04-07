@@ -2034,3 +2034,167 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: "Sterba's Cory")
+species.update_attributes(
+    image: 'freshwater/sterbas_cory.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Callichthyidae',
+        native_to: 'Amazon River',
+        diet: 'Omnivore',
+        temperature: '72 - 79',
+        water_parameters: 'pH 5.8-7.0; KH 2-12',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Corydoras sterbai',
+        about: "Peaceful scavenger. Smooth substrate is a necessity due to the Cory's whiskers, which are also known as barbels. As it is somewhat sensitive to light, please provide the Sterba's Cory with plenty of plants, caves, and any other hiding places possible. Does best in groups of six or more."
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Sunrise Guppy')
+species.update_attributes(
+    image: 'freshwater/sunrise_guppy.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia reticulata',
+        about: 'Classic aquarium fish. A schooling fish, it does best when housed in groups of five or more of the same species. Does best in a planted community tank with no fin nippers.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Tiger Barb')
+species.update_attributes(
+    image: 'freshwater/tiger_barb.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'Borneo, Indonesia, Sumatra',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Barbus tetrazona',
+        about: 'Recommended for slightly more advanced beginning aquarists. This active fish is best kept in schools of five or more, preferably with odd numbers to prevent pairing. A well planted tank is recommended. Will nip at the fins of larger, slower moving fish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Tiger Oscar Cichlid')
+species.update_attributes(
+    image: 'freshwater/tiger_oscar_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America: Amazon',
+        diet: 'Carnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Astronotus ocellatus',
+        about: 'Can learn to recognize their mate, as well as their owner. Tends to dig up plants, as well as rearrange rocks and gravel. Should be kept with fish of similar size as they will eat smaller fish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Tri Color Angelfish')
+species.update_attributes(
+    image: 'freshwater/tri_color_angelfish.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'South America',
+        diet: 'Omnivore',
+        temperature: '75 - 82',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterophyllum sp.',
+        about: 'Does best in large tanks in groups of 5 or more. Needs a variety of foods to thrive. A planted tank with plenty of swimming space is recommended.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Twinbar Solar Flare Swordtail')
+species.update_attributes(
+    image: 'freshwater/twinbar_solar_flare_swordtail.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central America',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        water_parameters: 'pH 7.0-8.3; KH 12-30',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Xiphophorus helleri',
+        about: 'Female Swordtails lack the long "sword" that male swordtails have. Well suited for community tanks. Come in a variety of patterns and colorations.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Venustus Cichlid')
+species.update_attributes(
+    image: 'freshwater/venustus_cichlid.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 9,
+    info: {
+        family: 'Cichlidae',
+        native_to: 'Africa: Lake Malawi',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        water_parameters: 'pH 7.8-8.5; KH 10-15',
+        care_level: 'Moderate',
+        tank_size: '100+ gallons',
+        scientific_name: 'Haplochromis venustus',
+        about: 'Likes to play dead. Has a unique spotted coloration. Needs plenty of rocks to set up territories.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Yellow Guppy')
+species.update_attributes(
+    image: 'freshwater/yellow_guppy.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 2.5,
+    info: {
+        family: 'Poeciliidae',
+        native_to: 'Central and South America',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Poecilia reticulata',
+        about: 'A schooling fish. Does best when housed in groups of five or more of the same species. Does best in a planted community tank with no fin nippers.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Zebra Danio')
+species.update_attributes(
+    image: 'freshwater/zebra_danio.jpg',
+    water_type: 'Freshwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        family: 'Cyprinidae',
+        native_to: 'South East Asia',
+        diet: 'Omnivore',
+        temperature: '72 - 82',
+        care_level: 'Easy',
+        tank_size: '10+ gallons',
+        scientific_name: 'Brachydanio rerio',
+        about: 'Great fish for beginning aquarists. Active schooling fish. Does best in aquariums with other community fish, plants to hide in and plenty of space to swim.'
+    }
+)
