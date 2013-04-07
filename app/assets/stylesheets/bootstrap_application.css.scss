@@ -45,6 +45,11 @@ section {
   transition: all 0.2s ease-in-out;
 }
 
+.bowl-thumbnail {
+  height: 65em;
+  overflow-y: auto;
+}
+
 /* species */
 
 .your-thumbnail-height {

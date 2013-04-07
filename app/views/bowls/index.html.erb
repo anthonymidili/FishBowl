@@ -5,7 +5,7 @@
 <ul class="thumbnails">
   <% @bowls.each do |bowl| %>
     <li class="span6">
-      <div class="thumbnail">
+      <div class="thumbnail bowl-thumbnail">
         <%= link_to bowl do %>
           <h3><%= bowl.name %><small><%= " - #{bowl.water_type}" %></small></h3>
         <% end %>
