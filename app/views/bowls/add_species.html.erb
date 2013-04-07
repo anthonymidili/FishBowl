@@ -12,5 +12,5 @@
 
 <div class="center">
   <p>Didn't see your species? <%= link_to 'Create your own!', species_index_path %></p> 
-  <p>More Species To Select From Coming Soon.</p>
+  <% unless @bowl.water_type == 'Freshwater' %><p>More Species To Select From Coming Soon.</p><% end %>
 </div>

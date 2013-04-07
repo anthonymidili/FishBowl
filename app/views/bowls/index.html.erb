@@ -1,4 +1,4 @@
-<h2><%= "#{current_user.name}'s Fish #{one_or_more_bowls(@bowls)}" %></h2>
+<h2><%= "#{current_user.name}'s Fish #{('Bowl').pluralize(@bowls.count)}" %></h2>
 
 <p><%= link_to 'Create Custom Species', species_index_path %></p>
 
