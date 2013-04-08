@@ -51,9 +51,4 @@ class BowlsController < ApplicationController
   def add_species
     @bowl = current_user.bowls.find(params[:id])
   end
-
-  def update_species
-    @bowl = current_user.bowls.find(params[:id])
-    @bowl.update_attributes(params[:bowl])
-  end
 end

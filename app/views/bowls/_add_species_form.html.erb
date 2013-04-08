@@ -1,4 +1,4 @@
-<%= form_for @bowl, url: update_species_bowl_path, remote: true, html: { id: 'species_selector' } do |f| %>
+<%= form_for @bowl, remote: true, html: { id: 'species_selector' } do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <%= hidden_field_tag "bowl[species_ids][]", nil%>
   <ul class="thumbnails">
