@@ -48,7 +48,7 @@ class BowlsController < ApplicationController
     @water_health_tests = @bowl.water_health_tests.all
   end
 
-  def add_species
+  def species_list
     @bowl = current_user.bowls.find(params[:id])
   end
 end

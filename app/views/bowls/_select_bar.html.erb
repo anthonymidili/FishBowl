@@ -1,7 +1,7 @@
 <%= form_for [@bowl, @occupancy] do |f| %>
   <div class="form-inline select-bar">
-    <%= link_to "List of #{@bowl.water_type} Species", add_species_bowl_path(@bowl) %>
-    <%= f.collection_select :species_id, Species.by_custom_species(current_user.id).by_bowl_water_type(@bowl.water_type).all_but_shown(@bowl.species_ids), :id, :name, { prompt: 'Select One Species' } %>
+    <%= link_to "List of #{@bowl.water_type} Species", species_list_bowl_path(@bowl) %>
+    <%= f.collection_select :species_id, Species.all_available_to(current_user.id).by_bowl_water_type(@bowl.water_type).all_but_shown(@bowl.species_ids), :id, :name, { prompt: 'Select One Species' } %>
     <%= f.submit 'Add', class: 'btn' %>
     <%= link_to "Create Your Own Species", species_index_path %>
   </div>

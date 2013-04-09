@@ -5,7 +5,7 @@ FishBowl::Application.routes.draw do
   resources :bowls do
     member do
       get 'test_results_history'
-      get 'add_species'
+      get 'species_list'
     end
     resources :water_health_tests, only: [:index, :create, :destroy]
     resources :occupancies, only: [:create, :destroy]

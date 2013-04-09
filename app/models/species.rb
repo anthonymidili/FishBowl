@@ -17,7 +17,9 @@ class Species < ActiveRecord::Base
 
   default_scope order: 'species.name ASC'
 
-  scope :by_bowl_water_type, lambda { |water_type| where('water_type = ?', water_type) }
-  scope :by_custom_species, lambda { |user_id| where('created_by_id IS NULL OR created_by_id = ?', user_id) }
+  scope :builtin, where(created_by_id: nil)
+  scope :custom_for, lambda { |user_id| where(created_by_id: user_id) }
+  scope :all_available_to, lambda { |user_id| where(created_by_id: [ user_id, nil ]) }
+  scope :by_bowl_water_type, lambda { |water_type| where(water_type: water_type) }
   scope :all_but_shown, lambda { |species_ids| where('id NOT IN (?)', (species_ids.blank? ? 0 : species_ids)) }
 end
