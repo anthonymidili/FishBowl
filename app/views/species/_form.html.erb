@@ -4,14 +4,14 @@
     <%= f.label :name %>
     <%= f.text_field :name, autofocus: true %>
   </div>
-  <div class="control-group" id="species_water_type">
+  <div class="control-group">
     <%= f.label :water_type %>
     <%= f.select :water_type,
                  'Select One' => '',
                  'Freshwater' => 'Freshwater',
                  'Saltwater'  => 'Saltwater' %>
   </div>
-  <div class="control-group" id="species_reef_safe">
+  <div class="control-group">
     <%= f.label :reef_safe %>
     <%= f.select :reef_safe,
                  'Select One' => '',
