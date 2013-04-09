@@ -13,6 +13,4 @@ class User < ActiveRecord::Base
   has_many :custom_species, foreign_key: 'created_by_id', class_name: 'Species', dependent: :destroy
 
   validates :name, presence: true
-  
-  # scope :custom_species, where('created_by_id = ?', self.id)
 end
