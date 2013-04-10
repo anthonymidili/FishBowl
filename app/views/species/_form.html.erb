@@ -11,7 +11,7 @@
                  'Freshwater' => 'Freshwater',
                  'Saltwater'  => 'Saltwater' %>
   </div>
-  <div class="control-group">
+  <div class="control-group" <%= style="visibility: hidden" if f.object.water_type == 'Freshwater' %>>
     <%= f.label :reef_safe %>
     <%= f.select :reef_safe,
                  'Select One' => '',
