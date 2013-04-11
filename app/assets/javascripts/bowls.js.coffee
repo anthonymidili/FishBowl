@@ -1,6 +1,6 @@
 jQuery ->
-  $("[id^='edit_bowl_'] input[type='submit']").hide()
-  $("[id^='edit_bowl_'] input[type='checkbox']").click ->
+  $("[id^='add_species_'] input[type='submit']").hide()
+  $("[id^='add_species_'] input[type='checkbox']").click ->
     $(this).closest("form").submit()
 
 jQuery ->
