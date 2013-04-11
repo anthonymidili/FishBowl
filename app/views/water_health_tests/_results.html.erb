@@ -1,12 +1,13 @@
 <% @water_health_tests.each do |water_health_test| %>
   <tr>
-    <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
+    <td><%= water_health_test.created_at.strftime('%b. %d, %Y @ %I:%M%p') %></td>
     <%= ammonia_level(water_health_test.ammonia) %>
     <%= nitrate_level(water_health_test.nitrate) %>
     <%= nitrite_level(water_health_test.nitrite) %>
-    <%= hardness_level(water_health_test.hardness) if @bowl.water_type == "Freshwater" %>
+    <%= hardness_level(water_health_test.hardness) if @bowl.water_type == 'Freshwater' %>
     <%= alkalinity_level(water_health_test.alkalinity) %>
     <%= ph_level(water_health_test.ph) %>
+    <%= salinity_level(water_health_test.salinity) if @bowl.water_type == 'Saltwater' %>
     <td class="center">
       <%= link_to [@bowl, water_health_test],
                   confirm: 'Are you sure? This will permanently delete your water health test!',
@@ -17,7 +18,7 @@
   </tr>
   <!-- future event
   <tr>
-    <td><%= water_health_test.created_at.strftime("%b. %d, %Y @ %I:%M%p") %></td>
+    <td><%= water_health_test.created_at.strftime('%b. %d, %Y @ %I:%M%p') %></td>
     <td colspan="6">hi there, what happens here?</td>
     <td class="center">
       <%= link_to [@bowl, water_health_test],

@@ -15,7 +15,7 @@ module WaterHealthTestsHelper
   end
 
   def nitrate_level(level)
-    if @bowl.water_type == "Freshwater"
+    if @bowl.water_type == 'Freshwater'
       case level
         when nil
           level_nil
@@ -28,7 +28,7 @@ module WaterHealthTestsHelper
         else
           level_danger(level)
       end
-    elsif @bowl.water_type == "Saltwater"
+    elsif @bowl.water_type == 'Saltwater'
       case level
         when nil
           level_nil
@@ -62,7 +62,7 @@ module WaterHealthTestsHelper
   end
 
   def hardness_level(level)
-    if @bowl.water_type == "Freshwater"
+    if @bowl.water_type == 'Freshwater'
       case level
         when nil
           level_nil
@@ -75,13 +75,13 @@ module WaterHealthTestsHelper
         else
           raw("<td>#{level} very hard</td>")
       end
-    elsif @bowl.water_type == "Saltwater"
+    elsif @bowl.water_type == 'Saltwater'
       level_nil
     end
   end
 
   def alkalinity_level(level)
-    if @bowl.water_type == "Freshwater"
+    if @bowl.water_type == 'Freshwater'
       case level
         when nil
           level_nil
@@ -94,7 +94,7 @@ module WaterHealthTestsHelper
         else
           raw("<td class='caution'>#{level} high</td>")
       end
-    elsif @bowl.water_type == "Saltwater"
+    elsif @bowl.water_type == 'Saltwater'
       case level
         when nil
           level_nil
@@ -107,7 +107,7 @@ module WaterHealthTestsHelper
   end
 
   def ph_level(level)
-    if @bowl.water_type == "Freshwater"
+    if @bowl.water_type == 'Freshwater'
       case level
         when nil
           level_nil
@@ -118,7 +118,7 @@ module WaterHealthTestsHelper
         else
           raw("<td>#{level} alkaline</td>")
       end
-    elsif @bowl.water_type == "Saltwater"
+    elsif @bowl.water_type == 'Saltwater'
       case level
         when nil
           level_nil
@@ -131,6 +131,19 @@ module WaterHealthTestsHelper
         else
           raw("<td class='caution'>#{level} too high</td>")
       end
+    end
+  end
+
+  def salinity_level(level)
+    if @bowl.water_type == 'Saltwater'
+      case level
+        when nil
+          level_nil
+        else
+          level_ideal(level)
+      end
+    elsif @bowl.water_type == 'Freshwater'
+      level_nil
     end
   end
 

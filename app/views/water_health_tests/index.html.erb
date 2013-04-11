@@ -1,12 +1,12 @@
 <h2><%= "#{@bowl.name} Fish Bowl Water Health" %></h2>
 
 <p>
-  <%= link_to "Bowl Directory", bowls_path %> |
-  <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %> |
-  <%= link_to "Graph Test Results History", test_results_history_bowl_path(@bowl) %>
+  <%= link_to 'Bowl Directory', bowls_path %> |
+  <%= link_to 'Back to Fish Bowl', bowl_path(@bowl) %> |
+  <%= link_to 'Graph Test Results History', test_results_history_bowl_path(@bowl) %>
 </p>
 
-<%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>
+<%= content_tag :div, '', id: 'results_chart', data: {results: @water_health_tests} %>
 
 <h3>Water Health Test</h3>
 
@@ -14,4 +14,4 @@
 <%= render 'form' %>
 <%= paginate @water_health_tests %>
 
-<p><%= link_to "Back to Fish Bowl", bowl_path(@bowl) %></p>
+<p><%= link_to 'Back to Fish Bowl', bowl_path(@bowl) %></p>

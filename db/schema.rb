@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404204938) do
+ActiveRecord::Schema.define(:version => 20130411200919) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(:version => 20130404204938) do
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
     t.decimal  "ammonia",    :precision => 6, :scale => 2
+    t.decimal  "salinity",   :precision => 6, :scale => 2
   end
 
 end
