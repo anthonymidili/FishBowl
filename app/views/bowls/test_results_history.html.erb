@@ -6,4 +6,8 @@
   <%= link_to "Water Health Test", bowl_water_health_tests_path(@bowl) %>
 </p>
 
-<%= content_tag :div, "", id: "results_chart", data: {results: @water_health_tests} %>
+<% if @water_health_tests.present? %>
+  <%= content_tag :div, '', id: 'results_chart', data: { results: @water_health_tests } %>
+<% else %>
+  <%= image_tag('sample/large_graph.png') %>
+<% end %>
