@@ -3,11 +3,11 @@
 <p>
   <%= link_to "Bowl Directory", bowls_path %> |
   <%= link_to "Back to Fish Bowl", bowl_path(@bowl) %> |
-  <%= link_to "Water Health Test", bowl_water_health_tests_path(@bowl) %>
+  <%= link_to "Water Health Test", bowl_test_results_path(@bowl) %>
 </p>
 
-<% if @water_health_tests.present? %>
-  <%= content_tag :div, '', id: 'results_chart', data: { results: @water_health_tests } %>
+<% if @test_results.present? %>
+  <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
 <% else %>
   <%= image_tag('sample/large_graph.png') %>
 <% end %>

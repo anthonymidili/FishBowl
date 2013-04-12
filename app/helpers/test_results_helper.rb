@@ -1,4 +1,4 @@
-module WaterHealthTestsHelper
+module TestResultsHelper
   def ammonia_level(level)
     case level
       when nil

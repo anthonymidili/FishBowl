@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130411200919) do
+ActiveRecord::Schema.define(:version => 20130412012413) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -46,6 +46,19 @@ ActiveRecord::Schema.define(:version => 20130411200919) do
     t.string   "avatar"
   end
 
+  create_table "test_results", :force => true do |t|
+    t.decimal  "nitrate",    :precision => 6, :scale => 2
+    t.decimal  "nitrite",    :precision => 6, :scale => 2
+    t.decimal  "hardness",   :precision => 6, :scale => 2
+    t.decimal  "alkalinity", :precision => 6, :scale => 2
+    t.decimal  "ph",         :precision => 6, :scale => 2
+    t.integer  "bowl_id"
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
+    t.decimal  "ammonia",    :precision => 6, :scale => 2
+    t.decimal  "salinity",   :precision => 6, :scale => 2
+  end
+
   create_table "users", :force => true do |t|
     t.string   "name",                   :default => "", :null => false
     t.string   "email",                  :default => "", :null => false
@@ -64,18 +77,5 @@ ActiveRecord::Schema.define(:version => 20130411200919) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
-
-  create_table "water_health_tests", :force => true do |t|
-    t.decimal  "nitrate",    :precision => 6, :scale => 2
-    t.decimal  "nitrite",    :precision => 6, :scale => 2
-    t.decimal  "hardness",   :precision => 6, :scale => 2
-    t.decimal  "alkalinity", :precision => 6, :scale => 2
-    t.decimal  "ph",         :precision => 6, :scale => 2
-    t.integer  "bowl_id"
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
-    t.decimal  "ammonia",    :precision => 6, :scale => 2
-    t.decimal  "salinity",   :precision => 6, :scale => 2
-  end
 
 end

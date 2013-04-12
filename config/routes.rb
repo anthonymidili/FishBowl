@@ -4,10 +4,9 @@ FishBowl::Application.routes.draw do
 
   resources :bowls do
     member do
-      get 'test_results_history'
       get 'species_list'
     end
-    resources :water_health_tests, only: [:index, :create, :destroy]
+    resources :test_results, only: [:index, :create, :destroy]
     resources :occupancies, only: [:create, :destroy]
   end
 
@@ -15,6 +14,7 @@ FishBowl::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  match 'bowls/:bowl_id/test_results_history', to: 'test_results#test_results_history', as: 'test_results_history'
   match 'about_water_health', to: 'welcome#about_water_health'
   match 'info_sources', to: 'welcome#info_sources'
 

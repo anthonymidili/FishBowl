@@ -1,4 +1,4 @@
-<% @water_health_tests.each do |water_health_test| %>
+<% @test_results.each do |water_health_test| %>
   <tr>
     <td><%= water_health_test.created_at.strftime('%b. %d, %Y @ %I:%M%p') %></td>
     <%= ammonia_level(water_health_test.ammonia) %>

@@ -4,7 +4,7 @@ module BowlsHelper
   end
 
   def paginate_test_results(bowl)
-    bowl.water_health_tests.page(params[:page]).per(10)
+    bowl.test_results.page(params[:page]).per(10)
   end
 
   def count_species(bowl)
