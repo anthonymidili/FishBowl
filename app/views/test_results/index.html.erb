@@ -1,4 +1,4 @@
-<h2><%= "#{@bowl.name} Fish Bowl Water Health" %></h2>
+<h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Health" %></h2>
 
 <p>
   <%= link_to 'Bowl Directory', bowls_path %> |
@@ -12,7 +12,7 @@
   <%= image_tag('sample/large_graph.png') %>
 <% end %>
 
-<h3>Water Health Test</h3>
+<h3><%= "#{@bowl.water_type} Health Test" %></h3>
 
 <%= paginate @test_results %>
 <%= render 'form' %>
