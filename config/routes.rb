@@ -14,7 +14,9 @@ FishBowl::Application.routes.draw do
 
   root :to => 'welcome#index'
 
-  match 'bowls/:bowl_id/test_results_history', to: 'test_results#test_results_history', as: 'test_results_history'
+  match 'bowls/:bowl_id/test_results_history',
+        to: 'test_results#test_results_history',
+        as: 'test_results_history'
   match 'about_water_health', to: 'welcome#about_water_health'
   match 'info_sources', to: 'welcome#info_sources'
 
