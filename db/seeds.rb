@@ -2223,3 +2223,703 @@ species.update_attributes(
     }
 )
 
+species = Species.find_or_create_by_name(name: 'Adult Blue Ring Angel')
+species.update_attributes(
+    image: 'saltwater/adult_blue_ring_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Indo-Pacific, Sri Lanka',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Pomacanthus annularis',
+        about: 'Changes patterns and color with maturity. Not a good choice for a reef tank. Grazes on live rock, but also nips at inverts.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Adult Formosa Wrasse')
+species.update_attributes(
+    image: 'saltwater/adult_formosa_wrasse.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 24,
+    info: {
+        reef_safe: 'No',
+        family: 'Labridae',
+        native_to: 'Africa',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sq 1.020-1.026;pH 8.1-8.4;dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Coris formosa',
+        about: 'Appearance is very different from the Juvenile Formosa Wrasse. Quick and agile swimmer, will hunt its food down. Not reef safe as it will pick on inverts.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Adult Imperator Angel')
+species.update_attributes(
+    image: 'saltwater/adult_imperator_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 12,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Coral Sea, Indo-Pacific, Maldives, Sri Lanka',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Pomacanthus imperator',
+        about: 'Also known as an Emperor Angel. One of the larger and more colorful angelfish. Needs plenty of variety in its diet.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Adult Red Coris Wrasse')
+species.update_attributes(
+    image: 'saltwater/adult_red_coris_wrasse.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Aggressive',
+    adult_size: 14,
+    info: {
+        reef_safe: 'No',
+        family: 'Labridae',
+        native_to: 'Hawaii, Fiji',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4, dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '75+ gallons',
+        scientific_name: 'Coris gaimard',
+        about: 'Drastically different between Juvenile and Adult Stages. Needs a sandy substrate to burrow into. Carnivore that loves to eat crustaceans.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Antennata Lionfish')
+species.update_attributes(
+    image: 'saltwater/antennata_lionfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-Aggressive',
+    adult_size: 8,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Scorpaenidae',
+        native_to: 'Tahiti, South Asia, Indo-Pacific, Africa',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pterois antennata',
+        about: 'Also known as the Spotfin Lionfish. May hide initially when acclimating. Has VENOMOUS spines.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Arc Eye Hawkfish')
+species.update_attributes(
+    image: 'saltwater/arc_eye_hawkfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-Aggressive',
+    adult_size: 6,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Cirrhitidae',
+        native_to: 'Indo Pacific',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Paracirrhites arcatus',
+        about: 'One of the larger Hawkfish available. Eats shrimp and crabs, but can eat smaller fish as well. Does best with plenty of crevices and caves to hide in, and ledges to perch on or around.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Asfur Angelfish')
+species.update_attributes(
+    image: 'saltwater/asfur_angelfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-Aggressive',
+    adult_size: 16,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Red Sea',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Pomacanthus asfur',
+        about: 'Also known as the Arabian Angelfish or Crescent Angelfish, the Asfur Angelfish has a distinctly black head with a blue-purple body. This coloring is remarkably contrasted with a bright yellow tail and a yellow crescent shaped stripe in the middle of its body. This is a shy fish and territorial so it is best not to keep with other Asfur Angelfish. There is no visible difference between male and female Asfurs. A tank with plenty of hiding spots and room to swim is recommended.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Assasi Trigger')
+species.update_attributes(
+    image: 'saltwater/assasi_trigger.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Aggressive',
+    adult_size: 11,
+    info: {
+        reef_safe: 'No',
+        family: 'Balistidae',
+        native_to: 'Red Sea',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '100+ gallons',
+        scientific_name: 'Rhinecanthus assasi',
+        about: 'Makes grunting sounds, and has the personality of a canine. Known to rearrange rocks and substrate. Also known as a Picasso Triggerfish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Auriga Butterfly')
+species.update_attributes(
+    image: 'saltwater/auriga_butterfly.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 8,
+    info: {
+        reef_safe: 'No',
+        family: 'Chaetodontidae',
+        native_to: 'Indo-Pacific, Red-Sea and East Africa, Hawaii, Southern Japan, Tonga, Papua New Guinea',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.023-1.025; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Easy',
+        tank_size: '50+ gallons',
+        scientific_name: 'Chaetodon auriga',
+        about: 'Shy and peaceful. Also known as a Threadfin Butterfly. Not reef safe.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Aurora Goby')
+species.update_attributes(
+    image: 'saltwater/aurora_goby.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Gobiidae',
+        native_to: 'West Indian Ocean, Maldives, and South Africa',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Amblyeleotris aurora',
+        about: 'Great community fish, but can be territorial towards its own kind. Also known as the Pinkbar Goby. May jump out of a tank if startled.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Banana Wrasse')
+species.update_attributes(
+    image: 'saltwater/banana_wrasse.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Aggressive',
+    adult_size: 12,
+    info: {
+        reef_safe: 'No',
+        family: 'Labridae',
+        native_to: 'Tonga, Fiji',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4, dKH 8-12',
+        care_level: 'Easy',
+        tank_size: '50+ gallons',
+        scientific_name: 'Thalassoma lutescens',
+        about: 'Spectacularly colored and extremely active swimmer. A jumper that needs a tightly fitted lid. Does best in a fish only tank with live rock.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bicolor Angel')
+species.update_attributes(
+    image: 'saltwater/bicolor_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.023-1.025; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Centropyge bicolor',
+        about: 'Also known as the Oriole Angel. Not recommended with aggressive or highly active fish. Not as hardy as other Dwarf Angels.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bicolor Blenny')
+species.update_attributes(
+    image: 'saltwater/bicolor_blenny.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Blenniidae',
+        native_to: 'Indo-Pacific, Sri Lanka',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Ecsenius bicolor',
+        about: 'Intelligent, entertaining, yet territorial. Appears to hop instead of swimming. Perches on rocks.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bicolor Dottyback')
+species.update_attributes(
+    image: 'saltwater/bicolor_dottyback.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Pseudochromidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Pseudochromis paccagnellae',
+        about: 'One of the hardiest fish available. Can be territorial towards other fish, smaller or larger, but is definitely more aggressive towards similarly shaped fish or other dottybacks. Will eat ornamental shrimp, as well as nuisance bristleworms.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bicolor Foxface')
+species.update_attributes(
+    image: 'saltwater/bicolor_foxface.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 7,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Siganidae',
+        native_to: 'Fiji',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020 - 1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '75+ gallons',
+        scientific_name: 'Siganus uspi',
+        about: 'Great at controlling algae. Generally peaceful towards other tankmates. VENOMOUS spines on the dorsal and anal fins.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bicolor Parrotfish')
+species.update_attributes(
+    image: 'saltwater/bicolor_parrotfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 30,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Scaridae',
+        native_to: 'Indo-Pacific, Barrier Reef',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4, dKH 8-12',
+        care_level: 'Difficult',
+        tank_size: '150+ gallons',
+        scientific_name: 'Cetoscarus bicolor',
+        about: 'White body with an orange mask as a juvenile. Adult has a blue green body with yellows and pinks at key points of the body. Grows to almost three feet in length.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black & White Heniochus')
+species.update_attributes(
+    image: 'saltwater/black_white_heniochus.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 10,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Chaetodontidae',
+        native_to: 'Fiji, Hawaii, Tahiti, South East Asia',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.3; dKH 8-12',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Heniochus acuminatus',
+        about: 'Elegant butterfly with an elongated dorsal fin. Multiple fish will create a heirarchy within the tank. May nip at corals.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Angler')
+species.update_attributes(
+    image: 'saltwater/black_angler.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 10,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Antennariidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '20+ gallons',
+        scientific_name: 'Antennarius commersoni',
+        about: 'Coloration can change with mood and to some extent, the color of its environment. Very inactive fish that sits and waits for its prey. May swallow fish that are smaller or the same size.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Blenny')
+species.update_attributes(
+    image: 'saltwater/black_blenny.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 4,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Blenniidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Atrosalarias fuscus',
+        about: 'Intelligent, entertaining, yet territorial. Appears to hop instead of swimming. Perches on rocks.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Boxfish')
+species.update_attributes(
+    image: 'saltwater/black_boxfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 10,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Ostraciidae',
+        native_to: 'East Africa, Mexico, Japan, Hawaii',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.3; dKH 8-12',
+        care_level: 'Difficult',
+        tank_size: '70+ gallons',
+        scientific_name: 'Ostracion meleagris',
+        about: 'Comical appearance. Does best with peaceful fish. Can release toxins if stressed.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Nox Angel')
+species.update_attributes(
+    image: 'saltwater/black_nox_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 4,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.3; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '29+ gallons',
+        scientific_name: 'Centropyge nox',
+        about: 'Feeds mainly on algae and diatoms. Needs plenty of live rock. Nips at corals and inverts.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Tip Heraldi Angel')
+species.update_attributes(
+    image: 'saltwater/black_tip_heraldi_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Centropyge heraldi',
+        about: 'Similar to Lemon Peel Angel, without blue highlights. Peaceful addition to a community tank. Nips at corals and clams.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Black Volitan Lionfish')
+species.update_attributes(
+    image: 'saltwater/black_volitan_lionfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 14,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Scorpaenidae',
+        native_to: 'Africa, Indo-Pacific, Sri Lanka',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020 - 1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Pterois volitans',
+        about: 'Beautiful solitary carnivore. Will eat any tankmate that can fit in its mouth. VENOMOUS spines.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blackback Butterfly')
+species.update_attributes(
+    image: 'saltwater/blackback_butterfly.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 7,
+    info: {
+        reef_safe: 'No',
+        family: 'Chaetodontidae',
+        native_to: 'Indo-Pacific, Red-Sea and East Africa, Micronesia,and Southern Japan',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.023-1.025; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '70+ gallons',
+        scientific_name: 'Chaetodon melannotus',
+        about: 'Shy and peaceful. Controls pesty aiptasia anemones, but will also pick on ornamental invertebrates making this not reef safe. Does best as the only Butterflyfish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blackcap Basslet')
+species.update_attributes(
+    image: 'saltwater/blackcap_basslet.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 4,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Grammidae',
+        native_to: 'Tropical Western Atlantic, Caribbean',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Gramma melcara',
+        about: 'Not aggressive, but can be territorial. Stays relatively small making it reef safe. More than one can be kept in a tank as long as they are introduced simultaneously in larger tanks.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blonde Naso Tang')
+species.update_attributes(
+    image: 'saltwater/blonde_naso_tang.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 20,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Acanthuridae',
+        native_to: 'Maldives, Red Sea',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026; pH 8.1-8.4; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Naso lituratus',
+        about: 'Tangs are often called surgeon fish because of the scalpel-like spine at the base of its tail. The usually solitary and territorial tang will swing its tail at a target as a means of defense. The Blond Naso undergoes a remarkable transformation from gray with yellow stripes to dark blue-gray with maturity. A tank with rocks and decor to provide several hiding spots and plenty of swimming space is recommended. Tangs tend to be most aggressive towards fish of similar form and color. To minimize aggression in a small aquarium it is recommended to have only one Tang.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Angel')
+species.update_attributes(
+    image: 'saltwater/blue_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 15,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'West Atlantic, Caribbean',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '150+ gallons',
+        scientific_name: 'Holacanthus bermudensis',
+        about: 'Also known as the Common Angelfish. Somewhat aggressive especially towards other angelfish. Generally not reef safe.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Dot Jawfish')
+species.update_attributes(
+    image: 'saltwater/blue_dot_jawfish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 3.75,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Opistognathidae',
+        native_to: 'Sea of Cortez',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'pH 8.1-8.4, dKH 8-12, sg 1.021-1.023',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Opistognathus rosenblatti',
+        about: 'An uncommon and shy species. Spends the majority of its time in and around its burrow. May jump out of a tank if surprised or frightened.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Fin Angel')
+species.update_attributes(
+    image: 'saltwater/blue_fin_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 6,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'East Africa to Western Thailand',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.023-1.025; pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '30+ gallons',
+        scientific_name: 'Centropyge multispinis',
+        about: 'Also known as the Dusky Angelfish. Does best in a tank with plenty of hiding places. Often mistaken for Coral Beauty Angelfish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Hepatus Tang')
+species.update_attributes(
+    image: 'saltwater/blue_hepatus_tang.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 12,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Acanthuridae',
+        native_to: 'Fiji, Indo-Pacific, Solomon Islands',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.026, pH 8.1-8.4, dKH 8-12',
+        care_level: 'Easy',
+        tank_size: '55+ gallons',
+        scientific_name: 'Paracanthurus hepatus',
+        about: 'Also known as a hippo tang. Loves to "play dead" and hide in crevices. Least aggressive tang, but territorial towards other tangs.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blue Spotted Watchman Goby')
+species.update_attributes(
+    image: 'saltwater/blue_spotted_watchman_goby.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 5,
+    info: {
+        reef_safe: 'Yes',
+        family: 'Gobiidae',
+        native_to: 'Solomon Islands, Indo-Pacific',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '30+ gallons',
+        scientific_name: 'Cryptocentrus pavoninoides',
+        about: 'Great community fish, but can be territorial towards its own kind. Needs open swimming space and sand to burrow. May jump out of a tank if startled.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blueface Angel')
+species.update_attributes(
+    image: 'saltwater/blueface_angel.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Semi-aggressive',
+    adult_size: 15,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Pomacanthidae',
+        native_to: 'Indo Pacific: Maldives & Sri Lanka to Indonesia and Palau',
+        diet: 'Omnivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.023-1.025; pH 8.1-8.4',
+        care_level: 'Moderate',
+        tank_size: '100+ gallons',
+        scientific_name: 'Pomacanthus xanthometopon',
+        about: 'Also known as the Yellowmask Angelfish. Found in dense coral areas in the wild near caves. Does best as the largest fish in the tank and as the only Angelfish.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Blueline Trigger')
+species.update_attributes(
+    image: 'saltwater/blueline_trigger.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Aggressive',
+    adult_size: 22,
+    info: {
+        reef_safe: 'No',
+        family: 'Balistidae',
+        native_to: 'Sri Lanka, Coral Sea',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Easy',
+        tank_size: '180+ gallons',
+        scientific_name: 'Pseudobalistes fuscus',
+        about: 'One of the larger triggerfish. Will rearrange rocks and gravel. Has a personality similar to canines.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bluestripe Pipefish')
+species.update_attributes(
+    image: 'saltwater/bluestripe_pipefish.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 3,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Syngnathidae',
+        native_to: 'Indo-Pacific',
+        diet: 'Carnivore',
+        temperature: '72 - 78',
+        water_parameters: 'dKH 8-12, sg 1.020-1.025, pH 8.1-8.4',
+        care_level: 'Difficult',
+        tank_size: '30+ gallons',
+        scientific_name: 'Doryrhamphus excisus',
+        about: 'Should be kept with shy fish such as small gobies, firefish, and sea horses. Should not be kept with large, fast moving, or aggressive fish. May get injured by corals, anemones, crabs, and large shrimp.'
+    }
+)
+
+species = Species.find_or_create_by_name(name: 'Bristletooth Tang')
+species.update_attributes(
+    image: 'saltwater/bristletooth_tang.jpg',
+    water_type: 'Saltwater',
+    temperament: 'Community',
+    adult_size: 6,
+    info: {
+        reef_safe: 'With Caution',
+        family: 'Acanthuridae',
+        native_to: 'Indo-Pacific, South Pacific',
+        diet: 'Herbivore',
+        temperature: '72 - 78',
+        water_parameters: 'sg 1.020-1.025; pH 8.1-8.3; dKH 8-12',
+        care_level: 'Moderate',
+        tank_size: '55+ gallons',
+        scientific_name: 'Ctenochaetus tominiensis',
+        about: 'Also known as the Tomini Tang. Eats pesky hair algae. Active herbivore.'
+    }
+)
+
