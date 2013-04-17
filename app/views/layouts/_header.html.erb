@@ -1,17 +1,53 @@
 <header class="navbar navbar-static-top">
   <div class="navbar-inner">
-    <%= link_to "Fish Bowl", root_path, class: "brand" %>
+    <%= link_to 'Fish Bowl', root_path, class: 'brand' %>
     <ul class="nav pull-right">
-      <li class="active">
+      <li>
         <%= link_to root_path do %>
           <i class="icon-home"></i> Home
         <% end %>
       </li>
       <% if user_signed_in? %>
-        <li>
-          <%= link_to about_water_health_path do %>
-            <i class="icon-list"></i> About Water Health
-          <% end %>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="icon-tasks"></i> Options
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to bowls_path do %>
+                <i class="icon-list"></i> Bowls Directory
+              <% end %>
+            </li>
+            <li>
+              <%= link_to  new_bowl_path do %>
+                <i class="icon-plus"></i> Add New Bowl
+              <% end %>
+            </li>
+            <% if @bowl && @bowl.persisted? %>
+              <li>
+                <%= link_to edit_bowl_path(@bowl) do %>
+                  <i class="icon-edit"></i> Edit Bowl
+                <% end %>
+              </li>
+              <li>
+                <%= link_to @bowl, confirm: 'Are you sure?', method: :delete do %>
+                  <i class="icon-remove"></i> Delete Bowl
+                <% end %>
+              </li>
+            <% end %>
+            <li class="divider"></li>
+            <li>
+              <%= link_to species_index_path do %>
+                <i class="icon-list"></i> Species Directory
+              <% end %>
+            </li>
+            <li>
+              <%= link_to new_species_path do %>
+                <i class="icon-plus"></i> Add New Species
+              <% end %>
+            </li>
+          </ul>
         </li>
         <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
@@ -23,7 +59,25 @@
             <i class="icon-wrench"></i> User settings
           <% end %>
         </li>
-      <% else %>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Help
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to about_water_health_path do %>
+                <i class="icon-question-sign"></i> About Water Health
+              <% end %>
+            </li>
+            <li>
+              <%= link_to info_sources_path do %>
+                <i class="icon-list"></i> Information Sources
+              <% end %>
+            </li>
+          </ul>
+        </li>
+    <% else %>
         <li>
           <%= link_to new_user_session_path do %>
             <i class="icon-user"></i> Sign in
