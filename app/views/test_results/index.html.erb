@@ -1,16 +1,19 @@
 <h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Health" %></h2>
 
 <p>
-  <%= link_to 'Bowl Directory', bowls_path %> |
-  <%= link_to 'Back to Fish Bowl', bowl_path(@bowl) %> |
+  <%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl) %> |
   <%= link_to 'Graph Test Results History', test_results_history_path(@bowl) %>
 </p>
 
-<% if @test_results.present? %>
-  <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
-<% else %>
-  <%= image_tag('sample/large_graph.png') %>
-<% end %>
+<div class="remove-line">
+  <%= link_to test_results_history_path(@bowl) do %>
+    <% if @test_results.present? %>
+      <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
+    <% else %>
+      <%= image_tag('sample/large_graph.png') %>
+    <% end %>
+  <% end %>
+</div>
 
 <h3><%= "#{@bowl.water_type} Health Test" %></h3>
 

@@ -14,18 +14,22 @@
                                 alt: bowl.name,
                                 class: 'picture-frame'), bowl %>
         </div>
-        <p>
-          <% if bowl.test_results.present? %>
-            <%= content_tag :div, "",
-                            id: "results_chart_#{bowl.id}",
-                            data: { results: paginate_test_results(bowl) } %>
-          <% else %>
-            <%= image_tag('sample/small_graph.png') %>
+
+        <div class="remove-line">
+          <%= link_to bowl_test_results_path(bowl) do %>
+            <% if bowl.test_results.present? %>
+              <%= content_tag :div, '',
+                              id: "results_chart_#{bowl.id}",
+                              data: { results: paginate_test_results(bowl) } %>
+            <% else %>
+              <%= image_tag('sample/small_graph.png') %>
+            <% end %>
           <% end %>
-        </p>
+        </div>
+
         <p class="center">
-          <%= link_to "Edit Fish Bowl", edit_bowl_path(bowl) %> |
-          <%= link_to "Water Health Test", bowl_test_results_path(bowl) %> |
+          <%= link_to 'Edit Fish Bowl', edit_bowl_path(bowl) %> |
+          <%= link_to 'Water Health Test', bowl_test_results_path(bowl) %> |
           <%= link_to bowl,
                       confirm: 'Are you sure? This will permanently delete your fish bowl!',
                       method: :delete do %>
@@ -37,4 +41,4 @@
   <% end %>
 </ul>
 
-<p><%= link_to "Create New Bowl", new_bowl_path, class: "btn btn-primary" %></p>
+<p><%= link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary' %></p>

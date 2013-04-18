@@ -3,10 +3,6 @@
   <%= "Select Your #{@bowl.water_type} Species In #{@bowl.name} Fish Bowl" %>
   <small><%= link_to 'or create your own!', species_index_path %></small>
 </h3>
-<p>
-  <%= link_to "Bowl Directory", bowls_path %> |
-  <%= link_to "#{@bowl.name} Fish Bowl", @bowl %>
-</p>
 
 <%= render 'add_species_form' %>
 

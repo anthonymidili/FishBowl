@@ -26,8 +26,18 @@
             </li>
             <% if @bowl && @bowl.persisted? %>
               <li>
+                <%= link_to bowl_path(@bowl) do %>
+                  <i class="icon-flag"></i> Back to Bowl
+                <% end %>
+              </li>
+              <li>
                 <%= link_to edit_bowl_path(@bowl) do %>
                   <i class="icon-edit"></i> Edit Bowl
+                <% end %>
+              </li>
+              <li>
+                <%= link_to bowl_test_results_path(@bowl) do %>
+                  <i class="icon-book"></i> Water Health Test
                 <% end %>
               </li>
               <li>

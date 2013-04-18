@@ -95,6 +95,12 @@ section {
   color: red;
 }
 
+.remove-line {
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
 /* water health test results */
 
 .caution {

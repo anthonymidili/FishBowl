@@ -1,21 +1,14 @@
 <h2><%= "#{@bowl.name} Fish Bowl" %><small><%= " - #{@bowl.water_type}" %></small></h2>
 
-<p>
-  <%= link_to "Bowl Directory", bowls_path %> |
-  <%= link_to "Edit Fish Bowl", edit_bowl_path(@bowl) %> |
-  <%= link_to "Delete Fish Bowl", @bowl, confirm: 'Are you sure?', method: :delete %> |
-  <%= link_to "Water Health Test", bowl_test_results_path(@bowl) %>
-</p>
-
 <div class="row">
   <div class="span12">
 
     <div class="row">
       <div class="span4">
-        <h3><%= link_to "Bowl Info", edit_bowl_path(@bowl) %></h3>
+        <h3><%= link_to 'Bowl Info', edit_bowl_path(@bowl) %></h3>
         <p><%= link_to image_tag(default_or_bowl_avatar(@bowl),
                                  alt: @bowl.name,
-                                 class: "thumbnail img-polaroid"), edit_bowl_path(@bowl) %></p><br>
+                                 class: 'thumbnail img-polaroid'), edit_bowl_path(@bowl) %></p><br>
         <p>Bowl size:<b><%= " #{@bowl.size} Gallons" %></b></p>
         <p>Temperature:<b><%= " #{@bowl.temperature}" %>&deg;F</b></p>
         <p>Water type:<b><%= " #{@bowl.water_type}" %></b></p>
@@ -29,12 +22,16 @@
       </div>
 
       <div class="span8">
-        <h3><%= link_to "Water Health", bowl_test_results_path(@bowl) %></h3>
-        <% if @test_results.present? %>
-          <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
-        <% else %>
-          <%= image_tag('sample/medium_graph.png') %>
-        <% end %>
+        <h3><%= link_to 'Water Health', bowl_test_results_path(@bowl) %></h3>
+        <div class="remove-line">
+          <%= link_to bowl_test_results_path(@bowl) do %>
+            <% if @test_results.present? %>
+              <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
+            <% else %>
+              <%= image_tag('sample/medium_graph.png') %>
+            <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
 
