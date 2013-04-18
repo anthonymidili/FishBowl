@@ -27,7 +27,7 @@
           <% end %>
         </div>
 
-        <p class="center">
+        <div class="center">
           <%= link_to 'Edit Fish Bowl', edit_bowl_path(bowl) %> |
           <%= link_to 'Water Health Test', bowl_test_results_path(bowl) %> |
           <%= link_to bowl,
@@ -35,7 +35,7 @@
                       method: :delete do %>
             <i class="icon-remove"></i>Delete Bowl
           <% end %>
-        </p>
+        </div>
       </div>
     </li>
   <% end %>

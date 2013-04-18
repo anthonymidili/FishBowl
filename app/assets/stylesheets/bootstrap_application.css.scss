@@ -37,6 +37,8 @@ section {
   border-top: 1px solid #999;
 }
 
+/* thumbnails */
+
 .picture-frame {
   padding: 4px;
   border: 1px solid #ddd;
@@ -49,8 +51,6 @@ section {
   height: 68em;
   overflow-y: auto;
 }
-
-/* species */
 
 .your-thumbnail-height {
   height: 28em;
@@ -95,13 +95,13 @@ section {
   color: red;
 }
 
+/* water health test results */
+
 .remove-line {
   a:hover {
     text-decoration: none !important;
   }
 }
-
-/* water health test results */
 
 .caution {
   background-color: yellow !important;
