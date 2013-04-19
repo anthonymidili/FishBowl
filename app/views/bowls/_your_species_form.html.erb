@@ -15,11 +15,15 @@
                       <i class="icon-remove"></i>
                     <% end %>
                   </div>
-                  <div class="center"><%= image_tag(default_or_species_avatar(occupancy_builder.object.species)) %></div>
-                  <h4><em><%= occupancy_builder.object.species.name %></em></h4>
-                  <div class="control-group form-inline">
-                    <%= occupancy_builder.label :amount %>
-                    <%= occupancy_builder.number_field :amount, class: 'span1' %>
+                  <div class="center">
+                    <%= image_tag(default_or_species_avatar(occupancy_builder.object.species)) %>
+                  </div>
+                  <div class="to-bottom">
+                    <h4><em><%= occupancy_builder.object.species.name %></em></h4>
+                    <div class="control-group form-inline">
+                      <%= occupancy_builder.label :amount %>
+                      <%= occupancy_builder.number_field :amount, class: 'span1' %>
+                    </div>
                   </div>
                 </div>
                 <%= render occupancy_builder.object.species %>

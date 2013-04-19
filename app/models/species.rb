@@ -10,7 +10,7 @@ class Species < ActiveRecord::Base
 
   mount_uploader :avatar, SpeciesAvatarUploader
 
-  validates :name, presence: true
+  validates :name, presence: true, length: { maximum: 60 }
   validates :water_type, presence: true
   validates :temperament, presence: true
   validates :adult_size, presence: true, numericality: true

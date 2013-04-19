@@ -7,14 +7,18 @@
         <div class="thumbnail">
           <div class="add-thumbnail-height">
             <div class="center">
-              <label for=<%= species.id %>><%= image_tag(default_or_species_avatar(species)) %></label>
+              <label for=<%= species.id %>>
+                <%= image_tag(default_or_species_avatar(species)) %>
+              </label>
             </div>
-            <label class="checkbox" for=<%= species.id %>>
-              <%= check_box_tag "bowl[species_ids][]",
-                                species.id, @bowl.species_ids.include?(species.id),
-                                id: species.id %>
-              <h4><em><%= species.name %></em></h4>
-            </label>
+            <div class="to-bottom">
+              <label class="checkbox" for=<%= species.id %>>
+                <%= check_box_tag "bowl[species_ids][]",
+                                  species.id, @bowl.species_ids.include?(species.id),
+                                  id: species.id %>
+                <h4><em><%= species.name %></em></h4>
+              </label>
+            </div>
           </div>
           <%= render species %>
         </div>
