@@ -3,6 +3,7 @@ class BowlsController < ApplicationController
 
   def index
     @bowls = current_user.bowls.all
+    redirect_to new_bowl_path unless @bowls.any?
   end
 
   def show
