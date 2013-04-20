@@ -1,0 +1,53 @@
+<li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <i class="icon-tasks"></i> Options
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <%= link_to bowls_path do %>
+        <i class="icon-list"></i> Bowls Directory
+      <% end %>
+    </li>
+    <li>
+      <%= link_to  new_bowl_path do %>
+        <i class="icon-plus"></i> Add New Bowl
+      <% end %>
+    </li>
+    <% if @bowl && @bowl.persisted? %>
+      <li>
+        <%= link_to bowl_path(@bowl) do %>
+          <i class="icon-flag"></i> Back to Bowl
+        <% end %>
+      </li>
+      <li>
+        <%= link_to edit_bowl_path(@bowl) do %>
+          <i class="icon-edit"></i> Edit Bowl
+        <% end %>
+      </li>
+      <li>
+        <%= link_to bowl_test_results_path(@bowl) do %>
+          <i class="icon-book"></i> Water Health Test
+        <% end %>
+      </li>
+      <li>
+        <%= link_to @bowl,
+                    confirm: 'Are you sure? This will permanently delete your fish bowl!',
+                    method: :delete do %>
+          <i class="icon-remove"></i> Delete Bowl
+        <% end %>
+      </li>
+    <% end %>
+    <li class="divider"></li>
+    <li>
+      <%= link_to species_index_path do %>
+        <i class="icon-list"></i> Species Directory
+      <% end %>
+    </li>
+    <li>
+      <%= link_to new_species_path do %>
+        <i class="icon-plus"></i> Add New Species
+      <% end %>
+    </li>
+  </ul>
+</li>

@@ -1,0 +1,18 @@
+<li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    <i class="icon-user"></i> User
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <i class="icon-hand-left"></i> Sign out
+      <% end %>
+    </li>
+    <li>
+      <%= link_to edit_user_registration_path do %>
+        <i class="icon-wrench"></i> User settings
+      <% end %>
+    </li>
+  </ul>
+</li>
