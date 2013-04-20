@@ -3,6 +3,7 @@ class SpeciesController < ApplicationController
 
   def index
     @species = current_user.custom_species.all
+    redirect_to new_species_path unless @species.any?
   end
 
   def new
