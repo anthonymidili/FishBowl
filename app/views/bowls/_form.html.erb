@@ -6,11 +6,11 @@
       <div class="row">
         <div class="span4">
           <div class="control-group">
-            <%= f.label :name, "Fish bowl name" %>
+            <%= f.label :name, 'Fish bowl name' %>
             <%= f.text_field :name, autofocus: true %>
           </div>
           <div class="control-group">
-            <%= f.label :size, "Fish bowl size" %>
+            <%= f.label :size, 'Fish bowl size' %>
             <div class="input-append">
               <%= f.text_field :size %>
               <span class="add-on">Gallons</span>
@@ -29,9 +29,6 @@
                          'Freshwater' => 'Freshwater',
                          'Saltwater'  => 'Saltwater' %>
           </div>
-        </div>
-
-        <div class="span4">
           <div class="control-group">
             <%= f.label :fish_type, 'Fish temperament' %>
             <%= f.select :fish_type,
@@ -39,12 +36,16 @@
                          'Semi-aggressive' => 'Semi-aggressive',
                          'Aggressive'      => 'Aggressive' %>
           </div>
+        </div>
 
-          <br>
-
+        <div class="span4">
           <div class="control-group">
-            <%= f.label :avatar, "Upload Image for your Fish Bowl Avatar" %>
+            <%= f.label :avatar do %>
+              Upload Image for your Fish Bowl Avatar
+              <%= image_tag(f.object.avatar_url) if f.object.avatar? %>
+            <% end %>
             <%= f.file_field :avatar %>
+            <%= f.hidden_field :avatar_cache %>
           </div>
           <div class="control-group">
             <label class="checkbox">
@@ -54,7 +55,7 @@
         </div>
       </div>
 
-      <div class="control-group pull-right"><%= f.submit class: "btn btn-primary" %></div>
+      <div class="control-group pull-right"><%= f.submit class: 'btn btn-primary' %></div>
 
     <% end %>
   </div>
