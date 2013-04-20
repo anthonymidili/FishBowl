@@ -59,6 +59,17 @@
             </li>
           </ul>
         </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="icon-list"></i> Your Bowls
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <% current_user.bowls.each do |bowl| %>
+              <li><%= link_to bowl.name, bowl %></li>
+            <% end %>
+          </ul>
+        </li>
         <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
             <i class="icon-user"></i> Sign out
@@ -87,7 +98,7 @@
             </li>
           </ul>
         </li>
-    <% else %>
+      <% else %>
         <li>
           <%= link_to new_user_session_path do %>
             <i class="icon-user"></i> Sign in
