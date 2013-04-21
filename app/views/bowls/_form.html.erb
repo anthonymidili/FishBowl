@@ -1,10 +1,10 @@
 <div class="row">
-  <div class="span8 hero-unit">
+  <div class="span10 hero-unit">
     <%= form_for @bowl, html: { multipart: true } do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
       <div class="row">
-        <div class="span4">
+        <div class="span5">
           <div class="control-group">
             <%= f.label :name, 'Fish bowl name' %>
             <%= f.text_field :name, autofocus: true %>
@@ -38,7 +38,7 @@
           </div>
         </div>
 
-        <div class="span4">
+        <div class="span5">
           <div class="control-group">
             <%= f.label :avatar do %>
               Upload Image for your Fish Bowl Avatar
