@@ -8,4 +8,7 @@ class WelcomeController < ApplicationController
 
   def info_sources
   end
+
+  def help_forum
+  end
 end
