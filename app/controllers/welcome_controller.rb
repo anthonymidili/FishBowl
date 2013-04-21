@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
+  before_filter :authenticate_user!, except: :index
+
   def index
     redirect_to bowls_path if signed_in?
   end
@@ -9,6 +11,6 @@ class WelcomeController < ApplicationController
   def info_sources
   end
 
-  def help_forum
+  def forum
   end
 end

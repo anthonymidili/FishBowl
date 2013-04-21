@@ -19,7 +19,7 @@ FishBowl::Application.routes.draw do
         as: 'test_results_history'
   match 'about_water_health', to: 'welcome#about_water_health'
   match 'info_sources', to: 'welcome#info_sources'
-  match 'help_forum', to: 'welcome#help_forum'
+  match 'forum', to: 'welcome#forum'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
