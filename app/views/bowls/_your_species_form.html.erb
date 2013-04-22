@@ -1,5 +1,5 @@
 <%= form_for @bowl do |f| %>
-  <p class="pull-right"><%= f.submit "Update Amounts", class: "btn btn-primary" %></p>
+  <p class="pull-right"><%= f.submit 'Update Amounts', class: 'btn btn-primary' %></p>
   <div class="row">
     <div class="span12">
       <ul class="thumbnails">
@@ -10,7 +10,7 @@
                 <div class="your-thumbnail-height">
                   <div class="pull-right">
                     <%= link_to [@bowl, occupancy_builder.object],
-                                confirm: "Are you sure you want to remove this species from your list?",
+                                confirm: 'Are you sure you want to remove this species from your list?',
                                 method: :delete do %>
                       <i class="icon-remove"></i>
                     <% end %>
@@ -22,7 +22,7 @@
                     <h4><em><%= occupancy_builder.object.species.name %></em></h4>
                     <div class="control-group form-inline">
                       <%= occupancy_builder.label :amount %>
-                      <%= occupancy_builder.number_field :amount, class: 'span1' %>
+                      <%= occupancy_builder.number_field :amount, min: '0', class: 'span1' %>
                     </div>
                   </div>
                 </div>
