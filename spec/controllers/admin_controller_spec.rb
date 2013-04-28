@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe AdminController do
 
-  describe "GET 'administrator'" do
+  describe "GET 'view'" do
     it "returns http success" do
-      get 'administrator'
+      get 'view'
       response.should be_success
     end
   end

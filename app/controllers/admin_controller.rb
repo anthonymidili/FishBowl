@@ -2,7 +2,8 @@ class AdminController < ApplicationController
   before_filter :authenticate_user!
   before_filter :admin_user
 
-  def administrator
+  def view
+    @users = User.page(params[:page]).per(50)
   end
 
 private
