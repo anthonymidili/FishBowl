@@ -6,6 +6,11 @@ class AdminController < ApplicationController
     @users = User.page(params[:page]).per(50)
   end
 
+  def destroy
+    @user = User.find(params[:id]).destroy
+    redirect_to admin_path, notice: "Successfully destroyed Fish Bowler!"
+  end
+
 private
 
   def admin_user

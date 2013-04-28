@@ -21,6 +21,7 @@ FishBowl::Application.routes.draw do
   match 'info_sources', to: 'welcome#info_sources'
   match 'forum', to: 'welcome#forum'
   match 'admin', to: 'admin#view', as: 'admin'
+  delete 'users/:id', to: 'admin#destroy', as: 'remove_user'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
