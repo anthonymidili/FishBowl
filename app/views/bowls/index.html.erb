@@ -2,6 +2,8 @@
 
 <p><%= link_to 'Custom Species Directory', species_index_path %></p>
 
+<p><%= link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary' %></p>
+
 <ul class="thumbnails">
   <% @bowls.each do |bowl| %>
     <li class="span6">
@@ -40,5 +42,3 @@
     </li>
   <% end %>
 </ul>
-
-<p><%= link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary' %></p>

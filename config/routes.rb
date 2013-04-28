@@ -1,5 +1,7 @@
 FishBowl::Application.routes.draw do
 
+  get "admin/administrator"
+
   devise_for :users
 
   resources :bowls do

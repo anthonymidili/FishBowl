@@ -1,7 +1,5 @@
 <h2><%= "#{current_user.name}, Edit You Species" %></h2>
 
-<p>
-  <%= link_to "Species Directory", species_index_path %>
-</p>
+<p><%= link_to "Species Directory", species_index_path %></p>
 
 <%= render 'form' %>
