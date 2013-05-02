@@ -11,26 +11,24 @@
           <div class="to-bottom">
             <h4><em><%= species.name %></em></h4>
 
-
             <% if @bowl.species_ids.include?(species.id) %>
               <% @occupancy = @bowl.occupancies.find_by_species_id(species.id) %>
               <%= link_to 'Remove', [@bowl, @occupancy],
                           class: 'btn btn-danger',
-                          confirm: 'Are you sure you want to remove this species from your list?',
                           method: :delete %>
-
             <% else %>
               <%= form_for [@bowl, @new_occupancy], html: { id: "add_occupancy_#{species.id}" } do |f| %>
                 <%= render 'shared/error_messages', object: f.object %>
                 <%= f.hidden_field :species_id, value: species.id %>
-
-
-
-                <%= f.submit 'Add', class: 'btn btn-primary' %>
-
+                <div class="form-inline">
+                  <%= f.submit 'Add', class: 'btn btn-primary' %>
+                  <div class="pull-right">
+                    <%= f.label :amount %>
+                    <%= f.number_field :amount, min: '0', class: 'span1' %>
+                  </div>
+                </div>
               <% end %>
             <% end %>
-
 
           </div>
         </div>

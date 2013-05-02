@@ -70,7 +70,7 @@ section {
 }
 
 .add-thumbnail-height {
-  height: 24em;
+  height: 26em;
   position: relative;
 }
 
@@ -82,9 +82,16 @@ section {
 .to-bottom {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 1em;
+  right: 1em;
   margin: 0 auto;
+
+  form {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
 
 .select-bar {
