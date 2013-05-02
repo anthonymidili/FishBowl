@@ -46,5 +46,6 @@ class BowlsController < ApplicationController
 
   def species_list
     @bowl = current_user.bowls.find(params[:id])
+    @new_occupancy = @bowl.occupancies.new
   end
 end

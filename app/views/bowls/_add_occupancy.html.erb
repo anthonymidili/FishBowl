@@ -1,0 +1,44 @@
+<ul class="thumbnails">
+  <% Species.all_available_to(current_user.id).by_bowl_water_type(@bowl.water_type).each do |species| %>
+    <li class="span4">
+      <div class="thumbnail">
+        <div class="add-thumbnail-height">
+          <div class="center">
+            <label for=<%= species.id %>>
+              <%= image_tag(default_or_species_avatar(species)) %>
+            </label>
+          </div>
+          <div class="to-bottom">
+            <h4><em><%= species.name %></em></h4>
+
+
+            <% if @bowl.species_ids.include?(species.id) %>
+              <% @occupancy = @bowl.occupancies.find_by_species_id(species.id) %>
+              <%= link_to 'Remove', [@bowl, @occupancy],
+                          class: 'btn btn-danger',
+                          confirm: 'Are you sure you want to remove this species from your list?',
+                          method: :delete %>
+
+            <% else %>
+              <%= form_for [@bowl, @new_occupancy], html: { id: "add_occupancy_#{species.id}" } do |f| %>
+                <%= render 'shared/error_messages', object: f.object %>
+                <%= f.hidden_field :species_id, value: species.id %>
+
+
+
+                <%= f.submit 'Add', class: 'btn btn-primary' %>
+
+              <% end %>
+            <% end %>
+
+
+          </div>
+        </div>
+        <%= render species %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+<div class="fixed-button">
+  <%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-primary' %>
+</div>
