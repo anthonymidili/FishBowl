@@ -4,22 +4,20 @@
       <div class="thumbnail">
         <div class="add-thumbnail-height">
           <div class="center">
-            <label for=<%= species.id %>>
-              <%= image_tag(default_or_species_avatar(species)) %>
-            </label>
+            <%= image_tag(default_or_species_avatar(species)) %>
           </div>
           <div class="to-bottom">
             <h4><em><%= species.name %></em></h4>
+            <%= form_for [@bowl, @new_occupancy], html: { id: "add_occupancy_#{species.id}" } do |f| %>
+              <%= render 'shared/error_messages', object: f.object %>
+              <%= f.hidden_field :species_id, value: species.id %>
 
-            <% if @bowl.species_ids.include?(species.id) %>
-              <% @occupancy = @bowl.occupancies.find_by_species_id(species.id) %>
-              <%= link_to 'Remove', [@bowl, @occupancy],
-                          class: 'btn btn-danger',
-                          method: :delete %>
-            <% else %>
-              <%= form_for [@bowl, @new_occupancy], html: { id: "add_occupancy_#{species.id}" } do |f| %>
-                <%= render 'shared/error_messages', object: f.object %>
-                <%= f.hidden_field :species_id, value: species.id %>
+              <% if @bowl.species_ids.include?(species.id) %>
+                <% @occupancy = @bowl.occupancies.find_by_species_id(species.id) %>
+                <%= link_to 'Remove', [@bowl, @occupancy],
+                            class: 'btn btn-danger',
+                            method: :delete %>
+              <% else %>
                 <div class="form-inline">
                   <%= f.submit 'Add', class: 'btn btn-primary' %>
                   <div class="pull-right">
@@ -28,8 +26,8 @@
                   </div>
                 </div>
               <% end %>
-            <% end %>
 
+            <% end %>
           </div>
         </div>
         <%= render species %>
