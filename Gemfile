@@ -16,6 +16,7 @@ group :development, :test do
   gem 'nifty-generators', '0.4.6'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bullet'
 end
 
 group :assets do
