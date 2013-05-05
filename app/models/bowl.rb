@@ -3,6 +3,7 @@ class Bowl < ActiveRecord::Base
 
   belongs_to :user
   has_many :test_results, dependent: :destroy
+  has_many :notes, dependent: :destroy
   has_many :occupancies, dependent: :destroy
   has_many :species, through: :occupancies
 
@@ -16,4 +17,6 @@ class Bowl < ActiveRecord::Base
   validates :temperature, presence: true, numericality: true
   validates :water_type, presence: true
   validates :fish_type, presence: true
+
+  scope :logs_by_date, (self.test_results + self.notes).sort{|a,b| a.created_at <=> b.created_at }
 end
