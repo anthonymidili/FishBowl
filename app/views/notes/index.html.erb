@@ -1,0 +1,32 @@
+<h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Notes" %></h2>
+
+<p>
+  <%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl) %> |
+  <%= link_to 'Water Health Test', bowl_test_results_path(@bowl) %>
+</p>
+
+
+<%= render 'form' %>
+
+<table class="table table-striped table-bordered">
+  <tr>
+    <th class="span3">Date Taken</th>
+    <th>Event</th>
+    <th class="span1">Remove</th>
+  </tr>
+  <% @notes.each do |note| %>
+    <tr>
+      <td><%= note.created_at.strftime('%b. %d, %Y @ %I:%M%p') %></td>
+      <td><%= note.event %></td>
+      <td class="center">
+        <%= link_to [@bowl, note],
+                    confirm: 'Are you sure? This will permanently delete your note!',
+                    method: :delete do %>
+          <i class="icon-remove"></i>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= paginate @notes %>

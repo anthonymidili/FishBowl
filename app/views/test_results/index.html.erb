@@ -16,6 +16,7 @@
 </div>
 
 <h3><%= "#{@bowl.water_type} Health Test" %></h3>
+<%= link_to "View or Create #{@bowl.name} Bowl Notes", bowl_notes_path(@bowl) %>
 
 <%= paginate @test_results %>
 <%= render 'form' %>

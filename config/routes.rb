@@ -8,6 +8,7 @@ FishBowl::Application.routes.draw do
     end
     resources :test_results, only: [:index, :create, :destroy]
     resources :occupancies, only: [:create, :destroy]
+    resources :notes, only: [:index, :create, :destroy]
   end
 
   resources :species, except: [:show]
