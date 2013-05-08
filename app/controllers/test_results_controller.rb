@@ -5,6 +5,8 @@ class TestResultsController < ApplicationController
   def index
     @test_result = @bowl.test_results.new
     @test_results = @bowl.test_results.page(params[:page]).per(10)
+    @note = @bowl.notes.new
+    @notes = @bowl.notes.page(params[:page]).per(10)
   end
 
   def create
