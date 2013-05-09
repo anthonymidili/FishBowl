@@ -4,9 +4,10 @@ class TestResultsController < ApplicationController
 
   def index
     @test_result = @bowl.test_results.new
-    @test_results = @bowl.test_results.page(params[:page]).per(10)
+    @test_results = @bowl.test_results.all
     @note = @bowl.notes.new
-    @notes = @bowl.notes.page(params[:page]).per(10)
+    @notes = @bowl.notes.all
+    @logs = Kaminari.paginate_array((@test_results + @notes).sort_by(&:created_at).reverse).page(params[:page]).per(10)
   end
 
   def create

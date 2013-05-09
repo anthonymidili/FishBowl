@@ -3,7 +3,7 @@ class Note < ActiveRecord::Base
 
   belongs_to :bowl
 
-  validates :event, presence: true
+  validates_presence_of :event, message: "note can't be blank"
 
   default_scope order: 'notes.created_at DESC'
 end

@@ -11,7 +11,7 @@ class NotesController < ApplicationController
     @note = @bowl.notes.new(params[:note])
     @notes = @bowl.notes.page(params[:page]).per(10)
     if @note.save
-      redirect_to bowl_notes_path(@bowl), :notice => "Successfully created note."
+      redirect_to bowl_test_results_path(@bowl), :notice => "Successfully created note."
     else
       render 'notes/index'
     end

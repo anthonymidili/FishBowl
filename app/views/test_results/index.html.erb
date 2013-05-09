@@ -16,10 +16,12 @@
 </div>
 
 <h3><%= "#{@bowl.water_type} Health Test" %></h3>
-<%= link_to "View or Create #{@bowl.name} Bowl Notes", bowl_notes_path(@bowl) %>
 
-<%= paginate @test_results %>
+<p><%= link_to "View all #{@bowl.name} Fish Bowl Notes.", bowl_notes_path(@bowl) %></p>
+<%= render 'notes/form' %>
+
+<%= paginate @logs %>
 <%= render 'form' %>
-<%= paginate @test_results %>
+<%= paginate @logs %>
 
-<p><%= link_to 'Back to Fish Bowl', bowl_path(@bowl) %></p>
+<p><%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl) %></p>
