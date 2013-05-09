@@ -20,7 +20,7 @@ class NotesController < ApplicationController
   def destroy
     @note = @bowl.notes.find(params[:id])
     @note.destroy
-    redirect_to bowl_notes_path(@bowl), :notice => "Successfully removed note."
+    redirect_to bowl_test_results_path(@bowl), :notice => "Successfully removed note."
   end
 
 private
