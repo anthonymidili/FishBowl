@@ -16,12 +16,12 @@
 
     <div class="control-group">
       <%= f.label :password, "New password" %>
-      <%= f.password_field :password, :autofocus => true %>
+      <%= f.password_field :password, class: 'input-block-level', :autofocus => true %>
     </div>
 
     <div class="control-group">
       <%= f.label :password_confirmation, "Confirm new password" %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: 'input-block-level' %>
     </div>
 
     <div class="control-group">

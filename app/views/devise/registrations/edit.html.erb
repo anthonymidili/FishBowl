@@ -13,12 +13,12 @@
 
     <div class="control-group">
       <%= f.label :name %>
-      <%= f.text_field :name, autofocus: true %>
+      <%= f.text_field :name, class: 'input-block-level', autofocus: true %>
     </div>
 
     <div class="control-group">
       <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, class: 'input-block-level' %>
     </div>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -28,23 +28,23 @@
     <div class="control-group">
       <%= f.label :current_password %>
       <i class="help-block">(we need your current password to confirm your changes)</i>
-      <%= f.password_field :current_password %>
+      <%= f.password_field :current_password, class: 'input-block-level' %>
     </div>
 
     <div class="control-group">
       <%= f.label :password, "New password" %>
       <i class="help-block">(leave blank if you don't want to change it)</i>
-      <%= f.password_field :password, :autocomplete => "off" %>
+      <%= f.password_field :password, class: 'input-block-level', :autocomplete => 'off' %>
     </div>
 
     <div class="control-group">
       <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.password_field :password_confirmation, class: 'input-block-level' %>
     </div>
 
     <div class="control-group">
-      <%= f.submit "Update", class: "btn btn-primary" %>
-      <%= link_to "Back", root_path, class: "btn" %>
+      <%= f.submit 'Update', class: 'btn btn-primary' %>
+      <%= link_to 'Back', root_path, class: 'btn' %>
     </div>
   <% end %>
 
@@ -52,9 +52,9 @@
 
   <section>
     <h3>Cancel my account</h3>
-    <%= button_to "Cancel my account", registration_path(resource_name),
-                  class: "btn btn-small btn-danger",
-                  :data => { :confirm => "Are you sure? This will permanently delete your account and all of your personal information will be lost!" },
+    <%= button_to 'Cancel my account', registration_path(resource_name),
+                  class: 'btn btn-small btn-danger',
+                  :data => { :confirm => 'Are you sure? This will permanently delete your account and all of your personal information will be lost!' },
                   :method => :delete %>
   </section>
 
