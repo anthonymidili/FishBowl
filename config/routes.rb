@@ -13,7 +13,7 @@ FishBowl::Application.routes.draw do
 
   resources :species, except: [:show]
 
-  root :to => 'welcome#index'
+  root :to => 'welcome#home'
 
   match 'bowls/:bowl_id/test_results_history',
         to: 'test_results#test_results_history',

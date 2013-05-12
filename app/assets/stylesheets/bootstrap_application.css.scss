@@ -2,6 +2,10 @@
 
 /* universal */
 
+.move-down {
+  padding-bottom: 20px;
+}
+
 .welcome {
   min-height: 600px;
   background-image: url('/assets/glass-fish-bowl.jpg');
@@ -13,6 +17,11 @@
 .sign-up-button {
   padding-left: 2em;
   background-position: left top;
+}
+
+.center-hero-forms {
+  margin: 0 auto;
+  width: 20em;
 }
 
 .center_fields {

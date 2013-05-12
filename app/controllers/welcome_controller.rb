@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
-  before_filter :authenticate_user!, except: :index
+  before_filter :authenticate_user!, except: :home
 
-  def index
+  def home
     redirect_to bowls_path if signed_in?
   end
 

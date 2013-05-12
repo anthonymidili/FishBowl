@@ -16,7 +16,7 @@ describe TestResultsController do
     response.should redirect_to(root_url)
   end
 
-  it "destroy action should destroy model and redirect to index action" do
+  it "destroy action should destroy model and redirect to home action" do
     test_result = TestResult.first
     delete :destroy, :id => test_result
     response.should redirect_to(root_url)
