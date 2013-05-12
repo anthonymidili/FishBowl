@@ -3,7 +3,7 @@
     <%= form_for @species, html: { multipart: true } do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       <div class="row">
-        <div class="span3 right-divider">
+        <div class="span3">
           <div class="control-group">
             <%= f.label :name %>
             <%= f.text_field :name, autofocus: true %>
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="span3">
+        <div class="span3 left-divider">
           <div class="control-group">
             <%= f.label :family %>
             <%= f.text_field :family %>
