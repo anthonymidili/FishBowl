@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130505193858) do
+ActiveRecord::Schema.define(:version => 20130512143704) do
 
   create_table "bowls", :force => true do |t|
     t.string   "name"
@@ -24,15 +24,6 @@ ActiveRecord::Schema.define(:version => 20130505193858) do
     t.string   "fish_type"
     t.string   "avatar"
   end
-
-  create_table "history_logs", :force => true do |t|
-    t.integer  "loggable_id"
-    t.string   "loggable_type"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "history_logs", ["loggable_id", "loggable_type"], :name => "index_history_logs_on_loggable_id_and_loggable_type"
 
   create_table "notes", :force => true do |t|
     t.text     "event"
