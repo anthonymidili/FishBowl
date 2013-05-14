@@ -3,7 +3,7 @@
 /* universal */
 
 .move-down-bottom {
-  padding-bottom: 20px;
+  padding-bottom: 2em;
 }
 
 .welcome {
@@ -48,8 +48,19 @@ section {
 }
 
 .hero-unit {
-  background-color: lightskyblue;
-  color: midnightblue;
+  border: 3px solid black;
+  box-shadow: -10px 10px 5px #888;
+  background-color: midnightblue;
+  color: deepskyblue;
+
+  .add-on {
+    color: black;
+  }
+
+  .help-block {
+    color: lightskyblue;
+    font-size: 13px;
+  }
 }
 
 /* thumbnails */
@@ -99,7 +110,6 @@ section {
 .select-bar {
   background-color: midnightblue;
   padding: 1em;
-  -moz-border-radius: 15px;
   border-radius: 15px;
 
   a {
@@ -153,6 +163,11 @@ section {
   @extend .alert;
 }
 
+.alert {
+  border: 1px solid orangered;
+  color: orangered;
+}
+
 /* footer */
 
 footer {
@@ -165,9 +180,6 @@ div.fixed-button {
   bottom: 3em;
   right: 2em;
   z-index: 10;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 10px 10px 5px #888;
-  -webkit-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888;
 }

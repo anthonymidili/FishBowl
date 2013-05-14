@@ -42,9 +42,11 @@
       <%= f.password_field :password_confirmation, class: 'input-block-level' %>
     </div>
 
+    <br>
+
     <div class="control-group">
-      <%= f.submit 'Update', class: 'btn btn-primary' %>
-      <%= link_to 'Back', root_path, class: 'btn' %>
+      <p><%= f.submit 'Update', class: 'btn btn-large btn-block btn-primary' %></p><br>
+      <p><%= link_to 'Back', root_path, class: 'btn btn-block' %></p>
     </div>
   <% end %>
 
