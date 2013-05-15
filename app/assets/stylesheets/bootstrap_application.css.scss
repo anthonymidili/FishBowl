@@ -2,8 +2,12 @@
 
 /* universal */
 
-.move-down-bottom {
+.pad-bottom {
   padding-bottom: 2em;
+}
+
+.pad-top {
+  padding-top: 2em;
 }
 
 .welcome {
@@ -80,18 +84,32 @@ section {
 }
 
 .your-thumbnail-height {
-  height: 28em;
+  height: 29em;
   position: relative;
 }
 
 .your-species-height {
-  height: 26em;
+  height: 27em;
   position: relative;
 }
 
 .add-thumbnail-height {
-  height: 24em;
+  height: 25em;
   position: relative;
+}
+
+.center-image {
+  height: 21em;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .info-height {
