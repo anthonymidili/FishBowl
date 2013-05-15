@@ -1,8 +1,8 @@
 <h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Health History" %></h2>
 
 <p>
-  <%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl) %> |
-  <%= link_to "Water Health Test", bowl_test_results_path(@bowl) %>
+  <%= link_to "To #{@bowl.name} Bowl", bowl_path(@bowl) %> |
+  <%= link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl) %>
 </p>
 
 <div class="remove-line">
