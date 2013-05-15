@@ -28,7 +28,7 @@
 
       <div class="span8">
         <h3><%= link_to 'Water Health', bowl_test_results_path(@bowl) %></h3>
-        <div class="remove-line">
+        <div class="remove-link-underline">
           <%= link_to bowl_test_results_path(@bowl) do %>
             <% if @test_results.present? %>
               <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
