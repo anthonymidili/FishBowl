@@ -2,12 +2,12 @@ class BowlsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @bowls = current_user.bowls.all
+    @bowls = current_user.bowls.all include: :test_results
     redirect_to new_bowl_path unless @bowls.any?
   end
 
   def show
-    @bowl = current_user.bowls.find(params[:id])
+    @bowl = current_user.bowls.find(params[:id], include: [occupancies: :species])
     @test_results = @bowl.test_results.page(params[:page]).per(10)
     @occupancy = @bowl.occupancies.new
   end
