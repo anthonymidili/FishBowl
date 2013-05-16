@@ -4,9 +4,9 @@ describe BowlsController do
   fixtures :all
   render_views
 
-  it "index action should render index template" do
-    get :index
-    response.should render_template(:index)
+  it "home action should render home template" do
+    get :home
+    response.should render_template(:home)
   end
 
   it "show action should render show template" do
@@ -48,7 +48,7 @@ describe BowlsController do
     response.should redirect_to(tank_url(assigns[:bowl]))
   end
 
-  it "destroy action should destroy model and redirect to index action" do
+  it "destroy action should destroy model and redirect to home action" do
     tank = Bowl.first
     delete :destroy, :id => tank
     response.should redirect_to(tanks_url)

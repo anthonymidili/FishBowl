@@ -8,11 +8,12 @@ FishBowl::Application.routes.draw do
     end
     resources :test_results, only: [:index, :create, :destroy]
     resources :occupancies, only: [:create, :destroy]
+    resources :notes, only: [:index, :create, :destroy]
   end
 
   resources :species, except: [:show]
 
-  root :to => 'welcome#index'
+  root :to => 'welcome#home'
 
   match 'bowls/:bowl_id/test_results_history',
         to: 'test_results#test_results_history',

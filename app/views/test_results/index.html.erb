@@ -5,7 +5,7 @@
   <%= link_to 'Graph Test Results History', test_results_history_path(@bowl) %>
 </p>
 
-<div class="remove-line">
+<div class="remove-link-underline">
   <%= link_to test_results_history_path(@bowl) do %>
     <% if @test_results.present? %>
       <%= content_tag :div, '', id: 'results_chart', data: { results: @test_results } %>
@@ -17,8 +17,11 @@
 
 <h3><%= "#{@bowl.water_type} Health Test" %></h3>
 
-<%= paginate @test_results %>
-<%= render 'form' %>
-<%= paginate @test_results %>
+<p><%= link_to "View all #{@bowl.name} Fish Bowl Notes.", bowl_notes_path(@bowl) %></p>
+<%= render 'notes/form' %>
 
-<p><%= link_to 'Back to Fish Bowl', bowl_path(@bowl) %></p>
+<%= paginate @logs %>
+<%= render 'form' %>
+<%= paginate @logs %>
+
+<p><%= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl) %></p>

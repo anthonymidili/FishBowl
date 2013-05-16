@@ -2,6 +2,14 @@
 
 /* universal */
 
+.pad-bottom {
+  padding-bottom: 2em;
+}
+
+.pad-top {
+  padding-top: 2em;
+}
+
 .welcome {
   min-height: 600px;
   background-image: url('/assets/glass-fish-bowl.jpg');
@@ -10,7 +18,7 @@
   background-size: 800px 600px;
 }
 
-.sign-up {
+.sign-up-button {
   padding-left: 2em;
   background-position: left top;
 }
@@ -37,10 +45,26 @@ section {
   border-top: 1px solid #999;
 }
 
-.right-divider {
-  margin-right: 0.5em;
-  padding-right: 3em;
-  border-right: 1px solid black;
+.left-divider {
+  margin-left: 3em;
+  padding-left: 2em;
+  border-left: 1px solid #999;
+}
+
+.hero-unit {
+  border: 3px solid black;
+  box-shadow: -10px 10px 5px #888;
+  background-color: midnightblue;
+  color: deepskyblue;
+
+  .add-on {
+    color: black;
+  }
+
+  .help-block {
+    color: lightskyblue;
+    font-size: 13px;
+  }
 }
 
 /* thumbnails */
@@ -60,18 +84,32 @@ section {
 }
 
 .your-thumbnail-height {
-  height: 28em;
+  height: 29em;
   position: relative;
 }
 
 .your-species-height {
-  height: 26em;
+  height: 27em;
   position: relative;
 }
 
 .add-thumbnail-height {
-  height: 26em;
+  height: 25em;
   position: relative;
+}
+
+.center-image {
+  height: 21em;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .info-height {
@@ -82,22 +120,14 @@ section {
 .to-bottom {
   position: absolute;
   bottom: 0;
-  left: 1em;
-  right: 1em;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-
-  form {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
 }
 
 .select-bar {
   background-color: midnightblue;
   padding: 1em;
-  -moz-border-radius: 15px;
   border-radius: 15px;
 
   a {
@@ -122,7 +152,7 @@ section {
 
 /* water health test results */
 
-.remove-line {
+.remove-link-underline {
   a:hover {
     text-decoration: none !important;
   }
@@ -140,10 +170,26 @@ section {
   background-color: red !important;
 }
 
-/* devise form errors */
+.note-bar {
+  background-color: midnightblue;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+/* devise */
+
+.center-devise-forms {
+  margin: 0 auto;
+  width: 20em;
+}
 
 #error_explanation {
   @extend .alert;
+}
+
+.alert {
+  border: 1px solid orangered;
+  color: orangered;
 }
 
 /* footer */
@@ -158,9 +204,6 @@ div.fixed-button {
   bottom: 3em;
   right: 2em;
   z-index: 10;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 10px 10px 5px #888;
-  -webkit-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888;
 }

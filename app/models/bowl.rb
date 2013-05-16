@@ -3,6 +3,7 @@ class Bowl < ActiveRecord::Base
 
   belongs_to :user
   has_many :test_results, dependent: :destroy
+  has_many :notes, dependent: :destroy
   has_many :occupancies, dependent: :destroy
   has_many :species, through: :occupancies
 
