@@ -46,6 +46,7 @@ class BowlsController < ApplicationController
 
   def species_list
     @bowl = current_user.bowls.find(params[:id])
+    @species = Species.all_available_to(current_user.id).by_bowl_water_type(@bowl.water_type)
     @new_occupancy = @bowl.occupancies.new
   end
 end
