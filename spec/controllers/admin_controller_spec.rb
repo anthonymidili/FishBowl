@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe AdminController do
+describe UsersController do
 
   describe "GET 'view'" do
     it "returns http success" do

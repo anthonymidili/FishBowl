@@ -1,14 +1,14 @@
-class AdminController < ApplicationController
+class UsersController < ApplicationController
   before_filter :authenticate_user!
   before_filter :admin_user
 
-  def view
+  def index
     @users = User.page(params[:page]).per(50)
   end
 
   def destroy
     @user = User.find(params[:id]).destroy
-    redirect_to admin_path, notice: 'Successfully destroyed Fish Bowler!'
+    redirect_to users_path, notice: 'Successfully destroyed Fish Bowler!'
   end
 
 private
