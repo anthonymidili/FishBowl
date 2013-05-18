@@ -21,7 +21,7 @@ class BowlsController < ApplicationController
     if @bowl.save
       redirect_to @bowl, :notice => 'Successfully created fish bowl.'
     else
-      render :action => 'new'
+      render 'new'
     end
   end
 
@@ -34,7 +34,7 @@ class BowlsController < ApplicationController
     if @bowl.update_attributes(params[:bowl])
       redirect_to @bowl, :notice  => 'Successfully updated fish bowl.'
     else
-      render :action => 'edit'
+      render 'edit'
     end
   end
 

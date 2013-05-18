@@ -15,7 +15,7 @@ class SpeciesController < ApplicationController
     if @species.save
       redirect_to species_index_path, :notice => 'Successfully created species.'
     else
-      render :action => 'new'
+      render 'new'
     end
   end
 
@@ -28,7 +28,7 @@ class SpeciesController < ApplicationController
     if @species.update_attributes(params[:species])
       redirect_to species_index_path, :notice  => 'Successfully updated species.'
     else
-      render :action => 'edit'
+      render 'edit'
     end
   end
 

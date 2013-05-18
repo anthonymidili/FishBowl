@@ -13,6 +13,9 @@ class TestResultsController < ApplicationController
   def create
     @test_result = @bowl.test_results.new(params[:test_result])
     @test_results = @bowl.test_results.page(params[:page]).per(10)
+    @note = @bowl.notes.new
+    @notes = @bowl.notes.all
+    @logs = Kaminari.paginate_array((@test_results + @notes).sort_by(&:created_at).reverse).page(params[:page]).per(10)
     if @test_result.save
       redirect_to bowl_test_results_path(@bowl), :notice => 'Successfully saved water health test.'
     else
