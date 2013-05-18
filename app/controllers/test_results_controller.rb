@@ -14,7 +14,7 @@ class TestResultsController < ApplicationController
     @test_result = @bowl.test_results.new(params[:test_result])
     @test_results = @bowl.test_results.page(params[:page]).per(10)
     if @test_result.save
-      redirect_to bowl_test_results_path(@bowl), :notice => "Successfully saved water health test."
+      redirect_to bowl_test_results_path(@bowl), :notice => 'Successfully saved water health test.'
     else
       render 'test_results/index'
     end
@@ -23,7 +23,7 @@ class TestResultsController < ApplicationController
   def destroy
     @test_result = @bowl.test_results.find(params[:id])
     @test_result.destroy
-    redirect_to bowl_test_results_path(@bowl), :notice => "Successfully destroyed water health test."
+    redirect_to bowl_test_results_path(@bowl), :notice => 'Successfully destroyed water health test.'
   end
 
   def test_results_history

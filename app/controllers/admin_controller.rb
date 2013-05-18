@@ -8,7 +8,7 @@ class AdminController < ApplicationController
 
   def destroy
     @user = User.find(params[:id]).destroy
-    redirect_to admin_path, notice: "Successfully destroyed Fish Bowler!"
+    redirect_to admin_path, notice: 'Successfully destroyed Fish Bowler!'
   end
 
 private

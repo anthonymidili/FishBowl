@@ -3,10 +3,8 @@ FishBowl::Application.routes.draw do
   devise_for :users
 
   resources :bowls do
-    member do
-      get 'species_list'
-    end
-    resources :test_results, only: [:index, :create, :destroy]
+    get 'species_list', on: :member
+    resources :test_results, path: 'water_health', only: [:index, :create, :destroy]
     resources :occupancies, only: [:create, :destroy]
     resources :notes, only: [:index, :create, :destroy]
   end
