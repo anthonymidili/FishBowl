@@ -25,7 +25,7 @@
       <td><%= user.last_sign_in_at.strftime('%b. %d, %Y @ %I:%M%p') %></td>
       <td class="center">
         <% unless current_user?(user) %>
-          <%= link_to remove_user_path(user),
+          <%= link_to user,
                       confirm: 'Really?!? This will permanently delete your fellow Fish Bowler and all there information!',
                       method: :delete do %>
             <i class="icon-remove"></i>

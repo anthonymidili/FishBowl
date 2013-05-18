@@ -19,9 +19,9 @@ class BowlsController < ApplicationController
   def create
     @bowl = current_user.bowls.new(params[:bowl])
     if @bowl.save
-      redirect_to @bowl, :notice => "Successfully created fish bowl."
+      redirect_to @bowl, :notice => 'Successfully created fish bowl.'
     else
-      render :action => 'new'
+      render 'new'
     end
   end
 
@@ -32,16 +32,16 @@ class BowlsController < ApplicationController
   def update
     @bowl = current_user.bowls.find(params[:id])
     if @bowl.update_attributes(params[:bowl])
-      redirect_to @bowl, :notice  => "Successfully updated fish bowl."
+      redirect_to @bowl, :notice  => 'Successfully updated fish bowl.'
     else
-      render :action => 'edit'
+      render 'edit'
     end
   end
 
   def destroy
     @bowl = current_user.bowls.find(params[:id])
     @bowl.destroy
-    redirect_to bowls_url, :notice => "Successfully destroyed fish bowl."
+    redirect_to bowls_url, :notice => 'Successfully destroyed fish bowl.'
   end
 
   def species_list
