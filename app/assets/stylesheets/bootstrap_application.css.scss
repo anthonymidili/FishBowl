@@ -181,6 +181,7 @@ section {
 .health-sidebar {
   position: fixed;
   top: 4em;
+  left: inherit;
   margin: 0 !important;
   background-color: midnightblue;
   box-shadow: -10px 10px 5px #888;
