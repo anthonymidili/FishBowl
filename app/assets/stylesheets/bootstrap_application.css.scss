@@ -176,6 +176,35 @@ section {
   border-radius: 15px;
 }
 
+/* about water health sidebar */
+
+.health-sidebar {
+  position: fixed;
+  margin: 0 !important;
+  background-color: midnightblue;
+  box-shadow: -10px 10px 5px #888;
+  border: 3px solid black;
+  border-radius: 10px;
+  z-index: 10;
+
+  i {
+    float: right;
+  }
+
+  a {
+    color: lightgray;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+
+  .nav-header {
+    color: deepskyblue;
+    font-family: Verdana;
+  }
+}
+
 /* devise */
 
 .center-devise-forms {
