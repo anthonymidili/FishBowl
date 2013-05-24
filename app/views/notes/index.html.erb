@@ -1,4 +1,4 @@
-<h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Notes" %></h2>
+<h2><%= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Event #{('Note').pluralize(@notes.count)}" %></h2>
 
 <p>
   <%= link_to "To #{@bowl.name} Bowl", bowl_path(@bowl) %> |

@@ -17,7 +17,7 @@
 
 <h3><%= "#{@bowl.water_type} Health Test" %></h3>
 
-<p><%= link_to "View all #{@bowl.name} Fish Bowl Notes.", bowl_notes_path(@bowl) %></p>
+<p><%= link_to "View all #{@bowl.name} Fish Bowl Event Notes.", bowl_notes_path(@bowl) %></p>
 <%= render 'notes/form' %>
 
 <%= paginate @logs %>
