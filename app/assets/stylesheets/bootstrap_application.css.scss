@@ -179,8 +179,6 @@ section {
 /* about water health sidebar */
 
 .health-sidebar {
-  position: fixed;
-  margin: 0 !important;
   background-color: midnightblue;
   box-shadow: -10px 10px 5px #888;
   border: 3px solid black;
@@ -204,7 +202,6 @@ section {
     font-family: Verdana;
   }
 }
-
 /* devise */
 
 .center-devise-forms {
