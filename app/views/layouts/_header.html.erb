@@ -1,10 +1,10 @@
-<header class="navbar navbar-static-top pad-bottom">
+<header class="navbar navbar-inverse navbar-static-top pad-bottom">
   <div class="navbar-inner">
     <%= link_to 'Fish Bowl', root_path, class: 'brand' %>
     <ul class="nav pull-right">
       <li>
         <%= link_to root_path do %>
-          <i class="icon-home"></i> Home
+          <i class="icon-home icon-white"></i> Home
         <% end %>
       </li>
       <% if user_signed_in? %>
@@ -20,7 +20,7 @@
         <% if current_user.admin? %>
           <li>
             <%= link_to users_path do %>
-              <i class="icon-star"></i> Admin View
+              <i class="icon-star icon-white"></i> Admin View
             <% end %>
           </li>
         <% end %>
@@ -28,7 +28,7 @@
       <% else %>
         <li>
           <%= link_to new_user_session_path do %>
-            <i class="icon-user"></i> Sign in
+            <i class="icon-user icon-white"></i> Sign in
           <% end %>
         </li>
       <% end %>

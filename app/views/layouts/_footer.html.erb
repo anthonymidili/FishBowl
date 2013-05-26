@@ -1,15 +1,14 @@
-<footer class="navbar navbar-static muted">
-  <ul class="nav pull-left">
-    <li>
-      <%= link_to href="http://www.facebook.com/jtb.building", target: "_blank" do %>
-        JTB Building <i class="icon-fire"></i>
-      <% end %>
-    </li>
-  </ul>
-  <ul class="nav pull-right">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About Water Health", about_water_health_path %></li>
-    <li><%= link_to "Forum", forum_path %></li>
-    <li><%= link_to "Information Sources", info_sources_path %></li>
-  </ul>
+<footer class="navbar navbar-static-bottom muted">
+  <div class="navbar-inner">
+    <%= link_to href="http://www.facebook.com/jtb.building", class: 'brand', target: '_blank' do %>
+      JTB Building <i class="icon-fire"></i>
+    <% end %>
+
+    <ul class="nav pull-right">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About Water Health", about_water_health_path %></li>
+      <li><%= link_to "Forum", forum_path %></li>
+      <li><%= link_to "Information Sources", info_sources_path %></li>
+    </ul>
+  </div>
 </footer>

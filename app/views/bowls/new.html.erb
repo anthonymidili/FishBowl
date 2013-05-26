@@ -1,5 +1,5 @@
 <h2><%= "#{current_user.name}, Create a New Fish Bowl" %></h2>
 
-<p><%= link_to "Bowl Directory", bowls_path %></p>
+<p><%= link_to "Bowl Directory", bowls_path, class: 'btn btn-info btn-small' %></p>
 
 <%= render 'form' %>
