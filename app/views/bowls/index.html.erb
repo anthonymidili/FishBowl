@@ -1,8 +1,9 @@
 <h2><%= "#{current_user.name}'s Fish #{('Bowl').pluralize(@bowls.count)}" %></h2>
 
-<p><%= link_to 'Custom Species Directory', species_index_path %></p>
-
-<p><%= link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary' %></p>
+<p>
+  <%= link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary pad-right' %>
+  <%= link_to 'Custom Species Directory', species_index_path, class: 'btn btn-info btn-small' %>
+</p>
 
 <ul class="thumbnails">
   <% @bowls.each do |bowl| %>

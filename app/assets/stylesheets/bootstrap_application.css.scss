@@ -2,6 +2,55 @@
 
 /* universal */
 
+body {
+  background-size: cover;
+  background-color: lightskyblue;
+  background-image: url('under_the_sea.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+h1, h2 {
+  color: white;
+  text-shadow: -2px -2px 5px black;
+
+  small {
+    color: orangered;
+  }
+}
+
+.add-background {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+
+  .span8 {
+    width: 600px;
+  }
+}
+
+.table-background {
+  background-color: white;
+}
+
+.add-text-shadow {
+  color: greenyellow;
+  text-shadow: -2px -2px 5px black;
+
+  a {
+    color: lightgray;
+  }
+}
+
+.thumbnail {
+  background-color: white;
+}
+
+.pad-right {
+  margin-right: 1em;
+}
+
 .pad-bottom {
   padding-bottom: 2em;
 }
@@ -12,7 +61,7 @@
 
 .welcome {
   min-height: 600px;
-  background-image: url('/assets/glass-fish-bowl.jpg');
+  background-image: url('glass-fish-bowl.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 800px 600px;
@@ -53,7 +102,6 @@ section {
 
 .hero-unit {
   border: 3px solid black;
-  box-shadow: -10px 10px 5px #888;
   background-color: midnightblue;
   color: deepskyblue;
 
@@ -65,6 +113,13 @@ section {
     color: lightskyblue;
     font-size: 13px;
   }
+}
+
+nav.pagination {
+  background-color: white;
+  border-radius: 4px;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 /* thumbnails */
@@ -180,7 +235,6 @@ section {
 
 .health-sidebar {
   background-color: midnightblue;
-  box-shadow: -10px 10px 5px #888;
   border: 3px solid black;
   border-radius: 10px;
   z-index: 10;
@@ -216,13 +270,17 @@ section {
 .alert {
   border: 1px solid orangered;
   color: orangered;
+
+  h2 {
+    color: orangered;
+    text-shadow: none;
+  }
 }
 
 /* footer */
 
 footer {
   margin-top: 30px;
-  border-top: 1px solid #999;
 }
 
 div.fixed-button {
@@ -231,5 +289,5 @@ div.fixed-button {
   right: 2em;
   z-index: 10;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px #888;
+  box-shadow: 8px 8px 5px black;
 }
