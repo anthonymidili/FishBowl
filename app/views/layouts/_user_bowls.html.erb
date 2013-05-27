@@ -2,7 +2,7 @@
   <% if bowl.persisted? %>
     <li>
       <%= link_to bowl do %>
-        <i class="icon-flag icon-white"></i> <%= bowl.name %>
+        <i class="icon-flag <%= 'icon-white' if current_user.bowls.count == 1 %>"></i> <%= bowl.name %>
       <% end %>
     </li>
   <% end %>
