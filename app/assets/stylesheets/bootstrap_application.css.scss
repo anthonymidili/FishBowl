@@ -55,10 +55,6 @@ h1, h2 {
   padding-bottom: 2em;
 }
 
-.pad-top {
-  padding-top: 2em;
-}
-
 .welcome {
   min-height: 600px;
   background-image: url('glass-fish-bowl.jpg');
@@ -151,6 +147,10 @@ nav.pagination {
 .add-thumbnail-height {
   height: 25em;
   position: relative;
+}
+
+.pad-top {
+  top: 2em;
 }
 
 .center-image {
