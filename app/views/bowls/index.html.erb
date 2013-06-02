@@ -31,12 +31,13 @@
         </div>
 
         <div class="center to-bottom">
-          <%= link_to 'Edit Fish Bowl', edit_bowl_path(bowl) %> |
-          <%= link_to 'Water Health Test', bowl_test_results_path(bowl) %> |
+          <%= link_to 'Edit Fish Bowl', edit_bowl_path(bowl), class: 'pad-right' %>
+          <%= link_to 'Water Health Test', bowl_test_results_path(bowl), class: 'pad-right' %>
           <%= link_to bowl,
+
                       confirm: 'Are you sure? This will permanently delete your fish bowl!',
                       method: :delete do %>
-            <i class="icon-remove"></i>Delete Bowl
+            <%= image_tag('icons/rubber_stopper.gif', size: '64x64', title: 'Delete Bowl') %>
           <% end %>
         </div>
       </div>
