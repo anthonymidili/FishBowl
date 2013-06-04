@@ -1,7 +1,72 @@
-<div class="welcome">
-  <div class="sign-up-button">
+<div class="row">
+  <div class="span12">
     <h1>Welcome to Fish Bowl</h1>
-
     <p><%= link_to "Sign up", new_user_registration_path, class: "btn btn-large btn-primary" %></p>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <div class="carousel-center-image"><%= image_tag('sample/large_graph.png') %></div>
+          <div class="carousel-caption">
+            <h4>Record Test Results</h4>
+            <p>Keep track of your water levels and easily see your water levels displayed in a graph.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-center-image"><%= image_tag('freshwater/albino_peacock_cichlid.jpg') %></div>
+          <div class="carousel-caption">
+            <h4>Take Event Note</h4>
+            <p>Taking notes of the changes you make to your aquarium is a great way to see <b>why</b> water levels
+              rise or fall.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carousel-center-image"><%= image_tag('freshwater/albino_peacock_cichlid.jpg') %></div>
+          <div class="carousel-caption">
+            <h4>Have Questions, Get Answers</h4>
+            <p>With fish-bowl-questions forum, built with the power of google, you can connect with fellow fish
+              lovers and get your questions answered.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+    <div class="row">
+      <div class="carousel-span4 add-background">
+        <h4>Record Test Results</h4>
+        <p>Keep track of your water levels and easily see your water levels displayed in a graph.</p>
+      </div>
+      <div class="carousel-span4 add-background">
+        <h4>Take Event Note</h4>
+        <p>Taking notes of the changes you make to your aquarium is a great way to see <b>why</b> water levels
+          rise or fall.</p>
+      </div>
+      <div class="carousel-span4 add-background">
+        <h4>Have Questions, Get Answers</h4>
+        <p>With fish-bowl-questions forum, built with the power of google, you can connect with fellow fish
+          lovers and get your questions answered.</p>
+      </div>
+    </div><br>
+
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <div class="add-background">
+      <h4>What is Fish Bowl</h4>
+      <p>Keep track of one or more aquariums anywhere you can connect to the web.</p>
+    </div>
   </div>
 </div>

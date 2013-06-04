@@ -256,6 +256,33 @@ nav.pagination {
     font-family: Verdana;
   }
 }
+
+/* carousel */
+
+.carousel-inner {
+  background-color: lightskyblue;
+  padding: 10px;
+  width: 920px;
+  border-radius: 4px;
+}
+
+.carousel-center-image {
+  height: 30em;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.carousel-span4 {
+  width: 280px;
+  height: 10em;
+}
+
 /* devise */
 
 .center-devise-forms {
