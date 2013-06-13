@@ -20,6 +20,13 @@ h1, h2 {
   }
 }
 
+.home-background {
+  padding: 10px;
+  background-color: lightskyblue;
+  border-radius: 4px;
+  color: midnightblue;
+}
+
 .add-background {
   padding: 10px;
   background-color: white;
@@ -40,6 +47,10 @@ h1, h2 {
 
   a {
     color: lightgray;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -55,17 +66,9 @@ h1, h2 {
   padding-bottom: 2em;
 }
 
-.welcome {
-  min-height: 600px;
-  background-image: url('glass-fish-bowl.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 800px 600px;
-}
-
-.sign-up-button {
-  padding-left: 2em;
-  background-position: left top;
+.sign-up-btn {
+  font-size: 35px;
+  padding: 15px;
 }
 
 .center_fields {
@@ -280,7 +283,7 @@ nav.pagination {
 
 .carousel-span4 {
   width: 280px;
-  height: 10em;
+  height: 16em;
 }
 
 /* devise */
