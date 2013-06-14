@@ -13,7 +13,4 @@ class WelcomeController < ApplicationController
 
   def forum
   end
-
-  def google
-  end
 end

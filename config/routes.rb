@@ -20,7 +20,6 @@ FishBowl::Application.routes.draw do
   match 'about_water_health', to: 'welcome#about_water_health'
   match 'info_sources', to: 'welcome#info_sources'
   match 'forum', to: 'welcome#forum'
-  match 'google8b5b09385dbe1321.html', to: 'welcome#google'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
