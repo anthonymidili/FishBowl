@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  before_filter :authenticate_user!, except: :home
+  before_filter :authenticate_user!, except: [:home, :google]
 
   def home
     redirect_to bowls_path if signed_in?
@@ -12,5 +12,8 @@ class WelcomeController < ApplicationController
   end
 
   def forum
+  end
+
+  def google
   end
 end
