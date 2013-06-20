@@ -13,4 +13,6 @@ class User < ActiveRecord::Base
   has_many :custom_species, foreign_key: 'created_by_id', class_name: 'Species', dependent: :destroy
 
   validates :name, presence: true
+
+  default_scope order: 'users.id ASC'
 end
