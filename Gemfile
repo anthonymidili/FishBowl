@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.0.0'
 
 gem 'rails', '3.2.13'
 gem 'jquery-rails', '~> 3.0'
 gem 'devise', '~> 2.2.3'
-gem 'bcrypt-ruby', '~> 3.0.1'
+gem 'bcrypt', '~> 3.1.7'
 gem 'kaminari', '~> 0.14.1'
 gem 'carrierwave', '~> 0.8.0'
 gem 'fog', '~> 1.12.0'
