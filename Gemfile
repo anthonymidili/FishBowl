@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.2.2'
 
-gem 'rails', '3.2.17'
+gem 'rails', '~> 3.2.17'
 gem 'jquery-rails', '~> 3.0'
 gem 'devise', '~> 2.2.3'
 gem 'bcrypt', '~> 3.1.7'
@@ -26,7 +26,7 @@ group :assets do
   gem 'uglifier', '~> 2.1.0'
 end
 
-gem "mocha", :group => :test
+gem 'mocha', :group => :test
 
 group :production do
   gem 'pg', '~> 0.15.1'
