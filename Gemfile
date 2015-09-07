@@ -26,7 +26,7 @@ group :assets do
   gem 'uglifier', '~> 2.1.0'
 end
 
-gem 'mocha', :group => :test
+gem 'mocha', group: :test
 
 group :production do
   gem 'pg', '~> 0.15.1'
