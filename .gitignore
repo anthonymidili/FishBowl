@@ -23,3 +23,5 @@ doc/
 bundler_stubs/
 .idea/
 /public/uploads
+
+.env
