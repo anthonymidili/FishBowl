@@ -5,14 +5,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
-  # attr_accessible :title, :body
-
   has_many :bowls, dependent: :destroy
   has_many :custom_species, foreign_key: 'created_by_id', class_name: 'Species', dependent: :destroy
 
   validates :name, presence: true
 
-  default_scope order: 'users.id ASC'
+  default_scope -> { order(id: :asc) }
 end

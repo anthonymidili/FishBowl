@@ -1,5 +1,5 @@
 class SpeciesController < ApplicationController
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
 
   def index
     @species = current_user.custom_species.all
@@ -11,7 +11,7 @@ class SpeciesController < ApplicationController
   end
 
   def create
-    @species = current_user.custom_species.new(params[:species])
+    @species = current_user.custom_species.new(species_params)
     if @species.save
       redirect_to species_index_path, :notice => 'Successfully created species.'
     else
@@ -25,7 +25,7 @@ class SpeciesController < ApplicationController
 
   def update
     @species = current_user.custom_species.find(params[:id])
-    if @species.update_attributes(params[:species])
+    if @species.update_attributes(species_params)
       redirect_to species_index_path, :notice  => 'Successfully updated species.'
     else
       render 'edit'
@@ -36,5 +36,15 @@ class SpeciesController < ApplicationController
     @species = current_user.custom_species.find(params[:id])
     @species.destroy
     redirect_to species_index_path, :notice => 'Successfully destroyed species.'
+  end
+
+private
+
+  def species_params
+    params.require(:species).permit(:name, :image, :avatar, :avatar_cache, :remove_avatar,
+                                     :water_type, :temperament, :adult_size, :info, :reef_safe,
+                                     :family, :native_to, :diet, :temperature, :care_level,
+                                     :tank_size, :scientific_name, :water_current, :water_parameters,
+                                     :about, :created_by_id)
   end
 end

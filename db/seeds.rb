@@ -8,7 +8,7 @@
 
 # Freshwater Seeds
 
-species = Species.find_or_create_by_name(name: 'Blue Gourami')
+species = Species.find_or_create_by(name: 'Blue Gourami')
 species.update_attributes(
     image: 'freshwater/blue_gourami.jpg',
     water_type: 'Freshwater',
@@ -26,7 +26,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Albino Tiger Barb')
+species = Species.find_or_create_by(name: 'Albino Tiger Barb')
 species.update_attributes(
     image: 'freshwater/albino_tiger_barb.jpg',
     water_type: 'Freshwater',
@@ -44,7 +44,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Albino Cory')
+species = Species.find_or_create_by(name: 'Albino Cory')
 species.update_attributes(
     image: 'freshwater/albino_cory.jpg',
     water_type: 'Freshwater',
@@ -63,7 +63,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Albino Peacock Cichlid')
+species = Species.find_or_create_by(name: 'Albino Peacock Cichlid')
 species.update_attributes(
     image: 'freshwater/albino_peacock_cichlid.jpg',
     water_type: 'Freshwater',
@@ -82,7 +82,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Albino Rainbow Shark')
+species = Species.find_or_create_by(name: 'Albino Rainbow Shark')
 species.update_attributes(
     image: 'freshwater/albino_rainbow_shark.jpg',
     water_type: 'Freshwater',
@@ -100,7 +100,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Albino Tiger Oscar Cichlid')
+species = Species.find_or_create_by(name: 'Albino Tiger Oscar Cichlid')
 species.update_attributes(
     image: 'freshwater/albino_tiger_oscar_cichlid.jpg',
     water_type: 'Freshwater',
@@ -118,7 +118,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Fantail Goldfish')
+species = Species.find_or_create_by(name: 'Assorted Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -136,7 +136,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Fancy Guppies - Female')
+species = Species.find_or_create_by(name: 'Assorted Fancy Guppies - Female')
 species.update_attributes(
     image: 'freshwater/fancy_guppy_female.jpg',
     water_type: 'Freshwater',
@@ -154,7 +154,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Fancy Guppies - Male')
+species = Species.find_or_create_by(name: 'Assorted Fancy Guppies - Male')
 species.update_attributes(
     image: 'freshwater/fancy_guppy_male.jpg',
     water_type: 'Freshwater',
@@ -172,7 +172,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Mickey Mouse Platies')
+species = Species.find_or_create_by(name: 'Assorted Mickey Mouse Platies')
 species.update_attributes(
     image: 'freshwater/mickey_mouse_platy.jpg',
     water_type: 'Freshwater',
@@ -190,7 +190,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Platies')
+species = Species.find_or_create_by(name: 'Assorted Platies')
 species.update_attributes(
     image: 'freshwater/platy.jpg',
     water_type: 'Freshwater',
@@ -208,7 +208,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Swordtails')
+species = Species.find_or_create_by(name: 'Assorted Swordtails')
 species.update_attributes(
     image: 'freshwater/swordtail.jpg',
     water_type: 'Freshwater',
@@ -226,7 +226,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assorted Veiled Angelfish')
+species = Species.find_or_create_by(name: 'Assorted Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/veiled_angelfish.jpg',
     water_type: 'Freshwater',
@@ -244,7 +244,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bala Shark')
+species = Species.find_or_create_by(name: 'Bala Shark')
 species.update_attributes(
     image: 'freshwater/bala_shark.jpg',
     water_type: 'Freshwater',
@@ -262,7 +262,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Moor Goldfish')
+species = Species.find_or_create_by(name: 'Black Moor Goldfish')
 species.update_attributes(
     image: 'freshwater/black_moor_goldfish.jpg',
     water_type: 'Freshwater',
@@ -280,7 +280,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Phantom Tetra')
+species = Species.find_or_create_by(name: 'Black Phantom Tetra')
 species.update_attributes(
     image: 'freshwater/black_phantom_tetra.jpg',
     water_type: 'Freshwater',
@@ -299,7 +299,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Ruby Barb')
+species = Species.find_or_create_by(name: 'Black Ruby Barb')
 species.update_attributes(
     image: 'freshwater/black_ruby_barb.jpg',
     water_type: 'Freshwater',
@@ -318,7 +318,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bloodfin Tetra')
+species = Species.find_or_create_by(name: 'Bloodfin Tetra')
 species.update_attributes(
     image: 'freshwater/bloodfin_tetra.jpg',
     water_type: 'Freshwater',
@@ -337,7 +337,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Emperor Tetra')
+species = Species.find_or_create_by(name: 'Blue Emperor Tetra')
 species.update_attributes(
     image: 'freshwater/blue_emperor_tetra.jpg',
     water_type: 'Freshwater',
@@ -356,7 +356,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Crowntail Betta - Female')
+species = Species.find_or_create_by(name: 'Blue Crowntail Betta - Female')
 species.update_attributes(
     image: 'freshwater/blue_female_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -376,7 +376,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Veiltail Betta - Female')
+species = Species.find_or_create_by(name: 'Blue Veiltail Betta - Female')
 species.update_attributes(
     image: 'freshwater/blue_female_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -396,7 +396,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Crowntail Betta - Male')
+species = Species.find_or_create_by(name: 'Blue Crowntail Betta - Male')
 species.update_attributes(
     image: 'freshwater/blue_male_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -416,7 +416,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Veiltail Betta - Male')
+species = Species.find_or_create_by(name: 'Blue Veiltail Betta - Male')
 species.update_attributes(
     image: 'freshwater/blue_male_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -434,7 +434,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Neon Guppy')
+species = Species.find_or_create_by(name: 'Blue Neon Guppy')
 species.update_attributes(
     image: 'freshwater/blue_neon_guppy.jpg',
     water_type: 'Freshwater',
@@ -452,7 +452,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Peacock Cichlid')
+species = Species.find_or_create_by(name: 'Blue Peacock Cichlid')
 species.update_attributes(
     image: 'freshwater/blue_peacock_cichlid.jpg',
     water_type: 'Freshwater',
@@ -471,7 +471,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Boesemani Rainbow')
+species = Species.find_or_create_by(name: 'Boesemani Rainbow')
 species.update_attributes(
     image: 'freshwater/boesemani_rainbow.jpg',
     water_type: 'Freshwater',
@@ -489,7 +489,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Borneo Sucker')
+species = Species.find_or_create_by(name: 'Borneo Sucker')
 species.update_attributes(
     image: 'freshwater/borneo_sucker.jpg',
     water_type: 'Freshwater',
@@ -508,7 +508,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Calico Fantail Goldfish')
+species = Species.find_or_create_by(name: 'Calico Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/calico_fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -526,7 +526,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Calico Ryukin Goldfish')
+species = Species.find_or_create_by(name: 'Calico Ryukin Goldfish')
 species.update_attributes(
     image: 'freshwater/calico_ryukin_goldfish.jpg',
     water_type: 'Freshwater',
@@ -544,7 +544,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Calico Shubukin Goldfish')
+species = Species.find_or_create_by(name: 'Calico Shubukin Goldfish')
 species.update_attributes(
     image: 'freshwater/calico_shubunkin_goldfish.jpg',
     water_type: 'Freshwater',
@@ -562,7 +562,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Cherry Barb')
+species = Species.find_or_create_by(name: 'Cherry Barb')
 species.update_attributes(
     image: 'freshwater/cherry_barb.jpg',
     water_type: 'Freshwater',
@@ -580,7 +580,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Chinese Algae Eater')
+species = Species.find_or_create_by(name: 'Chinese Algae Eater')
 species.update_attributes(
     image: 'freshwater/chinese_algae_eater.jpg',
     water_type: 'Freshwater',
@@ -598,7 +598,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Clown Loach')
+species = Species.find_or_create_by(name: 'Clown Loach')
 species.update_attributes(
     image: 'freshwater/clown_loach.jpg',
     water_type: 'Freshwater',
@@ -617,7 +617,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Dalmatian Sailfin Molly')
+species = Species.find_or_create_by(name: 'Dalmatian Sailfin Molly')
 species.update_attributes(
     image: 'freshwater/dalmatian_sailfin_molly.jpg',
     water_type: 'Freshwater',
@@ -636,7 +636,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Dwarf Gourami')
+species = Species.find_or_create_by(name: 'Dwarf Gourami')
 species.update_attributes(
     image: 'freshwater/dwarf_gourami.jpg',
     water_type: 'Freshwater',
@@ -654,7 +654,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Electric Yellow Cichlid')
+species = Species.find_or_create_by(name: 'Electric Yellow Cichlid')
 species.update_attributes(
     image: 'freshwater/electric_yellow_cichlid.jpg',
     water_type: 'Freshwater',
@@ -673,7 +673,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Elephant Ear Halfmoon Plakat Betta')
+species = Species.find_or_create_by(name: 'Elephant Ear Halfmoon Plakat Betta')
 species.update_attributes(
     image: 'freshwater/elephant_ear_halfmoon_plakat_betta.jpg',
     water_type: 'Freshwater',
@@ -692,7 +692,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Elongated Mbuna')
+species = Species.find_or_create_by(name: 'Elongated Mbuna')
 species.update_attributes(
     image: 'freshwater/elongated_mbuna.jpg',
     water_type: 'Freshwater',
@@ -710,7 +710,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Crowntail Betta - Female')
+species = Species.find_or_create_by(name: 'Crowntail Betta - Female')
 species.update_attributes(
     image: 'freshwater/female_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -730,7 +730,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Deltatail Betta - Female')
+species = Species.find_or_create_by(name: 'Deltatail Betta - Female')
 species.update_attributes(
     image: 'freshwater/female_deltatail_betta.jpg',
     water_type: 'Freshwater',
@@ -750,7 +750,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon Betta - Female')
+species = Species.find_or_create_by(name: 'Halfmoon Betta - Female')
 species.update_attributes(
     image: 'freshwater/female_halfmoon_betta.jpg',
     water_type: 'Freshwater',
@@ -770,7 +770,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Veiltail Betta - Female')
+species = Species.find_or_create_by(name: 'Veiltail Betta - Female')
 species.update_attributes(
     image: 'freshwater/female_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -790,7 +790,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Fire Eel')
+species = Species.find_or_create_by(name: 'Fire Eel')
 species.update_attributes(
     image: 'freshwater/fire_eel.jpg',
     water_type: 'Freshwater',
@@ -808,7 +808,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Firemouth Cuchlid')
+species = Species.find_or_create_by(name: 'Firemouth Cuchlid')
 species.update_attributes(
     image: 'freshwater/firemouth_cuchlid.jpg',
     water_type: 'Freshwater',
@@ -827,7 +827,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Glowlight Tetra')
+species = Species.find_or_create_by(name: 'Glowlight Tetra')
 species.update_attributes(
     image: 'freshwater/glowlight_tetra.jpg',
     water_type: 'Freshwater',
@@ -846,7 +846,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Gold Barb')
+species = Species.find_or_create_by(name: 'Gold Barb')
 species.update_attributes(
     image: 'freshwater/gold_barb.jpg',
     water_type: 'Freshwater',
@@ -865,7 +865,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Gold Gourami')
+species = Species.find_or_create_by(name: 'Gold Gourami')
 species.update_attributes(
     image: 'freshwater/gold_gourami.jpg',
     water_type: 'Freshwater',
@@ -883,7 +883,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Gold Veiled Angelfish')
+species = Species.find_or_create_by(name: 'Gold Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/gold_veiled_angelfish.jpg',
     water_type: 'Freshwater',
@@ -901,7 +901,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Gold White Cloud')
+species = Species.find_or_create_by(name: 'Gold White Cloud')
 species.update_attributes(
     image: 'freshwater/gold_white_cloud.jpg',
     water_type: 'Freshwater',
@@ -920,7 +920,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Grade A Butterfly Koi')
+species = Species.find_or_create_by(name: 'Grade A Butterfly Koi')
 species.update_attributes(
     image: 'freshwater/grade_a_butterfly_koi.jpg',
     water_type: 'Freshwater',
@@ -938,7 +938,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Grade A Koi')
+species = Species.find_or_create_by(name: 'Grade A Koi')
 species.update_attributes(
     image: 'freshwater/grade_a_koi.jpg',
     water_type: 'Freshwater',
@@ -956,7 +956,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Green Crowntail Betta - Female')
+species = Species.find_or_create_by(name: 'Green Crowntail Betta - Female')
 species.update_attributes(
     image: 'freshwater/green_female_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -976,7 +976,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Green Veiltail Betta - Female')
+species = Species.find_or_create_by(name: 'Green Veiltail Betta - Female')
 species.update_attributes(
     image: 'freshwater/green_female_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -996,7 +996,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Green Fire Tetra')
+species = Species.find_or_create_by(name: 'Green Fire Tetra')
 species.update_attributes(
     image: 'freshwater/green_fire_tetra.jpg',
     water_type: 'Freshwater',
@@ -1015,7 +1015,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Green Crowntail Betta - Male')
+species = Species.find_or_create_by(name: 'Green Crowntail Betta - Male')
 species.update_attributes(
     image: 'freshwater/green_male_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -1035,7 +1035,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Green Tiger Barb')
+species = Species.find_or_create_by(name: 'Green Tiger Barb')
 species.update_attributes(
     image: 'freshwater/green_tiger_barb.jpg',
     water_type: 'Freshwater',
@@ -1053,7 +1053,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Head and Tail Light Tetra')
+species = Species.find_or_create_by(name: 'Head and Tail Light Tetra')
 species.update_attributes(
     image: 'freshwater/head_and_tail_light_tetra.jpg',
     water_type: 'Freshwater',
@@ -1071,7 +1071,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Honey Dwarf Gourami')
+species = Species.find_or_create_by(name: 'Honey Dwarf Gourami')
 species.update_attributes(
     image: 'freshwater/honey_dwarf_gourami.jpg',
     water_type: 'Freshwater',
@@ -1089,7 +1089,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Jack Dempsey Cichlid')
+species = Species.find_or_create_by(name: 'Jack Dempsey Cichlid')
 species.update_attributes(
     image: 'freshwater/jack_dempsey_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1107,7 +1107,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Kissing Gourami')
+species = Species.find_or_create_by(name: 'Kissing Gourami')
 species.update_attributes(
     image: 'freshwater/kissing_gourami.jpg',
     water_type: 'Freshwater',
@@ -1125,7 +1125,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Long Fin White Cloud')
+species = Species.find_or_create_by(name: 'Long Fin White Cloud')
 species.update_attributes(
     image: 'freshwater/long_fin_white_cloud.jpg',
     water_type: 'Freshwater',
@@ -1144,7 +1144,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Long Fin Zebra Danio')
+species = Species.find_or_create_by(name: 'Long Fin Zebra Danio')
 species.update_attributes(
     image: 'freshwater/long_fin_zebra_danio.jpg',
     water_type: 'Freshwater',
@@ -1162,7 +1162,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Lyretail Guppy')
+species = Species.find_or_create_by(name: 'Lyretail Guppy')
 species.update_attributes(
     image: 'freshwater/lyretail_guppy.jpg',
     water_type: 'Freshwater',
@@ -1180,7 +1180,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Cambodian Crowntail Betta - Male')
+species = Species.find_or_create_by(name: 'Cambodian Crowntail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_cambodian_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -1199,7 +1199,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Cambodian Veiltail Betta - Male')
+species = Species.find_or_create_by(name: 'Cambodian Veiltail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_cambodian_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -1217,7 +1217,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Crowntail Betta - Male')
+species = Species.find_or_create_by(name: 'Crowntail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_crowntail_betta.jpg',
     water_type: 'Freshwater',
@@ -1237,7 +1237,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Deltatail Betta - Male')
+species = Species.find_or_create_by(name: 'Deltatail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_deltatail_betta.jpg',
     water_type: 'Freshwater',
@@ -1257,7 +1257,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Doubletail Betta - Male')
+species = Species.find_or_create_by(name: 'Doubletail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_doubletail_betta.jpg',
     water_type: 'Freshwater',
@@ -1277,7 +1277,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon Betta - Male')
+species = Species.find_or_create_by(name: 'Halfmoon Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_halfmoon_betta.jpg',
     water_type: 'Freshwater',
@@ -1297,7 +1297,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon Doubletail Betta - Male')
+species = Species.find_or_create_by(name: 'Halfmoon Doubletail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_halfmoon_doubletail_betta.jpg',
     water_type: 'Freshwater',
@@ -1317,7 +1317,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon Doubletail Plakat Betta - Male')
+species = Species.find_or_create_by(name: 'Halfmoon Doubletail Plakat Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_halfmoon_doubletail_plakat_betta.jpg',
     water_type: 'Freshwater',
@@ -1337,7 +1337,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon King Betta - Male')
+species = Species.find_or_create_by(name: 'Halfmoon King Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_halfmoon_king_betta.jpg',
     water_type: 'Freshwater',
@@ -1357,7 +1357,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Halfmoon Plakat Betta - Male')
+species = Species.find_or_create_by(name: 'Halfmoon Plakat Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_halfmoon_plakat_betta.jpg',
     water_type: 'Freshwater',
@@ -1377,7 +1377,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'King Betta - Male')
+species = Species.find_or_create_by(name: 'King Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_king_betta.jpg',
     water_type: 'Freshwater',
@@ -1396,7 +1396,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Veiltail Betta - Male')
+species = Species.find_or_create_by(name: 'Veiltail Betta - Male')
 species.update_attributes(
     image: 'freshwater/male_veiltail_betta.jpg',
     water_type: 'Freshwater',
@@ -1416,7 +1416,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Marble Angelfish')
+species = Species.find_or_create_by(name: 'Marble Angelfish')
 species.update_attributes(
     image: 'freshwater/marble_angelfish.jpg',
     water_type: 'Freshwater',
@@ -1434,7 +1434,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Marble Veiled Angelfish')
+species = Species.find_or_create_by(name: 'Marble Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/marble_veiled_angelfish.jpg',
     water_type: 'Freshwater',
@@ -1452,7 +1452,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Neon Tetra')
+species = Species.find_or_create_by(name: 'Neon Tetra')
 species.update_attributes(
     image: 'freshwater/neon_tetra.jpg',
     water_type: 'Freshwater',
@@ -1471,7 +1471,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'OB Peacock Cichlid')
+species = Species.find_or_create_by(name: 'OB Peacock Cichlid')
 species.update_attributes(
     image: 'freshwater/ob_peacock_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1490,7 +1490,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Orange Sailfin Molly')
+species = Species.find_or_create_by(name: 'Orange Sailfin Molly')
 species.update_attributes(
     image: 'freshwater/orange_sailfin_molly.jpg',
     water_type: 'Freshwater',
@@ -1508,7 +1508,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Panda Cory')
+species = Species.find_or_create_by(name: 'Panda Cory')
 species.update_attributes(
     image: 'freshwater/panda_cory.jpg',
     water_type: 'Freshwater',
@@ -1527,7 +1527,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Panda Oranda Goldfish')
+species = Species.find_or_create_by(name: 'Panda Oranda Goldfish')
 species.update_attributes(
     image: 'freshwater/panda_oranda_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1545,7 +1545,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Penguin Tetra')
+species = Species.find_or_create_by(name: 'Penguin Tetra')
 species.update_attributes(
     image: 'freshwater/penguin_tetra.jpg',
     water_type: 'Freshwater',
@@ -1564,7 +1564,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Pigeon Blood Discus')
+species = Species.find_or_create_by(name: 'Pigeon Blood Discus')
 species.update_attributes(
     image: 'freshwater/pigeon_blood_discus.jpg',
     water_type: 'Freshwater',
@@ -1582,7 +1582,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Plecostomus')
+species = Species.find_or_create_by(name: 'Plecostomus')
 species.update_attributes(
     image: 'freshwater/plecostomus.jpg',
     water_type: 'Freshwater',
@@ -1600,7 +1600,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Purple Fantail Goldfish')
+species = Species.find_or_create_by(name: 'Purple Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/purple_fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1618,7 +1618,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Rainbow Shark')
+species = Species.find_or_create_by(name: 'Rainbow Shark')
 species.update_attributes(
     image: 'freshwater/rainbow_shark.jpg',
     water_type: 'Freshwater',
@@ -1636,7 +1636,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Rasbora Brigittae')
+species = Species.find_or_create_by(name: 'Rasbora Brigittae')
 species.update_attributes(
     image: 'freshwater/rasbora_brigittae.jpg',
     water_type: 'Freshwater',
@@ -1655,7 +1655,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red & White Fantail Goldfish')
+species = Species.find_or_create_by(name: 'Red & White Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/red_white_fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1673,7 +1673,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red & White Ryukin Goldfish')
+species = Species.find_or_create_by(name: 'Red & White Ryukin Goldfish')
 species.update_attributes(
     image: 'freshwater/red_white_ryukin_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1691,7 +1691,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Blond Guppy')
+species = Species.find_or_create_by(name: 'Red Blond Guppy')
 species.update_attributes(
     image: 'freshwater/red_blond_guppy.jpg',
     water_type: 'Freshwater',
@@ -1709,7 +1709,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Cap Oranda Goldfish')
+species = Species.find_or_create_by(name: 'Red Cap Oranda Goldfish')
 species.update_attributes(
     image: 'freshwater/red_cap_oranda_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1727,7 +1727,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Dalmatian Sailfin Molly')
+species = Species.find_or_create_by(name: 'Red Dalmatian Sailfin Molly')
 species.update_attributes(
     image: 'freshwater/red_dalmatian_sailfin_molly.jpg',
     water_type: 'Freshwater',
@@ -1745,7 +1745,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Devil Cichlid')
+species = Species.find_or_create_by(name: 'Red Devil Cichlid')
 species.update_attributes(
     image: 'freshwater/red_devil_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1763,7 +1763,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Fantail Goldfish')
+species = Species.find_or_create_by(name: 'Red Fantail Goldfish')
 species.update_attributes(
     image: 'freshwater/red_fantail_goldfish.jpg',
     water_type: 'Freshwater',
@@ -1781,7 +1781,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Fin Kadango Cichlid')
+species = Species.find_or_create_by(name: 'Red Fin Kadango Cichlid')
 species.update_attributes(
     image: 'freshwater/red_fin_kadango_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1800,7 +1800,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Oscar Cichlid')
+species = Species.find_or_create_by(name: 'Red Oscar Cichlid')
 species.update_attributes(
     image: 'freshwater/red_oscar_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1818,7 +1818,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Phantom Tetra')
+species = Species.find_or_create_by(name: 'Red Phantom Tetra')
 species.update_attributes(
     image: 'freshwater/red_phantom_tetra.jpg',
     water_type: 'Freshwater',
@@ -1837,7 +1837,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Sailfin Molly')
+species = Species.find_or_create_by(name: 'Red Sailfin Molly')
 species.update_attributes(
     image: 'freshwater/red_sailfin_molly.jpg',
     water_type: 'Freshwater',
@@ -1855,7 +1855,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Swordtail')
+species = Species.find_or_create_by(name: 'Red Swordtail')
 species.update_attributes(
     image: 'freshwater/red_swordtail.jpg',
     water_type: 'Freshwater',
@@ -1873,7 +1873,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Turquoise Discus')
+species = Species.find_or_create_by(name: 'Red Turquoise Discus')
 species.update_attributes(
     image: 'freshwater/red_turquoise_discus.jpg',
     water_type: 'Freshwater',
@@ -1891,7 +1891,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Wag Swordtail')
+species = Species.find_or_create_by(name: 'Red Wag Swordtail')
 species.update_attributes(
     image: 'freshwater/red_wag_swordtail.jpg',
     water_type: 'Freshwater',
@@ -1909,7 +1909,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Zebra Cichlid')
+species = Species.find_or_create_by(name: 'Red Zebra Cichlid')
 species.update_attributes(
     image: 'freshwater/red_zebra_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1927,7 +1927,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Red Zebra Cichlid')
+species = Species.find_or_create_by(name: 'Red Zebra Cichlid')
 species.update_attributes(
     image: 'freshwater/red_zebra_cichlid.jpg',
     water_type: 'Freshwater',
@@ -1945,7 +1945,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Rosy Barb')
+species = Species.find_or_create_by(name: 'Rosy Barb')
 species.update_attributes(
     image: 'freshwater/rosy_barb.jpg',
     water_type: 'Freshwater',
@@ -1964,7 +1964,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Serpae Tetra')
+species = Species.find_or_create_by(name: 'Serpae Tetra')
 species.update_attributes(
     image: 'freshwater/serpae_tetra.jpg',
     water_type: 'Freshwater',
@@ -1982,7 +1982,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Silver Tip Tetra')
+species = Species.find_or_create_by(name: 'Silver Tip Tetra')
 species.update_attributes(
     image: 'freshwater/silver_tip_tetra.jpg',
     water_type: 'Freshwater',
@@ -2000,7 +2000,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Silver Veiled Angelfish')
+species = Species.find_or_create_by(name: 'Silver Veiled Angelfish')
 species.update_attributes(
     image: 'freshwater/silver_veiled_angelfish.jpg',
     water_type: 'Freshwater',
@@ -2018,7 +2018,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Snow White Socolofi')
+species = Species.find_or_create_by(name: 'Snow White Socolofi')
 species.update_attributes(
     image: 'freshwater/snow_white_socolofi.jpg',
     water_type: 'Freshwater',
@@ -2036,7 +2036,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: "Sterba's Cory")
+species = Species.find_or_create_by(name: "Sterba's Cory")
 species.update_attributes(
     image: 'freshwater/sterbas_cory.jpg',
     water_type: 'Freshwater',
@@ -2055,7 +2055,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Sunrise Guppy')
+species = Species.find_or_create_by(name: 'Sunrise Guppy')
 species.update_attributes(
     image: 'freshwater/sunrise_guppy.jpg',
     water_type: 'Freshwater',
@@ -2073,7 +2073,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Tiger Barb')
+species = Species.find_or_create_by(name: 'Tiger Barb')
 species.update_attributes(
     image: 'freshwater/tiger_barb.jpg',
     water_type: 'Freshwater',
@@ -2091,7 +2091,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Tiger Oscar Cichlid')
+species = Species.find_or_create_by(name: 'Tiger Oscar Cichlid')
 species.update_attributes(
     image: 'freshwater/tiger_oscar_cichlid.jpg',
     water_type: 'Freshwater',
@@ -2109,7 +2109,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Tri Color Angelfish')
+species = Species.find_or_create_by(name: 'Tri Color Angelfish')
 species.update_attributes(
     image: 'freshwater/tri_color_angelfish.jpg',
     water_type: 'Freshwater',
@@ -2127,7 +2127,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Twinbar Solar Flare Swordtail')
+species = Species.find_or_create_by(name: 'Twinbar Solar Flare Swordtail')
 species.update_attributes(
     image: 'freshwater/twinbar_solar_flare_swordtail.jpg',
     water_type: 'Freshwater',
@@ -2146,7 +2146,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Venustus Cichlid')
+species = Species.find_or_create_by(name: 'Venustus Cichlid')
 species.update_attributes(
     image: 'freshwater/venustus_cichlid.jpg',
     water_type: 'Freshwater',
@@ -2165,7 +2165,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Yellow Guppy')
+species = Species.find_or_create_by(name: 'Yellow Guppy')
 species.update_attributes(
     image: 'freshwater/yellow_guppy.jpg',
     water_type: 'Freshwater',
@@ -2183,7 +2183,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Zebra Danio')
+species = Species.find_or_create_by(name: 'Zebra Danio')
 species.update_attributes(
     image: 'freshwater/zebra_danio.jpg',
     water_type: 'Freshwater',
@@ -2203,7 +2203,7 @@ species.update_attributes(
 
 # Saltwater Seeds
 
-species = Species.find_or_create_by_name(name: '8 Line Fairy Wrasse')
+species = Species.find_or_create_by(name: '8 Line Fairy Wrasse')
 species.update_attributes(
     image: 'saltwater/8_line_fairy_wrasse.jpg',
     water_type: 'Saltwater',
@@ -2223,7 +2223,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Adult Blue Ring Angel')
+species = Species.find_or_create_by(name: 'Adult Blue Ring Angel')
 species.update_attributes(
     image: 'saltwater/adult_blue_ring_angel.jpg',
     water_type: 'Saltwater',
@@ -2243,7 +2243,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Adult Formosa Wrasse')
+species = Species.find_or_create_by(name: 'Adult Formosa Wrasse')
 species.update_attributes(
     image: 'saltwater/adult_formosa_wrasse.jpg',
     water_type: 'Saltwater',
@@ -2263,7 +2263,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Adult Imperator Angel')
+species = Species.find_or_create_by(name: 'Adult Imperator Angel')
 species.update_attributes(
     image: 'saltwater/adult_imperator_angel.jpg',
     water_type: 'Saltwater',
@@ -2283,7 +2283,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Adult Red Coris Wrasse')
+species = Species.find_or_create_by(name: 'Adult Red Coris Wrasse')
 species.update_attributes(
     image: 'saltwater/adult_red_coris_wrasse.jpg',
     water_type: 'Saltwater',
@@ -2303,7 +2303,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Antennata Lionfish')
+species = Species.find_or_create_by(name: 'Antennata Lionfish')
 species.update_attributes(
     image: 'saltwater/antennata_lionfish.jpg',
     water_type: 'Saltwater',
@@ -2323,7 +2323,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Arc Eye Hawkfish')
+species = Species.find_or_create_by(name: 'Arc Eye Hawkfish')
 species.update_attributes(
     image: 'saltwater/arc_eye_hawkfish.jpg',
     water_type: 'Saltwater',
@@ -2343,7 +2343,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Asfur Angelfish')
+species = Species.find_or_create_by(name: 'Asfur Angelfish')
 species.update_attributes(
     image: 'saltwater/asfur_angelfish.jpg',
     water_type: 'Saltwater',
@@ -2363,7 +2363,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Assasi Trigger')
+species = Species.find_or_create_by(name: 'Assasi Trigger')
 species.update_attributes(
     image: 'saltwater/assasi_trigger.jpg',
     water_type: 'Saltwater',
@@ -2383,7 +2383,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Auriga Butterfly')
+species = Species.find_or_create_by(name: 'Auriga Butterfly')
 species.update_attributes(
     image: 'saltwater/auriga_butterfly.jpg',
     water_type: 'Saltwater',
@@ -2403,7 +2403,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Aurora Goby')
+species = Species.find_or_create_by(name: 'Aurora Goby')
 species.update_attributes(
     image: 'saltwater/aurora_goby.jpg',
     water_type: 'Saltwater',
@@ -2423,7 +2423,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Banana Wrasse')
+species = Species.find_or_create_by(name: 'Banana Wrasse')
 species.update_attributes(
     image: 'saltwater/banana_wrasse.jpg',
     water_type: 'Saltwater',
@@ -2443,7 +2443,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bicolor Angel')
+species = Species.find_or_create_by(name: 'Bicolor Angel')
 species.update_attributes(
     image: 'saltwater/bicolor_angel.jpg',
     water_type: 'Saltwater',
@@ -2463,7 +2463,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bicolor Blenny')
+species = Species.find_or_create_by(name: 'Bicolor Blenny')
 species.update_attributes(
     image: 'saltwater/bicolor_blenny.jpg',
     water_type: 'Saltwater',
@@ -2483,7 +2483,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bicolor Dottyback')
+species = Species.find_or_create_by(name: 'Bicolor Dottyback')
 species.update_attributes(
     image: 'saltwater/bicolor_dottyback.jpg',
     water_type: 'Saltwater',
@@ -2503,7 +2503,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bicolor Foxface')
+species = Species.find_or_create_by(name: 'Bicolor Foxface')
 species.update_attributes(
     image: 'saltwater/bicolor_foxface.jpg',
     water_type: 'Saltwater',
@@ -2523,7 +2523,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bicolor Parrotfish')
+species = Species.find_or_create_by(name: 'Bicolor Parrotfish')
 species.update_attributes(
     image: 'saltwater/bicolor_parrotfish.jpg',
     water_type: 'Saltwater',
@@ -2543,7 +2543,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black & White Heniochus')
+species = Species.find_or_create_by(name: 'Black & White Heniochus')
 species.update_attributes(
     image: 'saltwater/black_white_heniochus.jpg',
     water_type: 'Saltwater',
@@ -2563,7 +2563,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Angler')
+species = Species.find_or_create_by(name: 'Black Angler')
 species.update_attributes(
     image: 'saltwater/black_angler.jpg',
     water_type: 'Saltwater',
@@ -2583,7 +2583,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Blenny')
+species = Species.find_or_create_by(name: 'Black Blenny')
 species.update_attributes(
     image: 'saltwater/black_blenny.jpg',
     water_type: 'Saltwater',
@@ -2603,7 +2603,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Boxfish')
+species = Species.find_or_create_by(name: 'Black Boxfish')
 species.update_attributes(
     image: 'saltwater/black_boxfish.jpg',
     water_type: 'Saltwater',
@@ -2623,7 +2623,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Nox Angel')
+species = Species.find_or_create_by(name: 'Black Nox Angel')
 species.update_attributes(
     image: 'saltwater/black_nox_angel.jpg',
     water_type: 'Saltwater',
@@ -2643,7 +2643,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Tip Heraldi Angel')
+species = Species.find_or_create_by(name: 'Black Tip Heraldi Angel')
 species.update_attributes(
     image: 'saltwater/black_tip_heraldi_angel.jpg',
     water_type: 'Saltwater',
@@ -2663,7 +2663,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Black Volitan Lionfish')
+species = Species.find_or_create_by(name: 'Black Volitan Lionfish')
 species.update_attributes(
     image: 'saltwater/black_volitan_lionfish.jpg',
     water_type: 'Saltwater',
@@ -2683,7 +2683,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blackback Butterfly')
+species = Species.find_or_create_by(name: 'Blackback Butterfly')
 species.update_attributes(
     image: 'saltwater/blackback_butterfly.jpg',
     water_type: 'Saltwater',
@@ -2703,7 +2703,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blackcap Basslet')
+species = Species.find_or_create_by(name: 'Blackcap Basslet')
 species.update_attributes(
     image: 'saltwater/blackcap_basslet.jpg',
     water_type: 'Saltwater',
@@ -2723,7 +2723,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blonde Naso Tang')
+species = Species.find_or_create_by(name: 'Blonde Naso Tang')
 species.update_attributes(
     image: 'saltwater/blonde_naso_tang.jpg',
     water_type: 'Saltwater',
@@ -2743,7 +2743,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Angel')
+species = Species.find_or_create_by(name: 'Blue Angel')
 species.update_attributes(
     image: 'saltwater/blue_angel.jpg',
     water_type: 'Saltwater',
@@ -2763,7 +2763,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Dot Jawfish')
+species = Species.find_or_create_by(name: 'Blue Dot Jawfish')
 species.update_attributes(
     image: 'saltwater/blue_dot_jawfish.jpg',
     water_type: 'Saltwater',
@@ -2783,7 +2783,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Fin Angel')
+species = Species.find_or_create_by(name: 'Blue Fin Angel')
 species.update_attributes(
     image: 'saltwater/blue_fin_angel.jpg',
     water_type: 'Saltwater',
@@ -2803,7 +2803,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Hepatus Tang')
+species = Species.find_or_create_by(name: 'Blue Hepatus Tang')
 species.update_attributes(
     image: 'saltwater/blue_hepatus_tang.jpg',
     water_type: 'Saltwater',
@@ -2823,7 +2823,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blue Spotted Watchman Goby')
+species = Species.find_or_create_by(name: 'Blue Spotted Watchman Goby')
 species.update_attributes(
     image: 'saltwater/blue_spotted_watchman_goby.jpg',
     water_type: 'Saltwater',
@@ -2843,7 +2843,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blueface Angel')
+species = Species.find_or_create_by(name: 'Blueface Angel')
 species.update_attributes(
     image: 'saltwater/blueface_angel.jpg',
     water_type: 'Saltwater',
@@ -2863,7 +2863,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Blueline Trigger')
+species = Species.find_or_create_by(name: 'Blueline Trigger')
 species.update_attributes(
     image: 'saltwater/blueline_trigger.jpg',
     water_type: 'Saltwater',
@@ -2883,7 +2883,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bluestripe Pipefish')
+species = Species.find_or_create_by(name: 'Bluestripe Pipefish')
 species.update_attributes(
     image: 'saltwater/bluestripe_pipefish.jpg',
     water_type: 'Saltwater',
@@ -2903,7 +2903,7 @@ species.update_attributes(
     }
 )
 
-species = Species.find_or_create_by_name(name: 'Bristletooth Tang')
+species = Species.find_or_create_by(name: 'Bristletooth Tang')
 species.update_attributes(
     image: 'saltwater/bristletooth_tang.jpg',
     water_type: 'Saltwater',
@@ -2922,4 +2922,3 @@ species.update_attributes(
         about: 'Also known as the Tomini Tang. Eats pesky hair algae. Active herbivore.'
     }
 )
-

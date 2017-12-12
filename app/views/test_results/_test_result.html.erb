@@ -9,9 +9,9 @@
   <%= salinity_level(test_result.salinity) if @bowl.water_type == 'Saltwater' %>
   <td class="center">
     <%= link_to [@bowl, test_result],
-                confirm: 'Are you sure? This will permanently delete your water health test!',
+                data: { confirm: 'Are you sure? This will permanently delete your water health test!' },
                 method: :delete do %>
-      <i class="icon-remove"></i>
+      <i class="icon-remove">remove</i>
     <% end %>
   </td>
 </tr>

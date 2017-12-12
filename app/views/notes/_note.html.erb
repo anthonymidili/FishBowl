@@ -3,9 +3,9 @@
   <td colspan="6"><%= note.event %></td>
   <td class="center">
     <%= link_to [@bowl, note],
-                confirm: 'Are you sure? This will permanently delete your note!',
+                data: { confirm: 'Are you sure? This will permanently delete your note!' },
                 method: :delete do %>
-      <i class="icon-remove"></i>
+      <i class="icon-remove">remove</i>
     <% end %>
   </td>
 </tr>

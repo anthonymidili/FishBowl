@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :set_bowl
+  before_action :authenticate_user!
+  before_action :set_bowl
 
   def index
     @note = @bowl.notes.new
@@ -8,7 +8,7 @@ class NotesController < ApplicationController
   end
 
   def create
-    @note = @bowl.notes.new(params[:note])
+    @note = @bowl.notes.new(note_params)
     @notes = @bowl.notes.page(params[:page]).per(10)
     if @note.save
       redirect_to bowl_test_results_path(@bowl), :notice => 'Successfully created note.'
@@ -27,5 +27,9 @@ private
 
   def set_bowl
     @bowl = current_user.bowls.find(params[:bowl_id])
+  end
+
+  def note_params
+    params.require(:note).permit(:event, :bowl_id)
   end
 end

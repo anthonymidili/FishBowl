@@ -1,6 +1,6 @@
 class TestResultsController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :set_bowl
+  before_action :authenticate_user!
+  before_action :set_bowl
 
   def index
     @test_result = @bowl.test_results.new
@@ -11,7 +11,7 @@ class TestResultsController < ApplicationController
   end
 
   def create
-    @test_result = @bowl.test_results.new(params[:test_result])
+    @test_result = @bowl.test_results.new(test_result_params)
     @test_results = @bowl.test_results.page(params[:page]).per(10)
     @note = @bowl.notes.new
     @notes = @bowl.notes.all
@@ -38,4 +38,9 @@ private
   def set_bowl
     @bowl = current_user.bowls.find(params[:bowl_id])
   end
+
+  def test_result_params
+    params.require(:test_result).permit(:ammonia, :nitrate, :nitrite, :hardness, :alkalinity, :ph, :salinity, :bowl_id)
+  end
+
 end

@@ -1,11 +1,12 @@
 class Bowl < ActiveRecord::Base
-  attr_accessible :name, :size, :temperature, :water_type, :fish_type, :avatar, :avatar_cache, :remove_avatar, :species_ids, :occupancies_attributes, :user_id
 
   belongs_to :user
-  has_many :test_results, dependent: :destroy
-  has_many :notes, dependent: :destroy
+
   has_many :occupancies, dependent: :destroy
   has_many :species, through: :occupancies
+
+  has_many :test_results, dependent: :destroy
+  has_many :notes, dependent: :destroy
 
   accepts_nested_attributes_for :occupancies
 

@@ -1,5 +1,4 @@
 class TestResult < ActiveRecord::Base
-  attr_accessible :ammonia, :nitrate, :nitrite, :hardness, :alkalinity, :ph, :salinity, :bowl_id
 
   belongs_to :bowl
 
@@ -41,5 +40,5 @@ class TestResult < ActiveRecord::Base
   }
   validates :bowl_id, presence: true
 
-  default_scope order: 'test_results.created_at DESC'
+  default_scope -> { order(created_at: :desc) }
 end
