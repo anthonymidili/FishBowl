@@ -20,5 +20,9 @@ class Species < ActiveRecord::Base
   scope :custom_for, -> (user_id) { where(created_by_id: user_id) }
   scope :all_available_to, -> (user_id) { where(created_by_id: [ user_id, nil ]) }
   scope :by_bowl_water_type, -> (water_type) { where(water_type: water_type) }
-  scope :all_but_shown, -> (species_ids) { Species.where(Arel::Table.new(:species)[:id].not_in([*species_ids, 0])) }
+  scope :all_but_shown, -> (species_ids) { Species.where.not(id: species_ids) }
+
+  def self.select_bar_options(user, bowl)
+    all_available_to(user.id).by_bowl_water_type(bowl.water_type).all_but_shown(bowl.species_ids)
+  end
 end

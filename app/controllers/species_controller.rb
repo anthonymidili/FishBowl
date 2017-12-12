@@ -1,5 +1,6 @@
 class SpeciesController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_species, only: [:edit, :update, :destroy]
 
   def index
     @species = current_user.custom_species.all
@@ -20,11 +21,9 @@ class SpeciesController < ApplicationController
   end
 
   def edit
-    @species = current_user.custom_species.find(params[:id])
   end
 
   def update
-    @species = current_user.custom_species.find(params[:id])
     if @species.update_attributes(species_params)
       redirect_to species_index_path, :notice  => 'Successfully updated species.'
     else
@@ -33,12 +32,15 @@ class SpeciesController < ApplicationController
   end
 
   def destroy
-    @species = current_user.custom_species.find(params[:id])
     @species.destroy
     redirect_to species_index_path, :notice => 'Successfully destroyed species.'
   end
 
 private
+
+  def set_species
+    @species = current_user.custom_species.find(params[:id])
+  end
 
   def species_params
     params.require(:species).permit(:name, :image, :avatar, :avatar_cache, :remove_avatar,

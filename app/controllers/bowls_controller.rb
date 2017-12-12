@@ -1,5 +1,6 @@
 class BowlsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_bowl, only: [:show, :edit, :update, :destroy, :species_list]
 
   def index
     @bowls = current_user.bowls.all
@@ -7,7 +8,6 @@ class BowlsController < ApplicationController
   end
 
   def show
-    @bowl = current_user.bowls.find(params[:id])
     @test_results = @bowl.test_results.page(params[:page]).per(10)
     @occupancy = @bowl.occupancies.new
   end
@@ -26,11 +26,9 @@ class BowlsController < ApplicationController
   end
 
   def edit
-    @bowl = current_user.bowls.find(params[:id])
   end
 
   def update
-    @bowl = current_user.bowls.find(params[:id])
     if @bowl.update(bowl_params)
       redirect_to @bowl, :notice  => 'Successfully updated fish bowl.'
     else
@@ -39,16 +37,18 @@ class BowlsController < ApplicationController
   end
 
   def destroy
-    @bowl = current_user.bowls.find(params[:id])
     @bowl.destroy
     redirect_to bowls_url, :notice => 'Successfully destroyed fish bowl.'
   end
 
   def species_list
-    @bowl = current_user.bowls.find(params[:id])
   end
 
 private
+
+  def set_bowl
+    @bowl = current_user.bowls.find(params[:id])
+  end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def bowl_params
