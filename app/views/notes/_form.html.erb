@@ -1,8 +1,0 @@
-<%= form_for [@bowl, @note] do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
-  <div class="note-bar form-inline">
-    <%= f.text_area :event, class: 'span10', rows: '1', autofocus: true,
-                    placeholder: 'Create new event note here...' %>
-    <%= f.submit class: 'btn btn-primary span2 pull-right' %>
-  </div>
-<% end %>

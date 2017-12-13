@@ -1,0 +1,24 @@
+%body
+  %header.navbar.navbar-inverse.navbar-static-top.pad-bottom
+    .navbar-inner
+      = link_to 'Fish Bowl', root_path, class: 'brand'
+      %ul.nav.pull-right
+        %li
+          = link_to root_path do
+            %i.icon-home.icon-white
+            Home
+        - if user_signed_in?
+          = render 'layouts/bowls_navigation'
+          = render 'layouts/options'
+          = render 'layouts/user'
+          = render 'layouts/help'
+          - if current_user.admin?
+            %li
+              = link_to users_path do
+                %i.icon-star.icon-white
+                Admin View
+        - else
+          %li
+            = link_to new_user_session_path do
+              %i.icon-user.icon-white
+              Sign in

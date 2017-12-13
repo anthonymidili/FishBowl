@@ -1,0 +1,15 @@
+- provide(:title, 'Forget something')
+.hero-unit.center-devise-forms
+  %h2.heading Forgot your password?
+  %br/
+  = form_for(resource,                    |
+    :as => resource_name,                 |
+    :url => password_path(resource_name), |
+    :html => { :method => :post }) do |f| |
+    = devise_error_messages!
+    .control-group
+      = f.label :email
+      = f.text_field :email, class: 'input-block-level', :autofocus => true
+    .control-group
+      = f.submit 'Send me reset password instructions', class: 'btn btn-large btn-block btn-primary'
+  = render 'devise/shared/links'

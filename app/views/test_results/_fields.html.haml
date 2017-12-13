@@ -1,0 +1,16 @@
+%tr.center_fields
+  %td
+    %div Ideal
+    .caution Caution
+    .unsafe Unsafe
+    .danger Danger
+  %td= f.text_field :ammonia, autofocus: true
+  %td= f.text_field :nitrate
+  %td= f.text_field :nitrite
+  - if @bowl.water_type == 'Freshwater'
+    %td= f.text_field :hardness
+  %td= f.text_field :alkalinity
+  %td= f.text_field :ph
+  - if @bowl.water_type == 'Saltwater'
+    %td= f.text_field :salinity
+  %td= f.submit 'Save Test Results', class: 'btn btn-small btn-primary'

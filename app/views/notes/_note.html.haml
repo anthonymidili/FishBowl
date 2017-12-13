@@ -1,0 +1,8 @@
+%tr
+  %td= note.created_at.strftime('%b. %d, %Y @ %I:%M%p')
+  %td{:colspan => "6"}= note.event
+  %td.center
+    = link_to [@bowl, note],                                                      |
+      data: { confirm: 'Are you sure? This will permanently delete your note!' }, |
+      method: :delete do                                                          |
+      %i.icon-remove remove

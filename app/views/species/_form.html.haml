@@ -1,0 +1,96 @@
+.row
+  .span10.hero-unit
+    = form_for @species, html: { multipart: true } do |f|
+      = render 'shared/error_messages', object: f.object
+      .row
+        .span3
+          .control-group
+            = f.label :name
+            = f.text_field :name, autofocus: true
+          .control-group
+            = f.label :water_type
+            = f.select :water_type,
+              'Select One' => '',
+              'Freshwater' => 'Freshwater',
+              'Saltwater'  => 'Saltwater'
+          .control-group{style: "#{f.object.water_type == 'Saltwater' ? 'display: block' : 'display: none'}"}
+            = f.label :reef_safe
+            = f.select :reef_safe,
+              'Select One'   => '',
+              'Yes'          => 'Yes',
+              'With caution' => 'With Caution',
+              'No'           => 'No'
+          .control-group
+            = f.label :adult_size
+            .input-append
+              = f.text_field :adult_size
+              %span.add-on &quot;
+          .control-group
+            = f.label :temperament
+            = f.select :temperament,
+              'Community'       => 'Community',
+              'Semi-aggressive' => 'Semi-aggressive',
+              'Aggressive'      => 'Aggressive'
+        .span3.left-divider
+          .control-group
+            = f.label :family
+            = f.text_field :family
+          .control-group
+            = f.label :native_to
+            = f.text_field :native_to
+          .control-group
+            = f.label :diet
+            = f.select :diet,
+              'Herbivore' => 'Herbivore',
+              'Omnivore'  => 'Omnivore',
+              'Carnivore' => 'Carnivore'
+          .control-group
+            = f.label :water_current
+            = f.text_field :water_current
+          .pad-bottom.center
+            %h3 Optional Info
+
+        .span3
+          .control-group
+            = f.label :temperature
+            .input-append
+              = f.text_field :temperature
+              %span.add-on &deg;F
+          .control-group
+            = f.label :water_parameters
+            = f.text_field :water_parameters
+          .control-group
+            = f.label :care_level
+            = f.select :care_level,
+              'Easy'      => 'Easy',
+              'Moderate'  => 'Moderate',
+              'Difficult' => 'Difficult'
+          .control-group
+            = f.label :tank_size
+            = f.text_field :tank_size
+          .control-group
+            = f.label :scientific_name
+            = f.text_field :scientific_name
+
+      %section
+        .row
+          .span5
+            .control-group
+              = f.label :about
+              = f.text_area :about, class: 'span5', rows: '6',
+              placeholder: 'Feel free to add a few lines of information about your custom species...'
+
+          .span5
+            .control-group
+              = f.label :avatar do
+                Upload Image for your Species Avatar
+                = image_tag(f.object.avatar_url) if f.object.avatar?
+              = f.file_field :avatar
+              = f.hidden_field :avatar_cache
+            .control-group
+              %label.checkbox
+                = f.check_box :remove_avatar
+                Check box to remove Species Avatar
+
+      .control-group.pull-right
+        = f.submit class: 'btn btn-primary'

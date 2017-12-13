@@ -1,0 +1,14 @@
+%tr
+  %td= test_result.created_at.strftime('%b. %d, %Y @ %I:%M%p')
+  = ammonia_level(test_result.ammonia)
+  = nitrate_level(test_result.nitrate)
+  = nitrite_level(test_result.nitrite)
+  = hardness_level(test_result.hardness) if @bowl.water_type == 'Freshwater'
+  = alkalinity_level(test_result.alkalinity)
+  = ph_level(test_result.ph)
+  = salinity_level(test_result.salinity) if @bowl.water_type == 'Saltwater'
+  %td.center
+    = link_to [@bowl, test_result],                                                            |
+      data: { confirm: 'Are you sure? This will permanently delete your water health test!' }, |
+      method: :delete do                                                                       |
+      %i.icon-remove remove

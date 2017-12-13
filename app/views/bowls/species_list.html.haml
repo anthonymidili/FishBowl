@@ -1,0 +1,10 @@
+%h2= "#{current_user.name},"
+%h3.add-text-shadow
+  = "Select Your #{@bowl.water_type} Species In #{@bowl.name} Fish Bowl"
+  %small= link_to 'or create your own!', new_species_path
+= render 'add_species_form'
+.center.add-background
+  %p
+    Didn't see your species? #{link_to 'Create your own!', new_species_path}
+  - unless @bowl.water_type == 'Freshwater'
+    %p More Species To Select From Coming Soon.

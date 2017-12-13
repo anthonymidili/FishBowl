@@ -1,0 +1,42 @@
+%li.dropdown
+  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+    %i.icon-tasks.icon-white
+    Options
+    %b.caret
+  %ul.dropdown-menu
+    %li
+      = link_to bowls_path do
+        %i.icon-list
+        Bowls Directory
+    %li
+      = link_to  new_bowl_path do
+        %i.icon-plus
+        Add New Bowl
+    - if @bowl && @bowl.persisted?
+      %li
+        = link_to bowl_path(@bowl) do
+          %i.icon-flag
+          Back to Bowl
+      %li
+        = link_to edit_bowl_path(@bowl) do
+          %i.icon-edit
+          Edit Bowl
+      %li
+        = link_to bowl_test_results_path(@bowl) do
+          %i.icon-book
+          Water Health Test
+      %li
+        = link_to @bowl,                                                         |
+          confirm: 'Are you sure? This will permanently delete your fish bowl!', |
+          method: :delete do                                                     |
+          %i.icon-remove
+          Delete Bowl
+    %li.divider
+    %li
+      = link_to species_index_path do
+        %i.icon-list
+        Species Directory
+    %li
+      = link_to new_species_path do
+        %i.icon-plus
+        Add New Species

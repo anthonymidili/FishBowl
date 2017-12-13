@@ -1,0 +1,17 @@
+%li.dropdown
+  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+    Help
+    %b.caret
+  %ul.dropdown-menu
+    %li
+      = link_to about_water_health_path do
+        %i.icon-question-sign
+        About Water Health
+    %li
+      = link_to forum_path do
+        %i.icon-bullhorn
+        Forum
+    %li
+      = link_to info_sources_path do
+        %i.icon-list
+        Information Sources

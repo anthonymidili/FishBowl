@@ -1,0 +1,31 @@
+#myCarousel.carousel.slide
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+  / Carousel items
+  .carousel-inner
+    .active.item
+      .carousel-center-image= image_tag('graph.jpg')
+      .carousel-caption
+        %h4 Record Test Results
+        %p Keep track of your water levels and easily see your water levels displayed in a graph.
+    .item
+      .carousel-center-image= image_tag('notes.jpg')
+      .carousel-caption
+        %h4 Take Event Notes
+        %p
+          Taking notes of the changes you make to your aquarium is a great way to see
+          %b why
+          water levels
+          rise or fall.
+    .item
+      .carousel-center-image= image_tag('forum.jpg')
+      .carousel-caption
+        %h4 Have Questions, Get Answers
+        %p
+          With fish-bowl-questions forum, built with the power of google, you can connect with fellow fish
+          lovers and get your questions answered.
+  / Carousel nav
+  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›

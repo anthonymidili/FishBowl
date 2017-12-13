@@ -1,0 +1,24 @@
+= form_for @bowl do |f|
+  %p.pull-right= f.submit 'Update Amounts', class: 'btn btn-primary'
+  .row
+    .span12
+      %ul.thumbnails
+        = f.fields_for :occupancies do |occupancy_builder|
+          - if occupancy_builder.object.persisted?
+            %li.span4
+              .thumbnail
+                .your-thumbnail-height
+                  .pull-right
+                    = link_to [@bowl, occupancy_builder.object],
+                    data: { confirm: 'Are you sure you want to remove this species from your list?' },
+                    method: :delete do
+                      %i.icon-remove Remove
+                  .pad-top.center-image
+                    = image_tag(default_or_species_avatar(occupancy_builder.object.species))
+                  .to-bottom
+                    %h4
+                      %em= occupancy_builder.object.species.name
+                    .control-group.form-inline
+                      = occupancy_builder.label :amount
+                      = occupancy_builder.number_field :amount, min: '0', class: 'span1'
+                = render occupancy_builder.object.species

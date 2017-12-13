@@ -1,0 +1,17 @@
+%h2= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Health"
+%p
+  = link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-info btn-small pad-right'
+  = link_to 'Graph Test Results History', test_results_history_path(@bowl), class: 'btn btn-info btn-small'
+.remove-link-underline.add-background
+  = link_to test_results_history_path(@bowl) do
+    - if @test_results.present?
+      = content_tag :div, '', id: 'results_chart', data: { results: @logs }
+    - else
+      = image_tag('sample/large_graph.png')
+%h3.add-text-shadow= "#{@bowl.water_type} Health Test"
+%p= link_to "View all #{@bowl.name} Fish Bowl Event Notes", bowl_notes_path(@bowl), class: 'btn btn-mini'
+= render 'notes/form'
+= paginate @logs
+= render 'form'
+= paginate @logs
+%p= link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-info btn-small'

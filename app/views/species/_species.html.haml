@@ -1,0 +1,56 @@
+%section.info-height
+  %b Water type:
+  = species.water_type
+  %br/
+  - if species.reef_safe.present?
+    %b Reef Safe:
+    = species.reef_safe
+    %br/
+  %b Temperament:
+  = species.temperament
+  %br/
+  %b Adult size:
+  = ("up to #{sprintf("%g", species.adult_size)}")
+  "
+  %br/
+  - if species.family.present?
+    %b Family:
+    = species.family
+    %br/
+  - if species.native_to.present?
+    %b Native to:
+    = species.native_to
+    %br/
+  - if species.diet.present?
+    %b Diet:
+    = species.diet
+    %br/
+  - if species.water_current.present?
+    %b Water current:
+    = species.water_current
+    %br/
+  - if species.temperature.present?
+    %b Temperature:
+    = species.temperature
+    °F
+    %br/
+  - if species.water_parameters.present?
+    %b Water parameters:
+    = species.water_parameters
+    %br/
+  - if species.care_level.present?
+    %b Care level:
+    = species.care_level
+    %br/
+  - if species.tank_size.present?
+    %b Tank size:
+    = species.tank_size
+    %br/
+  - if species.scientific_name.present?
+    %b Scientific name:
+    = species.scientific_name
+    %br/
+  - if species.about.present?
+    %b About:
+    = species.about
+    %br/

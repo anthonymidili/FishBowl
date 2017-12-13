@@ -1,0 +1,141 @@
+.add-background
+  %h3 AQUARIUM CYCLING
+  %p Your aquarium is a delicately balanced ecosystem that depends on the nitrogen cycle. By breaking down the unhealthy elements within the water, this cycle helps generate the "good" bacteria your aquarium needs. Critical to the health and survival of your fish, this cycle is a vital part of every aquarium.
+  %p The first cycle can take 4-6 weeks to complete. Here’s how you can get the cycle started:
+  %ol
+    %li Start slowly and let the aquarium run at least a day before adding any fish.
+    %li
+      Add a few hardy fish such as danios, gouramis or livebearers that can withstand the presence of
+      \#{goto_section(:ammonia)} and
+      \#{goto_section(:nitrite)}. Never add more than three fish to your aquarium per week.
+    %li Seed the aquarium with bacteria by purchasing a cycling aid product.
+    %li Do not overcrowd your aquarium. This is sure to lead to toxic ammonia levels.
+    %li Do not overfeed. This is the most common cause of fish loss.
+    %li
+      Frequently
+      \#{link_to 'test', about_water_health_path(anchor: 'water_test')} levels of
+      \#{link_to 'pH', about_water_health_path(anchor: 'ph')},
+      \#{goto_section(:ammonia)},
+      \#{goto_section(:nitrite)} and
+      \#{goto_section(:nitrate)}. Change some of the water if the levels are elevated.
+    %li
+      Be sure water is at the right
+      \#{goto_section(:temperature)} for your fish.
+  %hr/
+  %h3#care_schedule WATER CARE SCHEDULE
+  %p Maintaining a healthy environment for your fish is an ongoing commitment. You can keep your aquarium in great shape with minimal effort by following this schedule:
+  %p
+    %b Daily:
+  %ul
+    %li
+      Check water #{goto_section(:temperature)}.
+  %p
+    %b Weekly:
+  %ul
+    %li Remove 10% of the water and replace with de-chlorinated water.
+    %li
+      Test the water conditions on a regular basis to be sure that
+      \#{link_to 'pH', about_water_health_path(anchor: 'ph')},
+      \#{goto_section(:ammonia)},
+      \#{goto_section(:nitrite)},
+      \#{goto_section(:nitrate)},
+      \#{goto_section(:hardness)},
+      \#{goto_section(:alkalinity)} and
+      \#{goto_section(:chlorine)} levels are normal. Water test kits are available for measuring these conditions in stores and at
+      \#{link_to 'PetSmart.com', 'http://www.petsmart.com', target: '_blank'}.
+    %li Scrub for algae (if necessary).
+  %p
+    %b Monthly:
+  %ul
+    %li Perform a 25% water change/gravel vacuum and replace with de-chlorinated water.
+    %li
+      Perform
+      \#{goto_section(:filter_maintenance)}  (i.e., replace filter cartridge, replace carbon, rinse pre-filter, etc.).
+    %li Scrub aquarium for algae.
+    %li Remove plastic plants/decorations and clean (if necessary).
+    %li Replace air stone if used (allows for more efficient operation and makes the air pump last longer).
+    %li Prune live plants (if necessary).
+  %hr/
+  %h3#how-many HOW MANY FISH ARE SAFE TO HAVE
+  %p
+    When adding fish to you aquarium, it's important to keep in mind that there is a limit to the amount of fish you can have in your tank.
+    %b The rule of thumb is for every gallon of water in your aquarium you can have 1 inch of fish.
+    Meaning, if your aquarium is 10 gallons you can put (10) 1 inch fish, (5) 2 inch fish, or just (1) 10 inch fish in your tank at one time. The reason for this is that each fish creates waste and the waste needs to be broken down by your aquarium's ecosystem. If there are to many fish per gallon, the waste could throw your aquarium's delicately balanced ecosystem out of balance causing your unhealthy elements to rise to dangerous levels.
+  %p
+    If you do exceed your ideal
+    = succeed "," do
+      %b estimated length of all occupants to aquarium size
+    = link_to 'water changes', about_water_health_path(anchor: 'care_schedule')
+    than recommended to try and keep you unhealthy elements at a safe level. It is also recommended that you
+    \#{link_to "test your aquarium's water", about_water_health_path(anchor: 'water_test')}  more often.
+  %hr/
+  %h3#water_test WATER TEST LOG
+  %p When preparing your aquarium, it’s important to closely monitor water quality. The information below will help you gauge where your levels should be as well as understand the results.
+  %p
+    %b#ph pH Level – NORMAL RANGE: 6.5-8.2
+  %p Test when:
+  %ul
+    %li Aquarium set up or water changes.
+    %li Fish's skin or gills are discolored.
+    %li Fish shake/appear stressed.
+  %p This is the measure of the activity (power) of the hydrogen ions in the water. The stability of the pH is related to water alkalinity and hardness. Rapid changes in pH are detrimental to fish. To raise or lower pH, use a pH adjuster such as Correct pH.
+  %p
+    %b#chlorine Chlorine and Chloramine – NORMAL RESULTS: 0.0 mg/L
+    %br/
+    These are added to city water supplies to make the water supply safe for human consumption. Be certain to always use a de-chlorinator when adding water to an aquarium because any amount of chlorine is toxic to fish.
+  %p
+    %b#ammonia Ammonia – NORMAL RESULTS: 0.0-0.25 mg/L
+    %br/
+    Aquariums with properly operating filtration systems should have no ammonia present (after they have been cycled). In new aquariums, Ammonia Removers can be used to lower ammonia levels, along with partial water changes.
+  %p
+    %b#nitrite Nitrite – NORMAL RESULTS: 0.0-0.5 mg/L
+  %p Test when:
+  %ul
+    %li Ammonia is present.
+    %li Fish activity slows.
+    %li Fish stop eating.
+  %p Nitrite reduces the ability of the fish’s blood to carry oxygen. You can remove excess nitrite from an aquarium by performing a 25% partial water change. Adding salt to the water at 0.1-0.3% (1-3 teaspoons of aquarium salt per gallon of water) also reduces nitrite toxicity. Also a nitrite ion exchange resin could help. If nitrite is present, ammonia may also be present. You can add an ammonia remover such as Ammonia Clear.
+  %p
+    %b#nitrate Nitrate – NORMAL RANGE: 0-40 mg/L
+  %p Test when:
+  %ul
+    %li Fish appear stressed.
+    %li Algae grows in aquarium.
+  %p If nitrate levels exceed 40 mg/L, 25% water changes can be used to lower the concentration. High levels of nitrate can also cause increased algae growth. You can also add a bacteria/enzyme product such as Start Zyme or nitrate ion exchange resin.
+  %p
+    %b#hardness Hardness – NORMAL RANGE: 100-250 mg/L
+  %p Test when:
+  %ul
+    %li Setting up aquarium of making water changes.
+    %li To maintain desired pH.
+    %li To set up preferred water conditions for fish/plants.
+  %p Water with high hardness usually has a high pH. Softening the water will lower the pH. Most fish will adapt to moderate hardness levels. To raise or lower hardness, Fresh Water Only, use a hardness adjusting product.
+  %p
+    %b#alkalinity Alkalinity – NORMAL RANGE: 120-300 mg/L
+  %p Test when:
+  %ul
+    %li Setting up aquarium of making water changes.
+    %li To maintain desired pH.
+    %li To set up preferred water conditions for fish/plants.
+  %p With low alkalinity water, your aquarium may experience sudden and deadly pH shifts. Increase the alkalinity of the water to stabilize the pH. To adjust alkalinity, use a pH adjuster such as Correct pH.
+  %p
+    %b#temperature Temperature – NORMAL RANGE: 74-82º F (23-28º C)
+    %br/
+    Use an aquarium heater to maintain stable water temperatures. Rapid temperature changes are harmful to tropical fish.
+  %hr/
+  %h3#filter_maintenance Understanding Aquatic Filtration
+  %p Proper filtration is critical to keeping happy, healthy fish. A complete filtration system should neutralize ammonia and nitrites, and remove floating debris and contamination from the water. There are three basic filtration methods: Mechanical, biological and chemical. Each is important, and your filtration system should incorporate all three.
+  %p The following common filtration systems employ each of the three methods:
+  %ul
+    %li
+      %b Under Gravel Filters
+      – A slotted plate under the gravel bed is used to provide continuous circulation of the aquarium water.
+    %li
+      %b Power Filters
+      – The most commonly used filtration systems in tanks up to 55 gallons, power filters can be used along with under gravel filters to increase biological filtration (and thus the number of fish you can keep in the tank).
+    %li
+      %b External Power Filters
+      – An external power filter hangs on the back of your aquarium, draws water from the tank and pumps it through a replaceable filter cartridge.
+    %li
+      %b Canister Filters
+      – Canister filtration is most typically used on 55-gallon aquariums and larger and is a very effective means of providing a total filtration system.

@@ -1,0 +1,7 @@
+= form_for [@bowl, @occupancy] do |f|
+  .form-inline.select-bar
+    = link_to "List of #{@bowl.water_type} Species", species_list_bowl_path(@bowl)
+    = f.collection_select :species_id, Species.select_bar_options(current_user, @bowl),
+    :id, :name, { prompt: 'Select One Species' }
+    = f.submit 'Add', class: 'btn'
+    = link_to "Create Your Own Species", new_species_path

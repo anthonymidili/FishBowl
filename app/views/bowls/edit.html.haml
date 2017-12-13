@@ -1,0 +1,5 @@
+%h2= "#{current_user.name}, Edit Your Fish Bowl"
+%p
+  = link_to "Bowl Directory", bowls_path, class: 'btn btn-info btn-small pad-right'
+  = link_to "#{@bowl.name} Fish Bowl", @bowl, class: 'btn btn-info btn-small'
+= render 'form'

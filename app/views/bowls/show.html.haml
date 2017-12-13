@@ -1,0 +1,46 @@
+%h2
+  = "#{@bowl.name} Fish Bowl"
+  %small= " - #{@bowl.water_type}"
+%p
+  = link_to 'Bowls Directory', bowls_path, class: 'btn btn-info btn-small pad-right'
+  = link_to 'Custom Species Directory', species_index_path, class: 'btn btn-info btn-small'
+.row
+  .span12
+    .add-background
+      .row
+        .span4
+          %h3= link_to 'Bowl Info', edit_bowl_path(@bowl)
+          %p= link_to image_tag(default_or_bowl_avatar(@bowl),
+            alt: @bowl.name,
+            class: 'thumbnail img-polaroid'), edit_bowl_path(@bowl)
+          %br/
+          %p
+            Bowl size:
+            %b= " #{@bowl.size} Gallons"
+          %p
+            Temperature:
+            %b
+              = " #{@bowl.temperature}"
+              °F
+          %p
+            Water type:
+            %b= " #{@bowl.water_type}"
+          %p
+            Fish temperament:
+            %b= " #{@bowl.fish_type}"
+          %p
+            Total bowl occupants:
+            %b= " #{count_species(@bowl)}"
+          %p
+            = link_to 'Estimated length of all occupants:', about_water_health_path(anchor: "how-many")
+            %b{:class => "<haml_loud"}
+              crowded?(@bowl) &gt;#{" #{species_total_length(@bowl)}"}"
+        .span8
+          %h3= link_to 'Water Health', bowl_test_results_path(@bowl)
+          .remove-link-underline
+            = link_to bowl_test_results_path(@bowl) do
+              - if @test_results.present?
+                = content_tag :div, '', id: 'results_chart', data: { results: @test_results }
+              - else
+                = image_tag('sample/medium_graph.png')
+    = render 'your_species'

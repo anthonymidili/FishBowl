@@ -19,6 +19,9 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'coffee-rails', '~> 4.2.2'
 gem 'uglifier', '~> 4.0.0'
 
+gem 'haml', '~> 5.0.1'
+gem 'haml-rails', '~> 1.0.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

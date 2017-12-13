@@ -1,0 +1,12 @@
+%tr
+  %th Date Taken
+  %th= link_to 'Ammonia', about_water_health_path(anchor: 'ammonia')
+  %th= link_to 'Nitrate', about_water_health_path(anchor: 'nitrate')
+  %th= link_to 'Nitrite', about_water_health_path(anchor: 'nitrite')
+  - if @bowl.water_type == 'Freshwater'
+    %th= link_to 'Hardness', about_water_health_path(anchor: 'hardness')
+  %th= link_to 'Alkalinity', about_water_health_path(anchor: 'alkalinity')
+  %th= link_to 'pH', about_water_health_path(anchor: 'ph')
+  - if @bowl.water_type == 'Saltwater'
+    %th= link_to 'Salinity', about_water_health_path(anchor: 'salinity')
+  %th

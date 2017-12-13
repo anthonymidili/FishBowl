@@ -1,0 +1,10 @@
+%h2= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Health History"
+%p
+  = link_to "To #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-info btn-small pad-right'
+  = link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl), class: 'btn btn-info btn-small'
+.remove-link-underline.add-background
+  = link_to bowl_test_results_path(@bowl) do
+    - if @test_results.present?
+      = content_tag :div, '', id: 'results_chart', data: { results: @test_results }
+    - else
+      = image_tag('sample/large_graph.png')

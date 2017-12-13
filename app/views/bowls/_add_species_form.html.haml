@@ -1,0 +1,20 @@
+= form_for @bowl, html: { id: "add_species_#{@bowl.id}" }, remote: true do |f|
+  = render 'shared/error_messages', object: f.object
+  = hidden_field_tag "bowl[species_ids][]", nil
+  %ul.thumbnails
+    - Species.all_available_to(current_user.id).by_bowl_water_type(f.object.water_type).each do |species|
+      %li.span4
+        .thumbnail
+          .add-thumbnail-height
+            .center-image
+              %label{for: "#{species.id}"}
+                = image_tag(default_or_species_avatar(species))
+            .to-bottom
+              %label.checkbox{for: "#{species.id}"}
+                =check_box_tag "bowl[species_ids][]", species.id, @bowl.species_ids.include?(species.id), id: species.id
+                %h4
+                  %em= species.name
+          = render species
+  .fixed-button
+    = f.submit class: 'btn btn-primary'
+    = link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-primary'
