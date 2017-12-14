@@ -1,9 +1,9 @@
-%li.dropdown
-  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+%li.has-submenu
+  = link_to '#' do
     %i.icon-user.icon-white
     User
     %b.caret
-  %ul.dropdown-menu
+  %ul.menu.dropdown
     %li
       = link_to destroy_user_session_path, method: :delete do
         %i.icon-hand-left

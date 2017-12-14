@@ -16,6 +16,7 @@ gem 'rmagick', '~> 2.16.0'
 
 gem 'sass-rails', '~> 5.0.7'
 gem 'foundation-rails', '~> 6.4.1'
+gem 'turbolinks', '~> 5.0.1'
 gem 'coffee-rails', '~> 4.2.2'
 gem 'uglifier', '~> 4.0.0'
 

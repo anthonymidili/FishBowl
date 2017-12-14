@@ -6,7 +6,7 @@
     = favicon_link_tag('favicon.ico')
     %title FishBowl
     = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
+    = javascript_include_tag "application", 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
     = render 'layouts/shim'
   %body

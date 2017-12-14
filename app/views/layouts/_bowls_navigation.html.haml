@@ -1,10 +1,10 @@
 - if current_user.bowls.count == 1
   = render 'layouts/user_bowls'
 - elsif current_user.bowls.count > 1
-  %li.dropdown
-    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+  %li.has-submenu
+    = link_to '#' do
       %i.icon-list.icon-white
       Your Bowls
       %b.caret
-    %ul.dropdown-menu
+    %ul.menu.dropdown
       = render 'layouts/user_bowls'

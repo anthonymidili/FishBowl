@@ -1,8 +1,7 @@
-%li.dropdown
-  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+%li.has-submenu
+  = link_to '#' do
     Help
-    %b.caret
-  %ul.dropdown-menu
+  %ul.menu.dropdown
     %li
       = link_to about_water_health_path do
         %i.icon-question-sign

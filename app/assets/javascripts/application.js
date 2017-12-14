@@ -13,8 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require turbolinks
 //= require raphael
 //= require morris
 //= require_tree .
-
-$(function(){ $(document).foundation(); });
