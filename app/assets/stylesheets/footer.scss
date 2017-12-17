@@ -2,14 +2,14 @@ html, body {height: 100%;}
 
 #wrap {min-height: 100%;}
 
-#main {padding-bottom: 87px;} /* must be same height as the footer */
+#main {padding-bottom: 150px;} /* must be same height as the footer */
 
 footer {
   padding-top: 15px;
   position: relative;
-  margin-top: -87px; /* negative value of footer height */
-  height: 87px;
+  margin-top: -150px; /* negative value of footer height */
+  min-height: 150px;
   clear:both;
   margin-bottom: 0 !important;
-  background-color: $fb-light-green;
+  background-color: whitesmoke;
 }
