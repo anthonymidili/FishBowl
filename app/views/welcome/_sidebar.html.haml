@@ -1,57 +1,58 @@
-%ul.nav.nav-list.health-sidebar
-  %li.nav-header Care and Maintenance
-  %li
-    = link_to about_water_health_path(anchor: 'care_schedule') do
-      Care Schedule
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'filter_maintenance') do
-      Filtration
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'how-many') do
-      Safe Number
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'temperature') do
-      Temperature
-      %i.icon-chevron-right.icon-white
-  %li.divider
-  %li.nav-header Elements
-  %li
-    = link_to about_water_health_path(anchor: 'ammonia') do
-      Ammonia
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'nitrite') do
-      Nitrite
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'nitrate') do
-      Nitrate
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'hardness') do
-      Hardness
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'alkalinity') do
-      Alkalinity
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'ph') do
-      pH
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to about_water_health_path(anchor: 'chlorine') do
-      Chlorine
-      %i.icon-chevron-right.icon-white
-  %li.divider
-  %li
-    = link_to about_water_health_path(anchor: 'top') do
-      Back to top
-      %i.icon-chevron-right.icon-white
-  %li
-    = link_to :back do
-      Back to previous page
-      %i.icon-chevron-right.icon-white
+.sticky{data: { sticky: true, margin_top: 0 }}
+  %ul.menu.vertical.health-sidebar
+    %li.nav-header Care and Maintenance
+    %li
+      = link_to about_water_health_path(anchor: 'care_schedule') do
+        Care Schedule
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'filter_maintenance') do
+        Filtration
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'how-many') do
+        Safe Number
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'temperature') do
+        Temperature
+        %i.icon-chevron-right.icon-white
+    %li.divider
+    %li.nav-header Elements
+    %li
+      = link_to about_water_health_path(anchor: 'ammonia') do
+        Ammonia
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'nitrite') do
+        Nitrite
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'nitrate') do
+        Nitrate
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'hardness') do
+        Hardness
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'alkalinity') do
+        Alkalinity
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'ph') do
+        pH
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to about_water_health_path(anchor: 'chlorine') do
+        Chlorine
+        %i.icon-chevron-right.icon-white
+    %li.divider
+    %li
+      = link_to about_water_health_path(anchor: 'top') do
+        Back to top
+        %i.icon-chevron-right.icon-white
+    %li
+      = link_to :back do
+        Back to previous page
+        %i.icon-chevron-right.icon-white

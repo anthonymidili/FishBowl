@@ -1,6 +1,9 @@
 = form_for [@bowl, @note] do |f|
   = render 'shared/error_messages', object: f.object
-  .note-bar.form-inline
-    = f.text_area :event, class: 'span10', rows: '1', autofocus: true, |
-      placeholder: 'Create new event note here...'                     |
-    = f.submit class: 'btn btn-primary span2 pull-right'
+  .note-bar
+    .row
+      .small-9.columns
+        = f.text_area :event, class: 'span10', rows: '1', autofocus: true,
+        placeholder: 'Create new event note here...'                     |
+      .small-3.columns
+        = f.submit class: 'button expanded'

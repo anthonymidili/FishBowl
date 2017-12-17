@@ -1,13 +1,15 @@
-%h2 Fish Bowl's Google Groups Forum
-%h4.add-text-shadow Be sure to become a member!
-%p.add-background
-  Here you can ask question, and get answers from your fellow Fish Bowlers.
-  %br/
-  Also feel free to leave comments, suggestions and report application bugs to help make your #{link_to 'Fish Bowl', root_path} experience that much better.
-.add-background
-  %iframe#forum_embed{:frameborder => "0", :height => "700", :scrolling => "no", :src => "javascript:void(0)", :width => "900"}
-  :javascript
-    document.getElementById('forum_embed').src =
-      'https://groups.google.com/forum/embed/?place=forum/fish-bowl-questions'
-        + '&showsearch=true&showpopout=true&showtabs=true'
-        + '&parenturl=' + encodeURIComponent(window.location.href);
+.row
+  .small-12.columns
+    %h2 Fish Bowl's Google Groups Forum
+    %h4.add-text-shadow Be sure to become a member!
+    %p.add-background
+      Here you can ask question, and get answers from your fellow Fish Bowlers.
+      %br/
+      Also feel free to leave comments, suggestions and report application bugs to help make your #{link_to 'Fish Bowl', root_path} experience that much better.
+    .add-background
+      %iframe#forum_embed{:frameborder => "0", :height => "700", :scrolling => "no", :src => "javascript:void(0)", :width => "900"}
+      :javascript
+        document.getElementById('forum_embed').src =
+          'https://groups.google.com/forum/embed/?place=forum/fish-bowl-questions'
+            + '&showsearch=true&showpopout=true&showtabs=true'
+            + '&parenturl=' + encodeURIComponent(window.location.href);

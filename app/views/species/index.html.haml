@@ -1,22 +1,26 @@
-%h2= "#{current_user.name}'s Custom Species"
-%p
-  = link_to 'Create New Species', new_species_path, class: 'btn btn-primary pad-right'
-  = link_to 'Bowls Directory', bowls_path, class: 'btn btn-info btn-small'
-%ul.thumbnails
-  - @species.each do |species|
-    %li.span4
-      .thumbnail
-        .your-species-height
-          .pull-left= link_to 'Edit', edit_species_path(species)
-          .pull-right
-            = link_to species,                                                                                                                        |
-              confirm: 'Are you sure you want to permanently delete this species? This will remove your custom species from ALL of your Fish Bowls!', |
-              method: :delete do                                                                                                                      |
-              Delete
-              %i.icon-remove
-          .pad-top.center-image
-            = link_to image_tag(default_or_species_avatar(species)), edit_species_path(species)
-          .to-bottom
-            %h4
-              %em= species.name
-        = render species
+.row
+  .small-12.columns
+    %h2= "#{current_user.name}'s Custom Species"
+    %p
+      = link_to 'Create New Species', new_species_path, class: 'button pad-right'
+      = link_to 'Bowls Directory', bowls_path, class: 'button'
+    .row
+      %ul.menu
+        - @species.each do |species|
+          .medium-4.columns
+            %li
+              .callout
+                .your-species-height
+                  .float-left= link_to 'Edit', edit_species_path(species)
+                  .float-right
+                    = link_to species,
+                    data: { confirm: 'Are you sure you want to permanently delete this species? This will remove your custom species from ALL of your Fish Bowls!' },
+                    method: :delete do
+                      Delete
+                      %i.icon-remove
+                  .pad-top.center-image
+                    = link_to image_tag(default_or_species_avatar(species)), edit_species_path(species)
+                  .to-bottom
+                    %h4
+                      %em= species.name
+                = render species

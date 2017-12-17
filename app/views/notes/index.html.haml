@@ -1,16 +1,18 @@
-%h2= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Event #{('Note').pluralize(@notes.count)}"
-%p
-  = link_to "To #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-info btn-small pad-right'
-  = link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl), class: 'btn btn-info btn-small'
-= render 'form'
-= paginate @notes
-%table.table.table-striped.table-bordered.table-background
-  %tr
-    %th.span3 Date Taken
-    %th{:colspan => "6"}= ('Note').pluralize(@notes.count)
-    %th.span1 Remove
-  = render @notes
-= paginate @notes
-%p
-  = link_to "To #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-info btn-small pad-right'
-  = link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl), class: 'btn btn-info btn-small'
+.row
+  .small-12.columns
+    %h2= "#{@bowl.name} Fish Bowl #{@bowl.water_type} Event #{('Note').pluralize(@notes.count)}"
+    %p
+      = link_to "To #{@bowl.name} Bowl", bowl_path(@bowl), class: 'button small pad-right'
+      = link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl), class: 'button small'
+    = render 'form'
+    = paginate @notes
+    %table.table.table-striped.table-bordered.table-background
+      %tr
+        %th.span3 Date Taken
+        %th{:colspan => "6"}= ('Note').pluralize(@notes.count)
+        %th.span1 Remove
+      = render @notes
+    = paginate @notes
+    %p
+      = link_to "To #{@bowl.name} Bowl", bowl_path(@bowl), class: 'button small pad-right'
+      = link_to "Back to #{@bowl.water_type} Health", bowl_test_results_path(@bowl), class: 'button small'

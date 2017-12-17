@@ -5,7 +5,7 @@
       = link_to 'Create New Bowl', new_bowl_path, class: 'button pad-right'
       = link_to 'Custom Species Directory', species_index_path, class: 'button secondary small'
     .row
-      %ul
+      %ul.menu
         - @bowls.each do |bowl|
           .medium-6.columns
             .pad-bottom

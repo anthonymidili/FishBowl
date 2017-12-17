@@ -25,9 +25,9 @@
           %i.icon-book
           Water Health Test
       %li
-        = link_to @bowl,                                                         |
-          confirm: 'Are you sure? This will permanently delete your fish bowl!', |
-          method: :delete do                                                     |
+        = link_to @bowl,
+        data: { confirm: 'Are you sure? This will permanently delete your fish bowl!' },
+        method: :delete do
           %i.icon-remove
           Delete Bowl
     %li.divider

@@ -1,30 +1,32 @@
-%h2 Administrator's View
-%p.add-background
-  Number of Fish Bowlers:
-  %b= User.count
-%table.table.table-striped.table-bordered.table-background
-  %tr
-    %th User Name
-    %th Email
-    %th ID
-    %th Admin
-    %th bowls_count
-    %th sign_in_count
-    %th last_sign_in_at
-    %th Remove
-  - @users.each do |user|
-    %tr
-      %td= user.name
-      %td= user.email
-      %td= user.id
-      %td= user.admin
-      %td= user.bowls.count
-      %td= user.sign_in_count
-      %td= user.last_sign_in_at.strftime('%b. %d, %Y @ %I:%M%p')
-      %td.center
-        - unless current_user?(user)
-          = link_to user,                                                                                         |
-            confirm: 'Really?!? This will permanently delete your fellow Fish Bowler and all there information!', |
-            method: :delete do                                                                                    |
-            %i.icon-remove
-= paginate @users
+.row
+  .small-12.columns
+    %h2 Administrator's View
+    %p.add-background
+      Number of Fish Bowlers:
+      %b= User.count
+    %table.table.table-striped.table-bordered.table-background
+      %tr
+        %th User Name
+        %th Email
+        %th ID
+        %th Admin
+        %th bowls_count
+        %th sign_in_count
+        %th last_sign_in_at
+        %th Remove
+      - @users.each do |user|
+        %tr
+          %td= user.name
+          %td= user.email
+          %td= user.id
+          %td= user.admin
+          %td= user.bowls.count
+          %td= user.sign_in_count
+          %td= user.last_sign_in_at.strftime('%b. %d, %Y @ %I:%M%p')
+          %td.center
+            - unless current_user?(user)
+              = link_to user,
+              data: { confirm: 'Really?!? This will permanently delete your fellow Fish Bowler and all there information!' },
+              method: :delete do
+                %i.icon-remove
+    = paginate @users

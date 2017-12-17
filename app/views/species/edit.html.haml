@@ -1,3 +1,5 @@
-%h2= "#{current_user.name}, Edit You Species"
-%p= link_to "Species Directory", species_index_path, class: 'btn btn-info btn-small'
-= render 'form'
+.row
+  .small-12.columns
+    %h2= "#{current_user.name}, Edit You Species"
+    %p= link_to "Species Directory", species_index_path, class: 'button small'
+    = render 'form'

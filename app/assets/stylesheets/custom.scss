@@ -28,6 +28,7 @@ h1, h2 {
 
 .add-background {
   padding: 10px;
+  margin-bottom: 2em;
   background-color: white;
   border-radius: 4px;
 
@@ -71,10 +72,6 @@ h1, h2 {
   td {
     text-align: center !important;
     vertical-align: middle !important;
-
-    input[type="text"]{
-      width: 3em;
-    }
   }
 }
 
@@ -89,8 +86,6 @@ section {
 }
 
 .left-divider {
-  margin-left: 3em;
-  padding-left: 2em;
   border-left: 1px solid #999;
 }
 
@@ -284,10 +279,6 @@ nav.pagination {
   border: 3px solid black;
   border-radius: 10px;
   z-index: 10;
-
-  i {
-    float: right;
-  }
 
   a {
     color: lightgray;
