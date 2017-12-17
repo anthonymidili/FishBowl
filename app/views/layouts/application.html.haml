@@ -12,9 +12,9 @@
   %body
     #wrap
       = render 'layouts/header'
+      %br/
       #main
         - flash.each do |key, value|
-          %br/
           = content_tag(:div, value, class: "alert alert-#{key} callout")
         = yield
     = render 'layouts/footer'

@@ -1,23 +1,24 @@
 - provide(:title, 'Sign up')
-.hero-unit.center-devise-forms
-  %h2.heading Sign up
-  %br/
-  = form_for(resource,                               |
-    :as => resource_name,                            |
-    :url => registration_path(resource_name)) do |f| |
-    = devise_error_messages!
-    .control-group
-      = f.label :name
-      = f.text_field :name, class: 'input-block-level', autofocus: true
-    .control-group
-      = f.label :email
-      = f.text_field :email, class: 'input-block-level'
-    .control-group
-      = f.label :password
-      = f.password_field :password, class: 'input-block-level'
-    .control-group
-      = f.label :password_confirmation
-      = f.password_field :password_confirmation, class: 'input-block-level'
-    .control-group
-      = f.submit 'Sign up', class: 'btn btn-large btn-block btn-primary'
-  = render 'devise/shared/links'
+.row
+  .medium-6.medium-centered.columns
+    .callout
+      %h2.heading Sign up
+      = form_for(resource, :as => resource_name,
+      :url => registration_path(resource_name)) do |f|
+        = devise_error_messages!
+        .control-group
+          = f.label :name
+          = f.text_field :name, autofocus: true
+        .control-group
+          = f.label :email
+          = f.text_field :email
+        .control-group
+          = f.label :password
+          = f.password_field :password
+        .control-group
+          = f.label :password_confirmation
+          = f.password_field :password_confirmation
+        %br/
+        .control-group
+          = f.submit 'Sign up', class: 'button large'
+      = render 'devise/shared/links'

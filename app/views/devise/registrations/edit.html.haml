@@ -1,42 +1,41 @@
 - provide(:title, 'User settings')
-.hero-unit.center-devise-forms
-  %h2.heading
-    Edit #{resource_name.to_s.humanize}
-  %br/
-  = form_for(resource,                        |
-    :as => resource_name,                     |
-    :url => registration_path(resource_name), |
-    :html => { :method => :put }) do |f|      |
-    = devise_error_messages!
-    .control-group
-      = f.label :name
-      = f.text_field :name, class: 'input-block-level', autofocus: true
-    .control-group
-      = f.label :email
-      = f.text_field :email, class: 'input-block-level'
-    - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-      %div
-        Currently waiting confirmation for: #{resource.unconfirmed_email}
-    .control-group
-      = f.label :current_password
-      %i.help-block (we need your current password to confirm your changes)
-      = f.password_field :current_password, class: 'input-block-level'
-    .control-group
-      = f.label :password, "New password"
-      %i.help-block (leave blank if you don't want to change it)
-      = f.password_field :password, class: 'input-block-level', :autocomplete => 'off'
-    .control-group
-      = f.label :password_confirmation
-      = f.password_field :password_confirmation, class: 'input-block-level'
-    %br/
-    .control-group
-      %p= f.submit 'Update', class: 'btn btn-large btn-block btn-primary'
+.row
+  .medium-6.medium-centered.columns
+    .callout
+      %h2.heading
+        Edit #{resource_name.to_s.humanize}
+      = form_for(resource, :as => resource_name, :url => registration_path(resource_name),
+      :html => { :method => :put }) do |f|
+        = devise_error_messages!
+        .control-group
+          = f.label :name
+          = f.text_field :name, autofocus: true
+        .control-group
+          = f.label :email
+          = f.text_field :email
+        - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+          %div
+            Currently waiting confirmation for: #{resource.unconfirmed_email}
+        .control-group
+          = f.label :current_password
+          %i.help-block (we need your current password to confirm your changes)
+          = f.password_field :current_password
+        .control-group
+          = f.label :password, "New password"
+          %i.help-block (leave blank if you don't want to change it)
+          = f.password_field :password, :autocomplete => 'off'
+        .control-group
+          = f.label :password_confirmation
+          = f.password_field :password_confirmation
+        %br/
+        .control-group
+          %p= f.submit 'Update', class: 'button large expanded'
+          %br/
+          %p= link_to 'Back', root_path, class: 'btn btn-block'
       %br/
-      %p= link_to 'Back', root_path, class: 'btn btn-block'
-  %br/
-  %section
-    %h3 Cancel my account
-    = button_to 'Cancel my account', registration_path(resource_name),                                                                       |
-      class: 'btn btn-small btn-danger',                                                                                                     |
-      :data => { :confirm => 'Are you sure? This will permanently delete your account and all of your personal information will be lost!' }, |
-      :method => :delete                                                                                                                     |
+      %section
+        %h3 Cancel my account
+        = button_to 'Cancel my account', registration_path(resource_name),                                                                       |
+          class: 'btn btn-small btn-danger',                                                                                                     |
+          :data => { :confirm => 'Are you sure? This will permanently delete your account and all of your personal information will be lost!' }, |
+          :method => :delete                                                                                                                     |
