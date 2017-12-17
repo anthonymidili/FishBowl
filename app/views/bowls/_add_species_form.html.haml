@@ -3,7 +3,7 @@
   = hidden_field_tag "bowl[species_ids][]", nil
   %ul.thumbnails
     - Species.all_available_to(current_user.id).by_bowl_water_type(f.object.water_type).each do |species|
-      %li.span4
+      %li.small-4.columns
         .thumbnail
           .add-thumbnail-height
             .center-image
@@ -16,5 +16,5 @@
                   %em= species.name
           = render species
   .fixed-button
-    = f.submit class: 'btn btn-primary'
-    = link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'btn btn-primary'
+    = f.submit class: 'button'
+    = link_to "Back to #{@bowl.name} Bowl", bowl_path(@bowl), class: 'button'

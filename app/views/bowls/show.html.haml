@@ -1,14 +1,16 @@
-%h2
-  = "#{@bowl.name} Fish Bowl"
-  %small= " - #{@bowl.water_type}"
-%p
-  = link_to 'Bowls Directory', bowls_path, class: 'btn btn-info btn-small pad-right'
-  = link_to 'Custom Species Directory', species_index_path, class: 'btn btn-info btn-small'
 .row
-  .span12
+  .small-12.columns
+    %h2
+      = "#{@bowl.name} Fish Bowl"
+      %small= " - #{@bowl.water_type}"
+    %p
+      = link_to 'Bowls Directory', bowls_path, class: 'button small pad-right'
+      = link_to 'Custom Species Directory', species_index_path, class: 'button small'
+.row
+  .small-12.columns
     .add-background
       .row
-        .span4
+        .small-4.columns
           %h3= link_to 'Bowl Info', edit_bowl_path(@bowl)
           %p= link_to image_tag(default_or_bowl_avatar(@bowl),
             alt: @bowl.name,
@@ -33,9 +35,9 @@
             %b= " #{count_species(@bowl)}"
           %p
             = link_to 'Estimated length of all occupants:', about_water_health_path(anchor: "how-many")
-            %b{:class => "<haml_loud"}
-              crowded?(@bowl) &gt;#{" #{species_total_length(@bowl)}"}"
-        .span8
+            %b{:class => "#{crowded?(@bowl)}"}
+              #{" #{species_total_length(@bowl)}"}"
+        .small-8.columns
           %h3= link_to 'Water Health', bowl_test_results_path(@bowl)
           .remove-link-underline
             = link_to bowl_test_results_path(@bowl) do

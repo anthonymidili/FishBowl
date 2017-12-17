@@ -53,10 +53,6 @@ h1, h2 {
   }
 }
 
-.thumbnail {
-  background-color: white;
-}
-
 .pad-right {
   margin-right: 1em;
 }
@@ -174,9 +170,10 @@ nav.pagination {
 }
 
 .bowl-thumbnail {
-  height: 66em;
+  height: 56em;
   overflow-y: auto;
   position: relative;
+  background-color: white;
 }
 
 .your-thumbnail-height {
@@ -274,6 +271,10 @@ nav.pagination {
   background-color: midnightblue;
   padding: 1em;
   border-radius: 15px;
+}
+
+.graph-sample {
+  width: 100%;
 }
 
 /* about water health sidebar */

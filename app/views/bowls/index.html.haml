@@ -1,31 +1,31 @@
-%h2= "#{current_user.name}'s Fish #{('Bowl').pluralize(@bowls.count)}"
-%p
-  = link_to 'Create New Bowl', new_bowl_path, class: 'btn btn-primary pad-right'
-  = link_to 'Custom Species Directory', species_index_path, class: 'btn btn-info btn-small'
-%ul.thumbnails
-  - @bowls.each do |bowl|
-    %li.span6
-      .thumbnail.bowl-thumbnail
-        = link_to bowl do
-          %h3
-            = bowl.name
-            %small= " - #{bowl.water_type}"
-        .center
-          = link_to image_tag(default_or_bowl_avatar(bowl),
-          alt: bowl.name,
-          class: 'picture-frame'), bowl
-        .remove-link-underline
-          = link_to bowl_test_results_path(bowl) do
-            - if bowl.test_results.present?
-              = content_tag :div, '',
-              id: "results_chart_#{bowl.id}",
-              data: { results: paginate_test_results(bowl) }
-            - else
-              = image_tag('sample/small_graph.png')
-        .center.to-bottom
-          = link_to 'Edit Fish Bowl', edit_bowl_path(bowl), class: 'pad-right'
-          = link_to 'Water Health Test', bowl_test_results_path(bowl), class: 'pad-right'
-          = link_to bowl,
-          confirm: 'Are you sure? This will permanently delete your fish bowl!',
-          method: :delete do
-            = image_tag('icons/rubber_stopper.gif', size: '64x64', title: 'Delete Bowl')
+.row
+  .small-12.columns
+    %h2= "#{current_user.name}'s Fish #{('Bowl').pluralize(@bowls.count)}"
+    %p
+      = link_to 'Create New Bowl', new_bowl_path, class: 'button pad-right'
+      = link_to 'Custom Species Directory', species_index_path, class: 'button secondary small'
+    .row
+      %ul
+        - @bowls.each do |bowl|
+          .medium-6.columns
+            .pad-bottom
+              %li.bowl-thumbnail
+                = link_to bowl do
+                  %h3
+                    = bowl.name
+                    %small= " - #{bowl.water_type}"
+                .center
+                  = link_to image_tag(default_or_bowl_avatar(bowl), alt: bowl.name, class: 'picture-frame'), bowl
+                .remove-link-underline
+                  = link_to bowl_test_results_path(bowl) do
+                    - if bowl.test_results.present?
+                      = content_tag :div, '', id: "results_chart_#{bowl.id}", data: { results: paginate_test_results(bowl) }
+                    - else
+                      = image_tag('sample/small_graph.png', class: 'graph-sample')
+                .center.to-bottom
+                  = link_to 'Edit Fish Bowl', edit_bowl_path(bowl), class: 'pad-right'
+                  = link_to 'Water Health Test', bowl_test_results_path(bowl), class: 'pad-right'
+                  = link_to bowl,
+                  data: { confirm: 'Are you sure? This will permanently delete your fish bowl!' },
+                  method: :delete do
+                    = image_tag('icons/rubber_stopper.gif', size: '64x64', title: 'Delete Bowl')

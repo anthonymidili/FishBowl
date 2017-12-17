@@ -1,43 +1,42 @@
 .row
-  .span10.hero-unit
-    = form_for @bowl, html: { multipart: true } do |f|
-      = render 'shared/error_messages', object: f.object
-      .row
-        .span5
-          .control-group
-            = f.label :name, 'Fish bowl name'
-            = f.text_field :name, autofocus: true
-          .control-group
-            = f.label :size, 'Fish bowl size'
-            .input-append
-              = f.text_field :size
-              %span.add-on Gallons
-          .control-group
-            = f.label :temperature
-            .input-append
-              = f.text_field :temperature
-              %span.add-on °F
-          - unless @bowl.persisted?
+  .medium-10.medium-centered
+    .callout
+      = form_for @bowl, html: { multipart: true } do |f|
+        = render 'shared/error_messages', object: f.object
+        .row
+          .medium-5.columns
             .control-group
-              = f.label :water_type
-              = f.select :water_type,         |
-                'Freshwater' => 'Freshwater', |
-                'Saltwater'  => 'Saltwater'   |
-          .control-group
-            = f.label :fish_type, 'Fish temperament'
-            = f.select :fish_type,                    |
-              'Community'       => 'Community',       |
-              'Semi-aggressive' => 'Semi-aggressive', |
-              'Aggressive'      => 'Aggressive'       |
-        .span5
-          .control-group
-            = f.label :avatar do
-              Upload Image for your Fish Bowl Avatar
-              = image_tag(f.object.avatar_url) if f.object.avatar?
-            = f.file_field :avatar
-            = f.hidden_field :avatar_cache
-          .control-group
-            %label.checkbox
-              = f.check_box :remove_avatar
-              Check box to remove Fish Bowl Avatar
-      .control-group.pull-right= f.submit class: 'btn btn-primary'
+              = f.label :name, 'Fish bowl name'
+              = f.text_field :name, autofocus: true
+            = f.label :size, 'Fish bowl size'
+            .input-group
+              = f.text_field :size, class: 'input-group-field'
+              %span.input-group-label Gallons
+            = f.label :temperature
+            .input-group
+              = f.text_field :temperature, class: 'input-group-field'
+              %span.input-group-label °F
+            - unless @bowl.persisted?
+              .control-group
+                = f.label :water_type
+                = f.select :water_type,
+                'Freshwater' => 'Freshwater',
+                'Saltwater'  => 'Saltwater'
+            .control-group
+              = f.label :fish_type, 'Fish temperament'
+              = f.select :fish_type,
+              'Community'       => 'Community',
+              'Semi-aggressive' => 'Semi-aggressive',
+              'Aggressive'      => 'Aggressive'
+          .medium-5.columns
+            .control-group
+              = f.label :avatar do
+                Upload Image for your Fish Bowl Avatar
+                = image_tag(f.object.avatar_url) if f.object.avatar?
+              = f.file_field :avatar
+              = f.hidden_field :avatar_cache
+            .control-group
+              %label.checkbox
+                = f.check_box :remove_avatar
+                Check box to remove Fish Bowl Avatar
+        .control-group.pull-right= f.submit class: 'button'

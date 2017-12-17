@@ -1,4 +1,4 @@
-jQuery ->
+document.addEventListener 'turbolinks:load', ->
   reef_type = $("#species_reef_safe").closest("div")
   $("#species_water_type").change ->
     if $("#species_water_type :selected").text() is "Saltwater"

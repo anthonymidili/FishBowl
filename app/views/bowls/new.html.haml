@@ -1,3 +1,5 @@
-%h2= "#{current_user.name}, Create a New Fish Bowl"
-%p= link_to "Bowl Directory", bowls_path, class: 'btn btn-info btn-small'
-= render 'form'
+.row
+  .small-12.columns
+    %h2= "#{current_user.name}, Create a New Fish Bowl"
+    %p= link_to "Bowl Directory", bowls_path, class: 'button small'
+    = render 'form'

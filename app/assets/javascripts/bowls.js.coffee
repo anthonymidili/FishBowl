@@ -1,4 +1,5 @@
-jQuery ->
+document.addEventListener 'turbolinks:load', ->
+
   $("[id^='add_species_'] input[type='submit']").hide()
   $("[id^='add_species_'] input[type='checkbox']").click ->
     $(this).closest("form").submit()

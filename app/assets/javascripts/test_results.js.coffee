@@ -1,4 +1,4 @@
-jQuery ->
+document.addEventListener 'turbolinks:load', ->
   $("div[id^='results_chart']").each (index, element) =>
     Morris.Line
       element: $(element).attr("id")
