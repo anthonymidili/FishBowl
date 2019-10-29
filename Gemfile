@@ -8,7 +8,7 @@ gem 'puma', '~> 3.11.0'
 gem 'pg', '~> 0.21.0'
 
 gem 'jquery-rails', '~> 4.3.1'
-gem 'devise', '~> 4.3.0'
+gem 'devise', '~> 4.7.1'
 gem 'kaminari', '~> 1.1.1'
 gem 'carrierwave', '~> 1.2.1'
 gem 'fog', '~> 1.42.0'
