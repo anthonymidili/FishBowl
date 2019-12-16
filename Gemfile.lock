@@ -76,7 +76,7 @@ GEM
       railties (>= 3.2, < 5.2)
     erubi (1.7.0)
     erubis (2.7.0)
-    excon (0.60.0)
+    excon (0.71.0)
     execjs (2.7.0)
     ffi (1.9.18)
     ffi (1.9.18-x86-mingw32)
