@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.1.4'
 
 # Procfile
-gem 'puma', '~> 3.11.0'
+gem 'puma', '~> 3.12.4'
 
 gem 'pg', '~> 0.21.0'
 
