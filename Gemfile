@@ -10,7 +10,7 @@ gem 'pg', '~> 0.21.0'
 gem 'jquery-rails', '~> 4.3.1'
 gem 'devise', '~> 4.3.0'
 gem 'kaminari', '~> 1.1.1'
-gem 'carrierwave', '~> 1.2.1'
+gem 'carrierwave', '~> 1.3.2'
 gem 'fog', '~> 1.42.0'
 gem 'rmagick', '~> 2.16.0'
 
